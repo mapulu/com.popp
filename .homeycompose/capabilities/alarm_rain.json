@@ -1,0 +1,19 @@
+{
+      "type": "number",
+      "title": {
+        "en": "Rain Alarm",
+        "nl": "Regen Alarm"
+      },
+      "units": {
+        "en": "rain_status"
+      },
+      "desc": {
+        "en": "Rain Alarm",
+        "nl": "Regen Alarm"
+      },
+      "min": 0,
+      "max": 3,
+      "step": 1,
+      "getable": true,
+      "setable": false
+    }
