@@ -5,8 +5,8 @@ const ZwaveDevice = require('homey-meshdriver').ZwaveDevice;
 
 class P700892 extends ZwaveDevice {
 	onMeshInit() {
-		this.enableDebug();
-		this.printNode();
+		//this.enableDebug();
+		//this.printNode();
 		this.registerCapability('alarm_contact', 'NOTIFICATION');
 		this.registerCapability('alarm_tamper', 'NOTIFICATION');
 		this.registerCapability('measure_battery', 'BATTERY');
