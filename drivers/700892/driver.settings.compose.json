@@ -315,46 +315,48 @@
       "id": "basic_group_on",
       "zwave": {
         "index": 7,
-        "size": 1
+        "size": 1,
+        "signed": false
       },
 	  "attr": {
-      "min": -128,
-      "max": 127
+      "min": 0,
+      "max": 255
     },
       "type": "number",
-      "value": -1,
+      "value": 255,
       "label": {
         "en": "BASIC command value sent to 2nd Association Group on On event",
         "nl": "BASIC command verzonden naar 2de Associatiegroep On evenement",
 		"de": "BASIC Command wird an die Assoziationsgruppe 2 gesendet, wenn das Ereignis On eintritt "
       },
       "hint": {
-        "en": "This is the BASIC command value sent in case of On event. (1-99, 255) (Default: 255=-1) In order to set values in the range 128 ... 255 the value sent in the application shall be the desired value minus 256.",
-        "nl": "BASIC-commandowaarde verzonden in het geval van On event. (1-99, 255) (Standaard: 255=-1) Om waarden in het bereik 128 .... 255 in te stellen, moet de waarde in de toepassing de gewenste waarde minus 256 zijn",
-		"de": "Dies ist das BASIC Command, das im Falle des Ereignisses On gesendet wird. (1-99, Standard: 255=-1) Um Werte zwischen 128 und 255 zu programmieren, muss der gewünschte Wert minus 256 eingegeben werden."
+        "en": "This is the BASIC command value sent in case of On event. (1-99, 255) (Default: 255)",
+        "nl": "BASIC-commandowaarde verzonden in het geval van On event. (1-99, 255) (Standaard: 255)",
+		"de": "Dies ist das BASIC Command, das im Falle des Ereignisses On gesendet wird. (1-99, Standard: 255)"
       }
     },
     {
       "id": "basic_group_off",
       "zwave": {
         "index": 8,
-        "size": 1
+        "size": 1,
+        "signed": false
       },
 	  "attr": {
-      "min": -128,
-      "max": 127
+      "min": 0,
+      "max": 255
     },
       "type": "number",
-      "value": -1,
+      "value": 255,
       "label": {
         "en": "BASIC command value sent to 2nd Association Group off event",
         "nl": "BASIC command verzonden naar 2de Associatiegroep off evenement",
 		"de": "BASIC Command wird an die Assoziationsgruppe 2 gesendet, wenn das Ereignis Off eintritt "
       },
       "hint": {
-        "en": "This is the BASIC command value sent in case of Off event. (1-99, 255) (Default: 255=-1) In order to set values in the range 128 ... 255 the value sent in the application shall be the desired value minus 256.",
-        "nl": "BASIC-commandowaarde verzonden in het geval van Off event. (1-99, 255) (Standaard: 255=-1) Om waarden in het bereik 128 .... 255 in te stellen, moet de waarde in de toepassing de gewenste waarde minus 256 zijn",
-		"de": "Dies ist das BASIC Command, das im Falle des Ereignisses Off gesendet wird. (1-99, 255) (Standard: 255=-1) Um Werte zwischen 128 und 255 zu programmieren, muss der gewünschte Wert minus 256 eingegeben werden."
+        "en": "This is the BASIC command value sent in case of Off event. (1-99, 255) (Default: 255)",
+        "nl": "BASIC-commandowaarde verzonden in het geval van Off event. (1-99, 255) (Standaard: 255=-1)",
+		"de": "Dies ist das BASIC Command, das im Falle des Ereignisses Off gesendet wird. (1-99, 255) (Standard: 255=-1)"
       }
     },
     {
