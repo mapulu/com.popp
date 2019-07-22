@@ -1,4 +1,5 @@
-[{
+{
+  "triggers":[{
     "id": "RC_scene",
     "title": {
       "en": "A user verified itself",
@@ -179,4 +180,7 @@
       "filter": "driver_id=700045"
     }]
   }
-]
+],
+    "conditions": [],
+  "actions": []
+}

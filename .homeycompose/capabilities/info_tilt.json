@@ -1,0 +1,11 @@
+{
+      "type": "boolean",
+      "title": {
+        "en": "Tilt",
+		"nl": "Gekanteld",
+		"de": "Gekippt"
+      },
+      "getable": true,
+      "setable": false,
+      "icon": "/assets/tilt.svg"
+    }

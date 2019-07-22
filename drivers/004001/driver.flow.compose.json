@@ -1,4 +1,7 @@
-[{
+{
+  "triggers": [],
+    "conditions": [],
+  "actions": [{
   "id": "004001_alarm_state",
   "title": {
     "en": "Change the alarm state",
@@ -34,3 +37,4 @@
     }
   ]
 }]
+}

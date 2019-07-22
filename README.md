@@ -18,7 +18,8 @@ Want the next donation to go to your favorite charity ? Don’t hesitate and tel
 * 010101 - Thermostat Valve 
 * 012501 - Strike Lock Control   
 * 123580 - Dimmer 67G   
-* 123610 - Switch 68G    
+* 123610 - Switch 68G 
+* 700892 - Door and Window Sensor with Tilt Detection
     
 ## Untested devices    
 * 005206 - Weather - Need help some reports dont get in  
@@ -46,6 +47,9 @@ c. check if effective and retry to the desired value
 
 ## Change Log:    
    
+### v 2.0.7
+Added support for Door and Window Sensor with Tilt Detection
+
 ### v 2.0.6   
 **fixed:**     
 Keypad usage crashed the app. Fixed thanks to Paul Molensky     
