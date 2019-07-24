@@ -2,7 +2,8 @@
   "id": "700045",
   "name": {
     "en": "Keypad",
-    "nl": "Keypad"
+    "nl": "Keypad",
+	"en": "Keypad"
   },
   "mobile": {
     "components": [{
@@ -19,7 +20,7 @@
       },
       {
         "id": "sensor",
-        "capabilities": ["alarm_contact", "alarm_tamper", "alarm_battery"],
+        "capabilities": ["alarm_tamper", "alarm_battery"],
         "options": {
           "icons": {
             "alarm_contact": "/drivers/700045/assets/ring.svg"
@@ -41,43 +42,48 @@
     "learnmode": {
       "image": "/drivers/700045/assets/learnmode.svg",
       "instruction": {
-        "en": "Turn into Management Mode (remove cover), hit button 1 and confirm with * (Star Key)",
-        "nl": "Zet de keypad in Magaement Mode (verwijder cover), druk toets 1 en bevestig met * (Ster Kop)"
+        "en": "Turn into Network Mode (remove cover), hit button 4 and confirm with * (Star Key)",
+        "nl": "Zet de keypad in Network Mode (verwijder cover), druk toets 4 en bevestig met * (Ster Kop)",
+		"de": "Wechsel in den Netzwerkmodus (Abdeckung entfernen), Taste 4 drücken und mit * (Sterntaste) bestätigen"
       }
     },
     "unlearnmode": {
       "image": "/drivers/700045/assets/learnmode.svg",
       "instruction": {
-        "en": "Turn into Management Mode (remove cover), hit button 1 and confirm with * (Star Key)",
-        "nl": "Zet de keypad in Magaement Mode (verwijder cover), druk toets 1 en bevestig met * (Ster Kop)"
+        "en": "Turn into Network Mode (remove cover), hit button 4 and confirm with * (Star Key)",
+        "nl": "Zet de keypad in Network Mode (verwijder cover), druk toets 4 en bevestig met * (Ster Kop)",
+		"de": "Wechsel in den Netzwerkmodus (Abdeckung entfernen), Taste 4 drücken und mit * (Sterntaste) bestätigen"
       }
     },
     "associationGroups": [
-      1,
-      2,
-      3
+      1
     ],
     "associationGroupsOptions": {
       "1": {
         "hint": {
-          "en": "Z-Wave Plus Lifeline"
+          "en": "Z-Wave Plus Lifeline",
+		  "nl": "Z-Wave Plus Lifeline",
+		  "de": "Z-Wave Plus Lifeline"
         }
       },
       "2": {
         "hint": {
-          "en": "Door Lock Control"
+          "en": "Door Lock Control",
+		  "en": "Door Lock Control",
+		  "en": "Türschloss-Steuerung"
         }
       },
       "3": {
         "hint": {
-          "en": "Ring Button Control"
+          "en": "Ring Button Control",
+		  "nl": "Ring Button Control",
+		  "de": "Klingeltaster-Steuerung"
         }
       }
     }
   },
   "class": "other",
   "capabilities": [
-    "alarm_contact",
     "alarm_tamper",
     "measure_battery",
     "alarm_battery"
@@ -85,89 +91,5 @@
   "images": {
     "large": "/drivers/700045/assets/images/large.jpg",
     "small": "/drivers/700045/assets/images/small.jpg"
-  },
-  "settings": [{
-      "id": "1",
-      "value": 0,
-      "label": {
-        "en": "Door Lock Automatic Secure Timeout (0-127 seconds)",
-        "nl": "Deurvergrendeling automatische vergrendeling time-out (0-127 seconden)"
-      },
-      "hint": {
-        "en": "After this time a CLOSE command is sent to the controlled door lock. On default no CLOSE command is sent assuming that the strike lock has its own timeout set",
-        "nl": "Na deze tijd wordt een CLOSE-opdracht naar het gecontroleerde deurslot verzonden. Standaard wordt er geen CLOSE-opdracht verzonden, ervan uitgaande dat de strike-lock zijn eigen time-out heeft ingesteld"
-      },
-      "_size": 1,
-      "type": "number"
-    },
-    {
-      "id": "2",
-      "value": 3,
-      "label": {
-        "en": "Ring Button Press Basic Command OFF Timeout (3-127 seconds)",
-        "nl": "Deurbel signaal time-out (0-127 seconden)"
-      },
-      "hint": {
-        "en": "After this time the Door Bell will receive an OF command regardless of the actuall button is pressed or not",
-        "nl": "Na deze tijd ontvangt de deurbel een OFF-commando, ongeacht of de actuall-knop is ingedrukt of niet"
-      },
-      "_size": 1,
-      "type": "number"
-    },
-    {
-      "id": "3",
-      "value": 255,
-      "label": {
-        "en": "Ring Button ON Command",
-        "nl": "Deurbell Knop ON commando"
-      },
-      "hint": {
-        "en": "This value is sent into Association Group 3 when the door bell button is pressed (0-255)",
-        "nl": "Deze waarde wordt naar Associatiegroep 3 verzonden wanneer op de belknop wordt gedrukt (0-255)"
-      },
-      "_size": 1,
-      "type": "number"
-    },
-    {
-      "id": "4",
-      "value": 0,
-      "label": {
-        "en": "Ring Button OFF Command"
-      },
-      "hint": {
-        "en": "This value is sent into Association Group 3 when the door bell button is released or the timeout has reached (0-255)",
-        "nl": "Deze waarde wordt naar Associatiegroep 3 verzonden wanneer op de belknop wordt losgelaten (0-255)"
-      },
-      "_size": 1,
-      "type": "number"
-    },
-    {
-      "id": "5",
-      "value": true,
-      "label": {
-        "en": "Central Scene ID for User Codes",
-        "nl": "Central Scene ID voor gebruikerscodes"
-      },
-      "hint": {
-        "en": "This parameter defines if different user codes shall cause individual or similar scene ID sent to the main controller",
-        "nl": "Deze parameter bepaalt of verschillende gebruikerscodes individuele of soortgelijke scene-ID's naar de hoofdcontroller moeten sturen"
-      },
-      "_size": 1,
-      "type": "checkbox"
-    },
-    {
-      "id": "6",
-      "value": true,
-      "label": {
-        "en": "Buzzer Confirmation",
-        "nl": "Buzzer confirmatie"
-      },
-      "hint": {
-        "en": "This parameter defines if the internal buzzer shall be used to confirm button presses",
-        "nl": "Deze parameter bepaalt of de interne zoemer moet worden gebruikt om het indrukken van de knoppen te bevestigen"
-      },
-      "_size": 1,
-      "type": "checkbox"
-    }
-  ]
+  }
 }

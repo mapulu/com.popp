@@ -7,9 +7,11 @@
   "capabilities": [
     "meter_rain",
     "measure_rain",
+	"measure_rain.total",
     "measure_battery",
     "alarm_battery",
-    "alarm_rain"
+    "is_rain",
+	"alarm_heavyrain"
   ],
   "mobile": {
     "components": [{
@@ -28,6 +30,22 @@
       }
     ]
   },
+  "capabilitiesOptions": {
+    "measure_rain.total": {
+      "title": {
+        "en": "Rain Total",
+        "nl": "Rain Totel",
+		"de": "Regen Gesamt"
+      }
+},
+    "measure_rain": {
+      "units": {
+        "en": "mm/h",
+        "nl": "mm/h",
+		"de": "mm/h"
+      }
+}
+},
   "zwave": {
     "manufacturerId": 340,
     "productTypeId": 4,
@@ -75,6 +93,11 @@
         "id": 7,
         "size": 1,
         "value": 1
+      },
+      {
+        "id": 5,
+        "size": 1,
+        "value": 25
       }
     ]
   },
@@ -153,15 +176,15 @@
         "size": 1,
         "signed": false
       },
-      "value": 255,
+      "value": 25,
       "type": "number",
       "label": {
         "en": "Heavy rain definition.",
         "nl": "Zware regen definitie."
       },
       "hint": {
-        "en": "This threshold defines when a heavy rain condition is hit in mm/hour. In most countries this is defined as > 15 mm rain per hour. The default value however is to turn this function off.",
-        "nl": "Stelt in wat als zware regen wordt gezien in mm/uur. In de meeste landen is dit > 15 mm regen per uur. Standaard staat deze functie uit."
+        "en": "This threshold defines when a heavy rain condition is hit in mm/hour. In most countries this is defined as > 15 mm rain per hour. (Default 25 mm/h)",
+        "nl": "Stelt in wat als zware regen wordt gezien in mm/uur. In de meeste landen is dit > 15 mm regen per uur. (Default 25 mm/h) "
       },
       "attr": {
         "min": 0,

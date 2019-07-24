@@ -1,0 +1,15 @@
+{
+      "type": "boolean",
+      "title": {
+        "en": "Rain",
+        "nl": "Regen",
+		"de": "Regen"
+      },
+      "desc": {
+        "en": "Rain",
+        "nl": "Regen",
+		"de": "Regen"
+      },
+      "getable": true,
+      "setable": false
+    }

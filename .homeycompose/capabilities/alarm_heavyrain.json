@@ -1,0 +1,16 @@
+{
+      "type": "boolean",
+      "title": {
+        "en": "Heavy Rain Alarm",
+        "nl": "Stortregens Alarm",
+		"de": "Starkregen Alarm"
+      },
+      "desc": {
+        "en": "Heavy Rain Alarm",
+        "nl": "Stortregens Alarm",
+		"de": "Starkregen Alarm"
+      },
+      "getable": true,
+      "setable": false,
+      "icon": "/assets/alarm_rain.svg"
+    }

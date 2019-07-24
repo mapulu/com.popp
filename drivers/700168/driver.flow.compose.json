@@ -1,0 +1,57 @@
+{
+  "triggers": [
+    {
+      "id": "rain_on",
+      "title": {
+        "en": "It started raining.",
+		"nl": "Het begon te regenen",
+		"de": "Es hat angefangen zu regnen"
+      }
+    },
+    {
+      "id": "rain_off",
+      "title": {
+        "en": "It stopped raining",
+		"nl": "It stopped raining",
+		"de": "Es hat aufgehört zu regnen"
+      }
+    },
+    {
+      "id": "heavyrain_alarm_on",
+      "title": {
+        "en": "The heavy rain alarm is on",
+		"nl": "Het hevige regenalarm is geactiveerd",
+		"de": "Der Starkregen Alarm ist angegangen"
+      }
+    },
+    {
+      "id": "heavyrain_alarm_off",
+      "title": {
+        "en": "The heavy rain alarm is off",
+		"nl": "Het hevige regenalarm is afgegaan",
+		"de": "Der Starkregen Alarm ist ausgegangen"
+      }
+    }
+],
+  "conditions": [
+      {
+        "id": "is_raining",
+        "title": {
+          "en": "It is !{{|not}} raining",
+		  "nl": "Het regent !{{|niet}}",
+          "de": "Es regnet !{{|nicht}}"
+        },
+        "args": []
+      },
+	   {
+        "id": "is_heavyrain_alarm",
+        "title": {
+          "en": "The heavy rain alarm is !{{on|off}}",
+		  "nl": "Het hevige regen alarm is !{{aan|uit}}",
+          "de": "Der Starkregen Alarm ist !{{an|aus}}"
+        },
+        "args": []
+      }
+],
+  "actions": []
+}

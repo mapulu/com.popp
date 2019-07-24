@@ -312,14 +312,16 @@
         ]
       },
       {
-        "id": "RC_scene",
+        "id": "user_validated",
         "title": {
-          "en": "A user verified itself",
-          "nl": "Een gebruiker is gevalideerd"
+          "en": "A specific user verified itself",
+          "nl": "Een specifieke gebruiker is gevalideerd",
+          "de": "Ein bestimmter Benutzer hat seinen Code eingegeben"
         },
         "hint": {
           "en": "This card triggers when a user validates. In the main settings of the device you can choose if this is done with the Global User Code or individual users",
-          "nl": "Deze kaart wordt geactiveerd wanneer een gebruiker valideert. In de hoofdinstellingen van het apparaat kunt u kiezen of dit wordt gedaan met de globale gebruiker code of met individuele gebruikers"
+          "nl": "Deze kaart wordt geactiveerd wanneer een gebruiker valideert. In de hoofdinstellingen van het apparaat kunt u kiezen of dit wordt gedaan met de globale gebruiker code of met individuele gebruikers",
+          "de": "Diese Karte wird ausgelöst, wenn ein Benutzer seinen Code eingegeben hat. In den Haupteinstellungen des Gerätes kannst du wählen, ob dies mit dem Global User Code (20) oder einzelnen Benutzern geschehen soll"
         },
         "args": [
           {
@@ -328,8 +330,216 @@
             "filter": "driver_id=700045"
           },
           {
-            "name": "device",
+            "name": "button",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "User 1",
+                  "nl": "Gebruiker 1",
+                  "de": "Benutzer 1"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "User 2",
+                  "nl": "Gebruiker 2",
+                  "de": "Benutzer 2"
+                }
+              },
+              {
+                "id": "3",
+                "label": {
+                  "en": "User 3",
+                  "nl": "Gebruiker 3",
+                  "de": "Benutzer 3"
+                }
+              },
+              {
+                "id": "4",
+                "label": {
+                  "en": "User 4",
+                  "nl": "Gebruiker 4",
+                  "de": "Benutzer 4"
+                }
+              },
+              {
+                "id": "5",
+                "label": {
+                  "en": "User 5",
+                  "nl": "Gebruiker 5",
+                  "de": "Benutzer 5"
+                }
+              },
+              {
+                "id": "6",
+                "label": {
+                  "en": "User 6",
+                  "nl": "Gebruiker 6",
+                  "de": "Benutzer 6"
+                }
+              },
+              {
+                "id": "7",
+                "label": {
+                  "en": "User 7",
+                  "nl": "Gebruiker 7",
+                  "de": "Benutzer 7"
+                }
+              },
+              {
+                "id": "8",
+                "label": {
+                  "en": "User 8",
+                  "nl": "Gebruiker 8",
+                  "de": "Benutzer 8"
+                }
+              },
+              {
+                "id": "9",
+                "label": {
+                  "en": "User 9",
+                  "nl": "Gebruiker 9",
+                  "de": "Benutzer 9"
+                }
+              },
+              {
+                "id": "10",
+                "label": {
+                  "en": "User 10",
+                  "nl": "Gebruiker 10",
+                  "de": "Benutzer 10"
+                }
+              },
+              {
+                "id": "11",
+                "label": {
+                  "en": "User 11",
+                  "nl": "Gebruiker 11",
+                  "de": "Benutzer 11"
+                }
+              },
+              {
+                "id": "12",
+                "label": {
+                  "en": "User 12",
+                  "nl": "Gebruiker 12",
+                  "de": "Benutzer 12"
+                }
+              },
+              {
+                "id": "13",
+                "label": {
+                  "en": "User 13",
+                  "nl": "Gebruiker 13",
+                  "de": "Benutzer 13"
+                }
+              },
+              {
+                "id": "14",
+                "label": {
+                  "en": "User 14",
+                  "nl": "Gebruiker 14",
+                  "de": "Benutzer 14"
+                }
+              },
+              {
+                "id": "15",
+                "label": {
+                  "en": "User 15",
+                  "nl": "Gebruiker 15",
+                  "de": "Benutzer 15"
+                }
+              },
+              {
+                "id": "16",
+                "label": {
+                  "en": "User 16",
+                  "nl": "Gebruiker 16",
+                  "de": "Benutzer 16"
+                }
+              },
+              {
+                "id": "17",
+                "label": {
+                  "en": "User 17",
+                  "nl": "Gebruiker 17",
+                  "de": "Benutzer 17"
+                }
+              },
+              {
+                "id": "18",
+                "label": {
+                  "en": "User 18",
+                  "nl": "Gebruiker 18",
+                  "de": "Benutzer 18"
+                }
+              },
+              {
+                "id": "19",
+                "label": {
+                  "en": "User 19",
+                  "nl": "Gebruiker 19",
+                  "de": "Benutzer 19"
+                }
+              },
+              {
+                "id": "20",
+                "label": {
+                  "en": "User 20",
+                  "nl": "Gebruiker 20",
+                  "de": "Benutzer 20"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "userid_validated",
+        "title": {
+          "en": "A user verified itself",
+          "nl": "Een gebruiker is gevalideerd",
+          "de": "Ein Benutzer hat seinen Code eingegeben..."
+        },
+        "hint": {
+          "en": "This card triggers when a user validates. In the main settings of the device you can choose if this is done with the Global User Code or individual users",
+          "nl": "Deze kaart wordt geactiveerd wanneer een gebruiker valideert. In de hoofdinstellingen van het apparaat kunt u kiezen of dit wordt gedaan met de globale gebruiker code of met individuele gebruikers",
+          "de": "Diese Karte wird ausgelöst, wenn ein Benutzer seinen Code eingegeben hat. In den Haupteinstellungen des Gerätes kannst du wählen, ob dies mit dem Global User Code (20) oder einzelnen Benutzern geschehen soll"
+        },
+        "tokens": [
+          {
+            "name": "button",
+            "type": "number",
+            "title": {
+              "en": "User-ID",
+              "nl": "Gebruiker-ID",
+              "de": "Benutzer-ID"
+            },
+            "example": "2"
+          }
+        ],
+        "args": [
+          {
             "type": "device",
+            "name": "device",
+            "filter": "driver_id=700045"
+          }
+        ]
+      },
+      {
+        "id": "ring_button",
+        "title": {
+          "en": "The bell button was pressed",
+          "nl": "De belknop is ingedrukt",
+          "de": "Der Klingel Button wurde betätigt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
             "filter": "driver_id=700045"
           },
           {
@@ -339,148 +549,25 @@
               {
                 "id": "0",
                 "label": {
-                  "en": "A User",
-                  "nl": "Een gebruiker"
+                  "en": "Pressed",
+                  "nl": "ingedrukt",
+                  "de": "Gedrückt"
                 }
               },
               {
-                "id": "1",
+                "id": "21",
                 "label": {
-                  "en": "User 1",
-                  "nl": "Gebruiker 1"
+                  "en": "1x pressed",
+                  "nl": "1x ingedrukt",
+                  "de": "1x gedrückt"
                 }
               },
               {
-                "id": "2",
+                "id": "22",
                 "label": {
-                  "en": "User 2",
-                  "nl": "Gebruiker 2"
-                }
-              },
-              {
-                "id": "3",
-                "label": {
-                  "en": "User 3",
-                  "nl": "Gebruiker 3"
-                }
-              },
-              {
-                "id": "4",
-                "label": {
-                  "en": "User 4",
-                  "nl": "Gebruiker 4"
-                }
-              },
-              {
-                "id": "5",
-                "label": {
-                  "en": "User 5",
-                  "nl": "Gebruiker 5"
-                }
-              },
-              {
-                "id": "6",
-                "label": {
-                  "en": "User 6",
-                  "nl": "Gebruiker 6"
-                }
-              },
-              {
-                "id": "7",
-                "label": {
-                  "en": "User 7",
-                  "nl": "Gebruiker 7"
-                }
-              },
-              {
-                "id": "8",
-                "label": {
-                  "en": "User 8",
-                  "nl": "Gebruiker 8"
-                }
-              },
-              {
-                "id": "9",
-                "label": {
-                  "en": "User 9",
-                  "nl": "Gebruiker 9"
-                }
-              },
-              {
-                "id": "10",
-                "label": {
-                  "en": "User 10",
-                  "nl": "Gebruiker 10"
-                }
-              },
-              {
-                "id": "11",
-                "label": {
-                  "en": "User 11",
-                  "nl": "Gebruiker 11"
-                }
-              },
-              {
-                "id": "12",
-                "label": {
-                  "en": "User 12",
-                  "nl": "Gebruiker 12"
-                }
-              },
-              {
-                "id": "13",
-                "label": {
-                  "en": "User 13",
-                  "nl": "Gebruiker 13"
-                }
-              },
-              {
-                "id": "14",
-                "label": {
-                  "en": "User 14",
-                  "nl": "Gebruiker 14"
-                }
-              },
-              {
-                "id": "15",
-                "label": {
-                  "en": "User 15",
-                  "nl": "Gebruiker 15"
-                }
-              },
-              {
-                "id": "16",
-                "label": {
-                  "en": "User 16",
-                  "nl": "Gebruiker 16"
-                }
-              },
-              {
-                "id": "17",
-                "label": {
-                  "en": "User 17",
-                  "nl": "Gebruiker 17"
-                }
-              },
-              {
-                "id": "18",
-                "label": {
-                  "en": "User 18",
-                  "nl": "Gebruiker 18"
-                }
-              },
-              {
-                "id": "19",
-                "label": {
-                  "en": "User 19",
-                  "nl": "Gebruiker 19"
-                }
-              },
-              {
-                "id": "20",
-                "label": {
-                  "en": "User 20",
-                  "nl": "Gebruiker 20"
+                  "en": "2x pressed",
+                  "nl": "2x ingedrukt",
+                  "de": "2x gedrückt"
                 }
               }
             ]
@@ -488,7 +575,23 @@
         ]
       },
       {
+        "id": "code_invalid",
+        "title": {
+          "en": "An invalid code has been entered",
+          "nl": "Er is een ongeldige code ingevoerd",
+          "de": "Ein ungültiger Code wurde eingegeben"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=700045"
+          }
+        ]
+      },
+      {
         "id": "alarm_battery",
+        "deprecated": true,
         "title": {
           "en": "The battery alarm turned on",
           "nl": "De batterijwaarschuwing gaat aan"
@@ -503,6 +606,66 @@
             "name": "device",
             "type": "device",
             "filter": "driver_id=700045"
+          }
+        ]
+      },
+      {
+        "id": "rain_on",
+        "title": {
+          "en": "It started raining.",
+          "nl": "Het begon te regenen",
+          "de": "Es hat angefangen zu regnen"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=700168"
+          }
+        ]
+      },
+      {
+        "id": "rain_off",
+        "title": {
+          "en": "It stopped raining",
+          "nl": "It stopped raining",
+          "de": "Es hat aufgehört zu regnen"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=700168"
+          }
+        ]
+      },
+      {
+        "id": "heavyrain_alarm_on",
+        "title": {
+          "en": "The heavy rain alarm is on",
+          "nl": "Het hevige regenalarm is geactiveerd",
+          "de": "Der Starkregen Alarm ist angegangen"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=700168"
+          }
+        ]
+      },
+      {
+        "id": "heavyrain_alarm_off",
+        "title": {
+          "en": "The heavy rain alarm is off",
+          "nl": "Het hevige regenalarm is afgegaan",
+          "de": "Der Starkregen Alarm ist ausgegangen"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=700168"
           }
         ]
       },
@@ -614,6 +777,36 @@
       }
     ],
     "conditions": [
+      {
+        "id": "is_raining",
+        "title": {
+          "en": "It is !{{|not}} raining",
+          "nl": "Het regent !{{|niet}}",
+          "de": "Es regnet !{{|nicht}}"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=700168"
+          }
+        ]
+      },
+      {
+        "id": "is_heavyrain_alarm",
+        "title": {
+          "en": "The heavy rain alarm is !{{on|off}}",
+          "nl": "Het hevige regen alarm is !{{aan|uit}}",
+          "de": "Der Starkregen Alarm ist !{{an|aus}}"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=700168"
+          }
+        ]
+      },
       {
         "id": "is_tilted",
         "title": {
@@ -1148,7 +1341,8 @@
       "id": "005206",
       "name": {
         "en": "Z-Weather",
-        "nl": "Z-Weather"
+        "nl": "Z-Weather",
+        "de": "Z-Weather"
       },
       "class": "sensor",
       "capabilities": [
@@ -1208,14 +1402,12 @@
         "learnmode": {
           "instruction": {
             "en": "Push the button 3 times within 1.5 seconds. If the LED is not blinking after releasing the button, Z-Weather has not enough energy and must be charged for several hours in bright sunlight.",
-            "nl": "Druk 2 keer op de knop 3 binnen 1,5 seconden. Als de LED niet knippert na het loslaten van de toets heeft Z-Weather niet genoeg energie en moet worden opgeladen voor enkele uren in fel zonlicht."
+            "nl": "Druk 2 keer op de knop 3 binnen 1,5 seconden. Als de LED niet knippert na het loslaten van de toets heeft Z-Weather niet genoeg energie en moet worden opgeladen voor enkele uren in fel zonlicht.",
+            "de": "Dreimal den Taster drücken innerhalb von 1.5 Sekunden. Wenn die LED nicht leuchtet, dann ist nicht genügend Energie vorhanden und Z-Weather muss bei starker Sonneneinstrahlung mehrere Stunden lang aufgeladen werden."
           }
         },
         "associationGroups": [
-          1,
-          2,
-          3,
-          4
+          1
         ],
         "associationGroupsOptions": {
           "1": {
@@ -1225,17 +1417,20 @@
           },
           "2": {
             "hint": {
-              "en": "Too windy. If the threshold value for wind (Default value: 6m/s ) is exceeded, the basic set is sent to all group members. If the threshold value is exceeded for a long time, e.g. in case of storm for a couple of hours, the basic set value is sent repeatedly upon the scheduled wake up. Because in most cases the sun does not shine in case of storm, the repeated sending schedule may be between every one hour up to every five hours."
+              "en": "Too windy. If the threshold value for wind (Default value: 6m/s ) is exceeded, the basic set is sent to all group members. If the threshold value is exceeded for a long time, e.g. in case of storm for a couple of hours, the basic set value is sent repeatedly upon the scheduled wake up. Because in most cases the sun does not shine in case of storm, the repeated sending schedule may be between every one hour up to every five hours.",
+              "de": "Windstärke von mehr als 6 m/s (22 Km/h)"
             }
           },
           "3": {
             "hint": {
-              "en": "It is getting bright. Sends BASIC SET command in the morning when brightness reached trigger level (Default value: 37%)"
+              "en": "It is getting bright. Sends BASIC SET command in the morning when brightness reached trigger level (Default value: 37%)",
+              "de": "Zum Ende der Morgendämmerung, wenn es hell wird"
             }
           },
           "4": {
             "hint": {
-              "en": "It is getting dark. Sends BASIC SET command in the evening when brightness reached trigger level (Default value: 37%)"
+              "en": "It is getting dark. Sends BASIC SET command in the evening when brightness reached trigger level (Default value: 37%)",
+              "de": "Zum Ende der Abenddämmerung, wenn es dunkel wird"
             }
           }
         }
@@ -1249,10 +1444,12 @@
           },
           "value": 6,
           "label": {
-            "en": "Threshold for too much wind"
+            "en": "Threshold for too much wind",
+            "de": "Schwellwert für zu viel Wind"
           },
           "hint": {
-            "en": "Crossing this value on the rising edge, Z-Weather sends a Basic Set to the associated groups, serves the lifeline and sends a wake up notification."
+            "en": "Crossing this value on the rising edge, Z-Weather sends a Basic Set to the associated groups, serves the lifeline and sends a wake up notification.",
+            "de": "Bei Überschreiten dieses Grenzwertes wird ein Kommando an alle Geräte der Assoziationgruppe 2 gesendet."
           },
           "type": "number"
         },
@@ -1264,10 +1461,11 @@
           },
           "value": 37,
           "label": {
-            "en": "Threshold for twilight"
+            "en": "Schwellwert für Dämmerung"
           },
           "hint": {
-            "en": "Crossing this value from night to day, association group 3 is informed. Crossing this parameter from day to night, association group 4 is informed."
+            "en": "Crossing this value from night to day, association group 3 is informed. Crossing this parameter from day to night, association group 4 is informed.",
+            "de": "Bei Überschreiten dieses Wertes wird ein Kommando in die Geräte der Assoziationsgruppe 3 gesendet. Gleichermaßen wird beim Unterschreiten dieses Wertes wird ein Kommando in die Geräte der Assoziationsgruppe 4 gesendet."
           },
           "type": "number"
         }
@@ -2779,7 +2977,6 @@
           {
             "id": "sensor",
             "capabilities": [
-              "alarm_contact",
               "alarm_tamper",
               "alarm_battery"
             ],
@@ -2804,43 +3001,46 @@
         "learnmode": {
           "image": "/drivers/700045/assets/learnmode.svg",
           "instruction": {
-            "en": "Turn into Management Mode (remove cover), hit button 1 and confirm with * (Star Key)",
-            "nl": "Zet de keypad in Magaement Mode (verwijder cover), druk toets 1 en bevestig met * (Ster Kop)"
+            "en": "Turn into Network Mode (remove cover), hit button 4 and confirm with * (Star Key)",
+            "nl": "Zet de keypad in Network Mode (verwijder cover), druk toets 4 en bevestig met * (Ster Kop)",
+            "de": "Wechsel in den Netzwerkmodus (Abdeckung entfernen), Taste 4 drücken und mit * (Sterntaste) bestätigen"
           }
         },
         "unlearnmode": {
           "image": "/drivers/700045/assets/learnmode.svg",
           "instruction": {
-            "en": "Turn into Management Mode (remove cover), hit button 1 and confirm with * (Star Key)",
-            "nl": "Zet de keypad in Magaement Mode (verwijder cover), druk toets 1 en bevestig met * (Ster Kop)"
+            "en": "Turn into Network Mode (remove cover), hit button 4 and confirm with * (Star Key)",
+            "nl": "Zet de keypad in Network Mode (verwijder cover), druk toets 4 en bevestig met * (Ster Kop)",
+            "de": "Wechsel in den Netzwerkmodus (Abdeckung entfernen), Taste 4 drücken und mit * (Sterntaste) bestätigen"
           }
         },
         "associationGroups": [
-          1,
-          2,
-          3
+          1
         ],
         "associationGroupsOptions": {
           "1": {
             "hint": {
-              "en": "Z-Wave Plus Lifeline"
+              "en": "Z-Wave Plus Lifeline",
+              "nl": "Z-Wave Plus Lifeline",
+              "de": "Z-Wave Plus Lifeline"
             }
           },
           "2": {
             "hint": {
-              "en": "Door Lock Control"
+              "en": "Türschloss-Steuerung"
             }
           },
           "3": {
             "hint": {
-              "en": "Ring Button Control"
+              "en": "Ring Button Control",
+              "nl": "Ring Button Control",
+              "de": "Klingeltaster-Steuerung"
             }
           }
         }
       },
       "class": "other",
       "capabilities": [
-        "alarm_contact",
         "alarm_tamper",
         "measure_battery",
         "alarm_battery"
@@ -2848,92 +3048,7 @@
       "images": {
         "large": "/drivers/700045/assets/images/large.jpg",
         "small": "/drivers/700045/assets/images/small.jpg"
-      },
-      "settings": [
-        {
-          "id": "1",
-          "value": 0,
-          "label": {
-            "en": "Door Lock Automatic Secure Timeout (0-127 seconds)",
-            "nl": "Deurvergrendeling automatische vergrendeling time-out (0-127 seconden)"
-          },
-          "hint": {
-            "en": "After this time a CLOSE command is sent to the controlled door lock. On default no CLOSE command is sent assuming that the strike lock has its own timeout set",
-            "nl": "Na deze tijd wordt een CLOSE-opdracht naar het gecontroleerde deurslot verzonden. Standaard wordt er geen CLOSE-opdracht verzonden, ervan uitgaande dat de strike-lock zijn eigen time-out heeft ingesteld"
-          },
-          "_size": 1,
-          "type": "number"
-        },
-        {
-          "id": "2",
-          "value": 3,
-          "label": {
-            "en": "Ring Button Press Basic Command OFF Timeout (3-127 seconds)",
-            "nl": "Deurbel signaal time-out (0-127 seconden)"
-          },
-          "hint": {
-            "en": "After this time the Door Bell will receive an OF command regardless of the actuall button is pressed or not",
-            "nl": "Na deze tijd ontvangt de deurbel een OFF-commando, ongeacht of de actuall-knop is ingedrukt of niet"
-          },
-          "_size": 1,
-          "type": "number"
-        },
-        {
-          "id": "3",
-          "value": 255,
-          "label": {
-            "en": "Ring Button ON Command",
-            "nl": "Deurbell Knop ON commando"
-          },
-          "hint": {
-            "en": "This value is sent into Association Group 3 when the door bell button is pressed (0-255)",
-            "nl": "Deze waarde wordt naar Associatiegroep 3 verzonden wanneer op de belknop wordt gedrukt (0-255)"
-          },
-          "_size": 1,
-          "type": "number"
-        },
-        {
-          "id": "4",
-          "value": 0,
-          "label": {
-            "en": "Ring Button OFF Command"
-          },
-          "hint": {
-            "en": "This value is sent into Association Group 3 when the door bell button is released or the timeout has reached (0-255)",
-            "nl": "Deze waarde wordt naar Associatiegroep 3 verzonden wanneer op de belknop wordt losgelaten (0-255)"
-          },
-          "_size": 1,
-          "type": "number"
-        },
-        {
-          "id": "5",
-          "value": true,
-          "label": {
-            "en": "Central Scene ID for User Codes",
-            "nl": "Central Scene ID voor gebruikerscodes"
-          },
-          "hint": {
-            "en": "This parameter defines if different user codes shall cause individual or similar scene ID sent to the main controller",
-            "nl": "Deze parameter bepaalt of verschillende gebruikerscodes individuele of soortgelijke scene-ID's naar de hoofdcontroller moeten sturen"
-          },
-          "_size": 1,
-          "type": "checkbox"
-        },
-        {
-          "id": "6",
-          "value": true,
-          "label": {
-            "en": "Buzzer Confirmation",
-            "nl": "Buzzer confirmatie"
-          },
-          "hint": {
-            "en": "This parameter defines if the internal buzzer shall be used to confirm button presses",
-            "nl": "Deze parameter bepaalt of de interne zoemer moet worden gebruikt om het indrukken van de knoppen te bevestigen"
-          },
-          "_size": 1,
-          "type": "checkbox"
-        }
-      ]
+      }
     },
     {
       "id": "700168",
@@ -2944,9 +3059,11 @@
       "capabilities": [
         "meter_rain",
         "measure_rain",
+        "measure_rain.total",
         "measure_battery",
         "alarm_battery",
-        "alarm_rain"
+        "is_rain",
+        "alarm_heavyrain"
       ],
       "mobile": {
         "components": [
@@ -2971,6 +3088,22 @@
             ]
           }
         ]
+      },
+      "capabilitiesOptions": {
+        "measure_rain.total": {
+          "title": {
+            "en": "Rain Total",
+            "nl": "Rain Totel",
+            "de": "Regen Gesamt"
+          }
+        },
+        "measure_rain": {
+          "units": {
+            "en": "mm/h",
+            "nl": "mm/h",
+            "de": "mm/h"
+          }
+        }
       },
       "zwave": {
         "manufacturerId": 340,
@@ -3024,6 +3157,11 @@
             "id": 7,
             "size": 1,
             "value": 1
+          },
+          {
+            "id": 5,
+            "size": 1,
+            "value": 25
           }
         ]
       },
@@ -3103,15 +3241,15 @@
             "size": 1,
             "signed": false
           },
-          "value": 255,
+          "value": 25,
           "type": "number",
           "label": {
             "en": "Heavy rain definition.",
             "nl": "Zware regen definitie."
           },
           "hint": {
-            "en": "This threshold defines when a heavy rain condition is hit in mm/hour. In most countries this is defined as > 15 mm rain per hour. The default value however is to turn this function off.",
-            "nl": "Stelt in wat als zware regen wordt gezien in mm/uur. In de meeste landen is dit > 15 mm regen per uur. Standaard staat deze functie uit."
+            "en": "This threshold defines when a heavy rain condition is hit in mm/hour. In most countries this is defined as > 15 mm rain per hour. (Default 25 mm/h)",
+            "nl": "Stelt in wat als zware regen wordt gezien in mm/uur. In de meeste landen is dit > 15 mm regen per uur. (Default 25 mm/h) "
           },
           "attr": {
             "min": 0,
@@ -3564,46 +3702,48 @@
           "id": "basic_group_on",
           "zwave": {
             "index": 7,
-            "size": 1
+            "size": 1,
+            "signed": false
           },
           "attr": {
-            "min": -128,
-            "max": 127
+            "min": 0,
+            "max": 255
           },
           "type": "number",
-          "value": -1,
+          "value": 255,
           "label": {
             "en": "BASIC command value sent to 2nd Association Group on On event",
             "nl": "BASIC command verzonden naar 2de Associatiegroep On evenement",
             "de": "BASIC Command wird an die Assoziationsgruppe 2 gesendet, wenn das Ereignis On eintritt "
           },
           "hint": {
-            "en": "This is the BASIC command value sent in case of On event. (1-99, 255) (Default: 255=-1) In order to set values in the range 128 ... 255 the value sent in the application shall be the desired value minus 256.",
-            "nl": "BASIC-commandowaarde verzonden in het geval van On event. (1-99, 255) (Standaard: 255=-1) Om waarden in het bereik 128 .... 255 in te stellen, moet de waarde in de toepassing de gewenste waarde minus 256 zijn",
-            "de": "Dies ist das BASIC Command, das im Falle des Ereignisses On gesendet wird. (1-99, Standard: 255=-1) Um Werte zwischen 128 und 255 zu programmieren, muss der gewünschte Wert minus 256 eingegeben werden."
+            "en": "This is the BASIC command value sent in case of On event. (1-99, 255) (Default: 255)",
+            "nl": "BASIC-commandowaarde verzonden in het geval van On event. (1-99, 255) (Standaard: 255)",
+            "de": "Dies ist das BASIC Command, das im Falle des Ereignisses On gesendet wird. (1-99, Standard: 255)"
           }
         },
         {
           "id": "basic_group_off",
           "zwave": {
             "index": 8,
-            "size": 1
+            "size": 1,
+            "signed": false
           },
           "attr": {
-            "min": -128,
-            "max": 127
+            "min": 0,
+            "max": 255
           },
           "type": "number",
-          "value": -1,
+          "value": 255,
           "label": {
             "en": "BASIC command value sent to 2nd Association Group off event",
             "nl": "BASIC command verzonden naar 2de Associatiegroep off evenement",
             "de": "BASIC Command wird an die Assoziationsgruppe 2 gesendet, wenn das Ereignis Off eintritt "
           },
           "hint": {
-            "en": "This is the BASIC command value sent in case of Off event. (1-99, 255) (Default: 255=-1) In order to set values in the range 128 ... 255 the value sent in the application shall be the desired value minus 256.",
-            "nl": "BASIC-commandowaarde verzonden in het geval van Off event. (1-99, 255) (Standaard: 255=-1) Om waarden in het bereik 128 .... 255 in te stellen, moet de waarde in de toepassing de gewenste waarde minus 256 zijn",
-            "de": "Dies ist das BASIC Command, das im Falle des Ereignisses Off gesendet wird. (1-99, 255) (Standard: 255=-1) Um Werte zwischen 128 und 255 zu programmieren, muss der gewünschte Wert minus 256 eingegeben werden."
+            "en": "This is the BASIC command value sent in case of Off event. (1-99, 255) (Default: 255)",
+            "nl": "BASIC-commandowaarde verzonden in het geval van Off event. (1-99, 255) (Standaard: 255=-1)",
+            "de": "Dies ist das BASIC Command, das im Falle des Ereignisses Off gesendet wird. (1-99, 255) (Standard: 255=-1)"
           }
         },
         {
@@ -3813,6 +3953,22 @@
     }
   ],
   "capabilities": {
+    "alarm_heavyrain": {
+      "type": "boolean",
+      "title": {
+        "en": "Heavy Rain Alarm",
+        "nl": "Stortregens Alarm",
+        "de": "Starkregen Alarm"
+      },
+      "desc": {
+        "en": "Heavy Rain Alarm",
+        "nl": "Stortregens Alarm",
+        "de": "Starkregen Alarm"
+      },
+      "getable": true,
+      "setable": false,
+      "icon": "/assets/alarm_rain.svg"
+    },
     "alarm_rain": {
       "type": "number",
       "title": {
@@ -3858,6 +4014,21 @@
       "getable": true,
       "setable": false,
       "icon": "/assets/tilt.svg"
+    },
+    "is_rain": {
+      "type": "boolean",
+      "title": {
+        "en": "Rain",
+        "nl": "Regen",
+        "de": "Regen"
+      },
+      "desc": {
+        "en": "Rain",
+        "nl": "Regen",
+        "de": "Regen"
+      },
+      "getable": true,
+      "setable": false
     },
     "measure_dewpoint": {
       "type": "number",

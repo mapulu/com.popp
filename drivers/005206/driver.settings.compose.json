@@ -1,0 +1,34 @@
+[{
+      "id": "wind_threshold",
+      "zwave": {
+        "index": 1,
+        "size": 1
+      },
+      "value": 6,
+      "label": {
+        "en": "Threshold for too much wind",
+		"de": "Schwellwert für zu viel Wind"
+      },
+      "hint": {
+        "en": "Crossing this value on the rising edge, Z-Weather sends a Basic Set to the associated groups, serves the lifeline and sends a wake up notification.",
+		"de": "Bei Überschreiten dieses Grenzwertes wird ein Kommando an alle Geräte der Assoziationgruppe 2 gesendet."
+      },
+      "type": "number"
+    },
+    {
+      "id": "twilight_threshold",
+      "zwave": {
+        "index": 2,
+        "size": 1
+      },
+      "value": 37,
+      "label": {
+        "en": "Schwellwert für Dämmerung"
+      },
+      "hint": {
+        "en": "Crossing this value from night to day, association group 3 is informed. Crossing this parameter from day to night, association group 4 is informed.",
+		"de": "Bei Überschreiten dieses Wertes wird ein Kommando in die Geräte der Assoziationsgruppe 3 gesendet. Gleichermaßen wird beim Unterschreiten dieses Wertes wird ein Kommando in die Geräte der Assoziationsgruppe 4 gesendet."
+      },
+      "type": "number"
+    }
+  ]
