@@ -18,5 +18,6 @@
       "chartType": "stepLine",
       "decimals": 2,
       "getable": true,
-      "setable": false
+      "setable": false,
+	  "icon": "/assets/measure_dewpoint.svg"
     }

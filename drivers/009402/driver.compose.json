@@ -2,7 +2,8 @@
   "id": "009402",
   "name": {
     "en": "10 Year Smoke Detector and Siren",
-    "nl": "10 Year Smoke Detector and Siren"
+    "nl": "10 Year Smoke Detector and Siren",
+	"de": "10-Jahres-Rauchmelder / Sirene"
   },
   "mobile": {
     "components": [{
@@ -36,7 +37,8 @@
     "learnmode": {
       "instruction": {
         "en": "To include the device start the inclusion on your controller and then hit the little button on the wireless module for 1 second",
-        "nl": "Om het apparaat op te nemen start het inclusion proces op uw controller en druk dan de kleine knop op de draadloze module gedurende 1 seconde"
+        "nl": "Om het apparaat op te nemen start het inclusion proces op uw controller en druk dan de kleine knop op de draadloze module gedurende 1 seconde",
+		"de": "Um das Gerät in ein Z-Wave Netz einzubinden, drücken Sie im Inklusions-Modus den Z-Wave-Knopf. Wird der Knopf mindestens 3 Sekunden lang gedrückt, wird das Gerät ohne Security Command Class inkludiert"
       }
     },
     "associationGroups": [1, 2, 3],
@@ -50,13 +52,15 @@
       "2": {
         "hint": {
           "en": "Alarm Reports. All devices in this group will receive Alarm notifications (Smoke , Battery Low, Tamper)",
-          "nl": "Alarmrapporten. Alle apparaten in deze groep ontvangen alarmmeldingen (Rook, Lage Accu, Sabotage"
+          "nl": "Alarmrapporten. Alle apparaten in deze groep ontvangen alarmmeldingen (Rook, Lage Accu, Sabotage",
+		  "de": "Alarm Benachrichtigungen"
         }
       },
       "3": {
         "hint": {
           "en": "Switching Command. All devices in this group will receive a BASIC SET command on Smoke Alarms. Configuration parameter 3 and 4 will define when ON and when OFF is sent.",
-          "nl": "Switching Command. Alle apparaten in deze groep krijgen een BASIC SET commando op smoke alarms. Configuratieparameters 3 en 4 zullen bepalen wanneer ON en wanneer OFF is verzonden."
+          "nl": "Switching Command. Alle apparaten in deze groep krijgen een BASIC SET commando op smoke alarms. Configuratieparameters 3 en 4 zullen bepalen wanneer ON en wanneer OFF is verzonden.",
+		  "de": "Schaltkommando: Es wird ein BASIC Kommando gesendet."
         }
       }
     }

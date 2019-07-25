@@ -2,7 +2,8 @@
   "id": "009006",
   "name": {
     "en": "Switch Indoor",
-    "nl": "Switch Indoor"
+    "nl": "Switch Indoor",
+	"de": "Schuko-Zwischenstecker"
   },
   "zwave": {
     "manufacturerId": 100,
@@ -12,7 +13,8 @@
       "image": "/drivers/009006/assets/learnmode.svg",
       "instruction": {
         "en": "Press button three times",
-        "nl": "Druk driemaal op knop"
+        "nl": "Druk driemaal op knop",
+		"de": "Dreifach-Klick auf die Taste inkludiert das Gerät. Schnelles Blinken der LED zeigt an daß sich das Gerät im Auslieferungszustand befindet."
       }
     },
     "associationGroups": [1, 1]
@@ -38,11 +40,13 @@
       "value": 0,
       "label": {
         "en": "Auto switch off after (0 - 65535 sec)",
-        "nl": "Automatisch uitschakelen na (0 - 65535 sec)"
+        "nl": "Automatisch uitschakelen na (0 - 65535 sec)",
+		"de": "Automatisches Ausschalten nach Timeout (0 - 65535 Sek) "
       },
       "hint": {
         "en": "If not zero, automatically switch off after a user defined time in seconds.",
-        "nl": "Indien niet nul, automatisch uitschakelen na de ingestelde tijd in seconden."
+        "nl": "Indien niet nul, automatisch uitschakelen na de ingestelde tijd in seconden.",
+		"de": "Wenn dieser Parameter nicht 0 ist, dann schaltet das Gerät nach einer Zeit X nach erfolgtem Einschalten automatisch wieder aus. Die Verzögerung X wird durch diesen Parameter bestimmt "
       }
     },
     {
@@ -54,12 +58,14 @@
       "type": "checkbox",
       "label": {
         "en": "LED Mode",
-        "nl": "LED Modus"
+        "nl": "LED Modus",
+		"de": "LED Modus"
       },
       "value": true,
       "hint": {
         "en": "Led Switch Status indication. Default: enabled",
-        "nl": "Led Status Light indicatie. Standaard: ingeschakeld"
+        "nl": "Led Status Light indicatie. Standaard: ingeschakeld",
+		"de": "Dieser Parameter definiert, wie die LED genutzt werden soll"
       }
     },
     {
@@ -71,12 +77,14 @@
       "type": "checkbox",
       "label": {
         "en": "Restore state after power loss",
-        "nl": "Herstel toestand bij spanningsuitval"
+        "nl": "Herstel toestand bij spanningsuitval",
+		"de": "Status des Schalters nach einem Stromausfall"
       },
       "value": true,
       "hint": {
         "en": "After power loss the relay will switch to last known state if enabled (checked) or remain off if disabled (unchecked).\nDefault: enabled = checked)",
-        "nl": "Schakel terug naar laatst bekende schakelstand na spanningsuitval wanneer ingeschakeld (checked) of uit wanneer niet ingeschakeld (unchecked).\nStandaard: uitgeschakeld = unchecked)"
+        "nl": "Schakel terug naar laatst bekende schakelstand na spanningsuitval wanneer ingeschakeld (checked) of uit wanneer niet ingeschakeld (unchecked).\nStandaard: uitgeschakeld = unchecked)",
+		"de": "Dieser Parameter definiert, wie sich der Schalter nach einem Stromausfall verhalten soll. Aktiviert=Ausgewählt."
       }
     },
     {
@@ -88,46 +96,53 @@
       "type": "dropdown",
       "label": {
         "en": "Color of Led when turned off",
-        "nl": "Kleur Led wanneer uitgeschakeld"
+        "nl": "Kleur Led wanneer uitgeschakeld",
+		"de": "Farbe LED im Aus-Zustand"
       },
       "value": "0",
       "hint": {
         "en": "Choose youre off color",
-        "nl": "Kies u kleur bij uitstand"
+        "nl": "Kies u kleur bij uitstand",
+		"de": "Dies definiert die Farbe der LED wenn ausgeschaltet."
       },
       "values": [{
           "id": "0",
           "label": {
             "en": "Off (default)",
-            "nl": "Uit (standaard)"
+            "nl": "Uit (standaard)",
+			"de": "Aus (Standard)"
           }
         },
         {
           "id": "1",
           "label": {
             "en": "Red",
-            "nl": "Rood"
+            "nl": "Rood",
+			"de": "Rot"
           }
         },
         {
           "id": "2",
           "label": {
             "en": "Green",
-            "nl": "Groen"
+            "nl": "Groen",
+			"de": "Grün"
           }
         },
         {
           "id": "3",
           "label": {
             "en": "Blue",
-            "nl": "Blauw"
+            "nl": "Blauw",
+			"de": "Blau"
           }
         },
         {
           "id": "4",
           "label": {
             "en": "Yellow",
-            "nl": "Geel"
+            "nl": "Geel",
+			"de": "Gelb"
           }
         }
       ]
@@ -141,46 +156,53 @@
       "type": "dropdown",
       "label": {
         "en": "Color of Led when turned On",
-        "nl": "Kleur Led wanneer Ingeschakeld"
+        "nl": "Kleur Led wanneer Ingeschakeld",
+		"de": "Farbe LED im An-Zustand"
       },
       "value": "3",
       "hint": {
         "en": "Choose youre On color",
-        "nl": "Kies u kleur wanneer Ingeschakeld"
+        "nl": "Kies u kleur wanneer Ingeschakeld",
+		"de": "Dies definiert die Farbe der LED wenn eingeschaltet."
       },
       "values": [{
           "id": "0",
           "label": {
             "en": "Off",
-            "nl": "Uit"
+            "nl": "Uit",
+			"de": "Aus"
           }
         },
         {
           "id": "1",
           "label": {
             "en": "Red",
-            "nl": "Rood"
+            "nl": "Rood",
+			"de": "Rot"
           }
         },
         {
           "id": "2",
           "label": {
             "en": "Green",
-            "nl": "Groen"
+            "nl": "Groen",
+			"de": "Grün"
           }
         },
         {
           "id": "3",
           "label": {
             "en": "Blue (default)",
-            "nl": "Blauw (standaard)"
+            "nl": "Blauw (standaard)",
+			"de": "Blau (Standard)"
           }
         },
         {
           "id": "4",
           "label": {
             "en": "Yellow",
-            "nl": "Geel"
+            "nl": "Geel",
+			"de": "Gelb"
           }
         }
       ]

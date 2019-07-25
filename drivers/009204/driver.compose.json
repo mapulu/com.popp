@@ -2,7 +2,8 @@
   "id": "009204",
   "name": {
     "en": "KFOB-C Remote Control",
-    "nl": "KFOB-C Remote Control"
+    "nl": "KFOB-C Remote Control",
+	"de": "KFOB-C 4 Tasten Mini Fernbedienung"
   },
   "zwave": {
     "manufacturerId": [340, 277],
@@ -12,7 +13,8 @@
       "image": "/drivers/009204/assets/learnmode.svg",
       "instruction": {
         "en": "Activate inclusion on the device by pressing any one of the four buttons for one second",
-        "nl": "Om pairing te activeren, druk langer een seconde op een van de knoppen van de afstandsbediening."
+        "nl": "Om pairing te activeren, druk langer een seconde op een van de knoppen van de afstandsbediening.",
+		"de": "Im Auslieferungszustad genügt das Drücken der Taste 1 für eine Sekunde, um den KFOB in ein Z-Wave zu inkludieren"
       }
     },
     "associationGroups": [
@@ -30,22 +32,26 @@
       },
       "2": {
         "hint": {
-          "en": "Control Group A, controlled by button 1 or single clicks of buttons 1 and 3"
+          "en": "Control Group A, controlled by button 1 or single clicks of buttons 1 and 3",
+		  "de": "Steuerung durch Tastengruppe A"
         }
       },
       "3": {
         "hint": {
-          "en": "Control Group B, controlled by button 2 or single clicks of buttons 2 and 4 "
+          "en": "Control Group B, controlled by button 2 or single clicks of buttons 2 and 4",
+		  "de": "Steuerung durch Tastengruppe B"
         }
       },
       "4": {
         "hint": {
-          "en": "Control Group C, controlled by button 3 or double clicks of buttons 1 and 3"
+          "en": "Control Group C, controlled by button 3 or double clicks of buttons 1 and 3",
+		  "de": "Steuerung durch Tastengruppe C"
         }
       },
       "5": {
         "hint": {
-          "en": "Control Group D, controlled by button 4 or double clicks of buttons 2 and 4"
+          "en": "Control Group D, controlled by button 4 or double clicks of buttons 2 and 4",
+		  "de": "Steuerung durch Tastengruppe D"
         }
       }
     }
@@ -60,123 +66,552 @@
   },
   "settings": [{
       "id": "1",
-      "value": 1,
+      "value": "1",
+	  "zwave": {
+        "index": 1,
+        "size": 1
+      },
       "label": {
-        "en": "Button 1 and 3 pair mode"
+        "en": "Button 1 and 3 pair mode",
+		"de": "Steuerungsmöglichkeiten der Tasten 1 und 3"
       },
       "hint": {
-        "en": "In separate mode button 1 works with group A, button 3 with groups C. Click is On, Hold is dimming Up, Double click is Off, Click-Hold is dimming Down. In pair button 1/3 are Up/Down correspondingly. Click is On/Off, Hold is dimming Up/Down. Single clicks works with group A, double click with group C."
+        "en": "In separate mode button 1 works with group A, button 3 with groups C. Click is On, Hold is dimming Up, Double click is Off, Click-Hold is dimming Down. In pair button 1/3 are Up/Down correspondingly. Click is On/Off, Hold is dimming Up/Down. Single clicks works with group A, double click with group C.",
+		"de": "Mit diesem Parameter wird festgelegt, welche Tastengruppen die Tasten 1 und 3 steuern sollen."
       },
-      "_size": 1,
-      "type": "number"
+      "type": "dropdown",
+	  	  "values": [{
+          "id": "0",
+          "label": {
+            "en": "Separately",
+            "de": "Eigene Steuergruppe pro Taste"
+          }
+        },
+        {
+          "id": "1",
+          "label": {
+            "en": "In pair without double clicks",
+            "de": "Gemeinsames Steuern der Tastengruppe A, kein Doppelklick"
+          }
+        },
+        {
+          "id": "2",
+          "label": {
+            "en": "In pair with double clicks",
+            "de": "Gemeinsames Steuern der Tastengruppe A, jeweils Doppelklicks für Tastengruppe C"
+          }
+        }
+      ]
+    },
+	{
+      "id": "2",
+      "value": "1",
+	  "zwave": {
+        "index": 2,
+        "size": 1
+      },
+      "label": {
+        "en": "Button 2 and 4 pair mode",
+		"de": "Steuerungsmöglichkeiten der Tasten 2 und 4"
+      },
+      "hint": {
+        "en": "In separate mode button 2 works with control group B, button 4 with control group D. Click is ON, Hold is dimming UP, Double click is OFF, Click-Hold is dimming DOWN. In pair button B/D are UP/DOWN correspondingly. Click is ON/OFF, Hold is dimming UP/DOWN. Single clicks works with Group B, double click with Group D.",
+		"de": "Mit diesem Parameter wird festgelegt, welche Tastengruppen die Tasten 2 und 4 steuern sollen."
+      },
+      "type": "dropdown",
+	  	  "values": [{
+          "id": "0",
+          "label": {
+            "en": "Separately",
+            "de": "Eigene Steuergruppe pro Taste"
+          }
+        },
+        {
+          "id": "1",
+          "label": {
+            "en": "In pair without double clicks",
+            "de": "Gemeinsames Steuern der Tastengruppe V, kein Doppelklick"
+          }
+        },
+        {
+          "id": "2",
+          "label": {
+            "en": "In pair with double clicks",
+            "de": "Gemeinsames Steuern der Tastengruppe B, jeweils Doppelklicks für Tastengruppe D"
+          }
+        }
+      ]
     },
     {
       "id": "11",
-      "value": 8,
+      "value": "8",
+	  "zwave": {
+        "index": 11,
+        "size": 1
+      },
       "label": {
-        "en": "Command to Control Group A"
+        "en": "Command to Control Group A",
+		"de": "Kommando für Geräte der Tastengruppe A"
       },
       "hint": {
-        "en": "This parameter defines the command to be sent to devices of control group A when the related button is pressed"
+        "en": "This parameter defines the command to be sent to devices of control group A when the related button is pressed",
+		"de": "Mit diesem Parameter wird festgelegt, welches Z-Wave Kommando die Geräte der Tastengruppe A erhalten"
       },
-      "_size": 1,
-      "type": "number"
+      "type": "dropdown",
+	  	  "values": [{
+          "id": "0",
+          "label": {
+            "en": "Disable",
+            "de": "Deaktiviert"
+          }
+        },
+        {
+          "id": "1",
+          "label": {
+            "en": "Switch on/off and Dim (send Basic Set and Switch Multilevel)",
+            "de": "Ein/Aus-Schalten und Dimmen (BASIC Set und Switch Multilevel)"
+          }
+        },
+        {
+          "id": "2",
+          "label": {
+            "en": "Switch on/off only (send Basic Set)",
+            "de": "Nur Ein/Aus-Schalten (BASIC Set)"
+          }
+        },
+		        {
+          "id": "3",
+          "label": {
+            "en": "Switch all",
+            "de": "Alle Geräte in Umgebung (Switch All)"
+          }
+        },
+		        {
+          "id": "4",
+          "label": {
+            "en": "Send scenes",
+            "de": "Komplexe Szenen (mehrere Szenen pro Taste)"
+          }
+        },
+		        {
+          "id": "5",
+          "label": {
+            "en": "Send preconfigured scenes",
+            "de": "Einfache Szenen (eine Szene pro Taste)"
+          }
+        },
+		{
+          "id": "6",
+          "label": {
+            "en": "Control devices in proximity",
+            "de": "Geräte in der nähe Steuern"
+          }
+        },
+		        {
+          "id": "7",
+          "label": {
+            "en": "Control door lock",
+            "de": "Türschloss (Door Lock)"
+          }
+        },
+		        {
+          "id": "8",
+          "label": {
+            "en": "Central scene to gateway (default)",
+            "de": "Zentrale Szenensteuerung im Gateway (Central Scene)"
+          }
+        }
+      ]
     },
     {
       "id": "12",
-      "value": 8,
+      "value": "8",
+	  "zwave": {
+        "index": 12,
+        "size": 1
+      },
       "label": {
-        "en": "Command to Control Group B"
+        "en": "Command to Control Group B",
+		"de": "Kommando für Geräte der Tastengruppe B"
       },
       "hint": {
-        "en": "This parameter defines the command to be sent to devices of control group B when the related button is pressed"
+        "en": "This parameter defines the command to be sent to devices of control group B when the related button is pressed",
+		"de": "Mit diesem Parameter wird festgelegt, welches Z-Wave Kommando die Geräte der Tastengruppe B erhalten"
       },
-      "_size": 1,
-      "type": "number"
+      "type": "dropdown",
+	  	  "values": [{
+          "id": "0",
+          "label": {
+            "en": "Disable",
+            "de": "Deaktiviert"
+          }
+        },
+        {
+          "id": "1",
+          "label": {
+            "en": "Switch on/off and Dim (send Basic Set and Switch Multilevel)",
+            "de": "Ein/Aus-Schalten und Dimmen (BASIC Set und Switch Multilevel)"
+          }
+        },
+        {
+          "id": "2",
+          "label": {
+            "en": "Switch on/off only (send Basic Set)",
+            "de": "Nur Ein/Aus-Schalten (BASIC Set)"
+          }
+        },
+		        {
+          "id": "3",
+          "label": {
+            "en": "Switch all",
+            "de": "Alle Geräte in Umgebung (Switch All)"
+          }
+        },
+		        {
+          "id": "4",
+          "label": {
+            "en": "Send scenes",
+            "de": "Komplexe Szenen (mehrere Szenen pro Taste)"
+          }
+        },
+		        {
+          "id": "5",
+          "label": {
+            "en": "Send preconfigured scenes",
+            "de": "Einfache Szenen (eine Szene pro Taste)"
+          }
+        },
+		{
+          "id": "6",
+          "label": {
+            "en": "Control devices in proximity",
+            "de": "Geräte in der nähe Steuern"
+          }
+        },
+		        {
+          "id": "7",
+          "label": {
+            "en": "Control door lock",
+            "de": "Türschloss (Door Lock)"
+          }
+        },
+		        {
+          "id": "8",
+          "label": {
+            "en": "Central scene to gateway (default)",
+            "de": "Zentrale Szenensteuerung im Gateway (Central Scene)"
+          }
+        }
+      ]
     },
     {
       "id": "13",
-      "value": 8,
+      "value": "8",
+	  "zwave": {
+        "index": 13,
+        "size": 1
+      },
       "label": {
-        "en": "Command to Control Group C"
+        "en": "Command to Control Group C",
+		"de": "Kommando für Geräte der Tastengruppe C"
       },
       "hint": {
-        "en": "This parameter defines the command to be sent to devices of control group C when the related button is pressed"
+        "en": "This parameter defines the command to be sent to devices of control group C when the related button is pressed",
+		"de": "Mit diesem Parameter wird festgelegt, welches Z-Wave Kommando die Geräte der Tastengruppe C erhalten"
       },
-      "_size": 1,
-      "type": "number"
+      "type": "dropdown",
+	  	  "values": [{
+          "id": "0",
+          "label": {
+            "en": "Disable",
+            "de": "Deaktiviert"
+          }
+        },
+        {
+          "id": "1",
+          "label": {
+            "en": "Switch on/off and Dim (send Basic Set and Switch Multilevel)",
+            "de": "Ein/Aus-Schalten und Dimmen (BASIC Set und Switch Multilevel)"
+          }
+        },
+        {
+          "id": "2",
+          "label": {
+            "en": "Switch on/off only (send Basic Set)",
+            "de": "Nur Ein/Aus-Schalten (BASIC Set)"
+          }
+        },
+		        {
+          "id": "3",
+          "label": {
+            "en": "Switch all",
+            "de": "Alle Geräte in Umgebung (Switch All)"
+          }
+        },
+		        {
+          "id": "4",
+          "label": {
+            "en": "Send scenes",
+            "de": "Komplexe Szenen (mehrere Szenen pro Taste)"
+          }
+        },
+		        {
+          "id": "5",
+          "label": {
+            "en": "Send preconfigured scenes",
+            "de": "Einfache Szenen (eine Szene pro Taste)"
+          }
+        },
+		{
+          "id": "6",
+          "label": {
+            "en": "Control devices in proximity",
+            "de": "Geräte in der nähe Steuern"
+          }
+        },
+		        {
+          "id": "7",
+          "label": {
+            "en": "Control door lock",
+            "de": "Türschloss (Door Lock)"
+          }
+        },
+		        {
+          "id": "8",
+          "label": {
+            "en": "Central scene to gateway (default)",
+            "de": "Zentrale Szenensteuerung im Gateway (Central Scene)"
+          }
+        }
+      ]
     },
-    {
+	    {
       "id": "14",
-      "value": 8,
+      "value": "8",
+	  "zwave": {
+        "index": 14,
+        "size": 1
+      },
       "label": {
-        "en": "Command to Control Group D"
+        "en": "Command to Control Group D",
+		"de": "Kommando für Geräte der Tastengruppe D"
       },
       "hint": {
-        "en": "This parameter defines the command to be sent to devices of control group D when the related button is pressed"
+        "en": "This parameter defines the command to be sent to devices of control group D when the related button is pressed",
+		"de": "Mit diesem Parameter wird festgelegt, welches Z-Wave Kommando die Geräte der Tastengruppe D erhalten"
       },
-      "_size": 1,
-      "type": "number"
+      "type": "dropdown",
+	  	  "values": [{
+          "id": "0",
+          "label": {
+            "en": "Disable",
+            "de": "Deaktiviert"
+          }
+        },
+        {
+          "id": "1",
+          "label": {
+            "en": "Switch on/off and Dim (send Basic Set and Switch Multilevel)",
+            "de": "Ein/Aus-Schalten und Dimmen (BASIC Set und Switch Multilevel)"
+          }
+        },
+        {
+          "id": "2",
+          "label": {
+            "en": "Switch on/off only (send Basic Set)",
+            "de": "Nur Ein/Aus-Schalten (BASIC Set)"
+          }
+        },
+		        {
+          "id": "3",
+          "label": {
+            "en": "Switch all",
+            "de": "Alle Geräte in Umgebung (Switch All)"
+          }
+        },
+		        {
+          "id": "4",
+          "label": {
+            "en": "Send scenes",
+            "de": "Komplexe Szenen (mehrere Szenen pro Taste)"
+          }
+        },
+		        {
+          "id": "5",
+          "label": {
+            "en": "Send preconfigured scenes",
+            "de": "Einfache Szenen (eine Szene pro Taste)"
+          }
+        },
+		{
+          "id": "6",
+          "label": {
+            "en": "Control devices in proximity",
+            "de": "Geräte in der nähe Steuern"
+          }
+        },
+		        {
+          "id": "7",
+          "label": {
+            "en": "Control door lock",
+            "de": "Türschloss (Door Lock)"
+          }
+        },
+		        {
+          "id": "8",
+          "label": {
+            "en": "Central scene to gateway (default)",
+            "de": "Zentrale Szenensteuerung im Gateway (Central Scene)"
+          }
+        }
+      ]
     },
-    {
-      "id": "2",
-      "value": 1,
-      "label": {
-        "en": "Button 2 and 4 pair mode "
-      },
-      "hint": {
-        "en": "In separate mode button 2 works with control group B, button 4 with control group D. Click is On, Hold is dimming Up, Double click is Off, Click-Hold is dimming Down. In pair button B/D are Up/Down correspondingly. Click is On/Off, Hold is dimming Up/Down. Single clicks works with group B, double click with group D."
-      },
-      "_size": 1,
-      "type": "number"
-    },
-    {
+	{
       "id": "21",
-      "value": 1,
+      "value": "1",
+	  "zwave": {
+        "index": 21,
+        "size": 1,
+		"signed": false
+      },
       "label": {
-        "en": "Send the following Switch All commands "
+        "en": "Send the following switch all commands",
+		"de": "Wie werden Geräte in der Umgebung geschaltet (SwitchAll)"
       },
       "hint": {
-        "en": ""
+        "en": "Send the following switch all commands ",
+		"de": "Dieser Parameter definiert, welche Befehle als Broadcast an alle Geräte in der Umgegend gesendet werden sollen. "
       },
-      "_size": 1,
-      "type": "number"
+      "type": "dropdown",
+	  	  "values": [
+        {
+          "id": "1",
+          "label": {
+            "en": "Switch off only",
+            "de": "Nur Ausschalten"
+          }
+        },
+        {
+          "id": "2",
+          "label": {
+            "en": "Switch on only",
+            "de": "Nur Einschalten"
+          }
+        },
+		        {
+          "id": "255",
+          "label": {
+            "en": "Switch all on and off",
+            "de": "Einschalten und Ausschalten"
+          }
+        }
+      ]
     },
-    {
+	{
       "id": "22",
-      "value": true,
+      "value": "0",
+	  "zwave": {
+        "index": 22,
+        "size": 1
+      },
       "label": {
-        "en": "Invert buttons"
+        "en": "Invert buttons",
+		"de": "Invertiere Tastenbedeutung"
       },
       "hint": {
-        "en": ""
+        "en": "Invert buttons",
+		"de": "Dieser Parameter ermöglicht, die Kommandos einer Tastengruppe zu invertieren."
       },
-      "_size": 1,
-      "type": "checkbox"
+      "type": "dropdown",
+	  	  "values": [
+        {
+          "id": "0",
+          "label": {
+            "en": "Yes",
+            "de": "Ja"
+          }
+        },
+        {
+          "id": "1",
+          "label": {
+            "en": "No",
+            "de": "Nein"
+          }
+        }
+      ]
     },
-    {
+		{
       "id": "25",
-      "value": true,
+      "value": "0",
+	  "zwave": {
+        "index": 25,
+        "size": 1
+      },
       "label": {
-        "en": "Blocks wakeup even when wakeup interval is set"
+        "en": "Blocks wake up even when Wake Up Interval is set",
+		"de": "Blockierung des Aufweckens trotz gesetztem Aufweckinterval"
       },
       "hint": {
-        "en": ""
+        "en": "If the KFOB wakes up and there is no controller nearby, several unsuccessful communication attempts will drain battery. ",
+		"de": "Ermöglicht einen zusätzlichen Schutz gegen falsch konfigurierende Gateways"
       },
-      "_size": 1,
-      "type": "checkbox"
+      "type": "dropdown",
+	  	  "values": [
+        {
+          "id": "0",
+          "label": {
+            "en": "Wake up is blocked",
+            "de": "Erlaubt"
+          }
+        },
+        {
+          "id": "1",
+          "label": {
+            "en": "Wake up is possible if configured accordingly",
+            "de": "Blockiert"
+          }
+        }
+      ]
     },
-    {
-      "id": "30",
-      "value": 0,
+	{
+      "id": "25",
+      "value": "0",
+	  "zwave": {
+        "index": 25,
+        "size": 1
+      },
       "label": {
-        "en": "Send unsolicited Battery Report on Wake Up"
+        "en": "Send unsolicited battery report on Wake Up",
+		"de": "Unaufgefordert bei Aufwecken einen Batteriereport senden"
       },
       "hint": {
-        "en": ""
+        "en": "Send unsolicited battery report on Wake Up",
+		"de": "Unaufgefordert bei Aufwecken einen Batteriereport senden"
       },
-      "_size": 1,
-      "type": "number"
+      "type": "dropdown",
+	  	  "values": [
+        {
+          "id": "0",
+          "label": {
+            "en": "No",
+            "de": "Nein"
+          }
+        },
+        {
+          "id": "1",
+          "label": {
+            "en": "To same node as Wake Up Notification",
+            "de": "Zum Gateway"
+          }
+        },
+		{
+          "id": "2",
+          "label": {
+            "en": "Broadcast to neighbors",
+            "de": "Als Broadcast"
+          }
+        }
+      ]
     }
   ]
 

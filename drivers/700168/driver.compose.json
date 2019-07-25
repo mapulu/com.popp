@@ -66,12 +66,14 @@
       },
       "2": {
         "hint": {
-          "en": "Switching Command when Rain (> 0 mm/h). Basic Set Command is sent."
+          "en": "Switching Command when Rain (> 0 mm/h). Basic Set Command is sent.",
+		  "de": "Schaltbefehl bei Regen (> 0 mm/h). Der Befehl Basic Set wird gesendet."
         }
       },
       "3": {
         "hint": {
-          "en": "Heavy Rain detected. Basic Set Command is sent."
+          "en": "Heavy Rain detected. Basic Set Command is sent.",
+		  "de": "Starker Regen festgestellt. Der Befehl Basic Set wird gesendet."
         }
       }
     },
@@ -117,11 +119,13 @@
       "type": "number",
       "label": {
         "en": "Total rain counter",
-        "nl": "Totale regen teller"
+        "nl": "Totale regen teller",
+		"de": "Gesamtregenzähler"
       },
       "hint": {
         "en": "This values shows the total count of rain from the moment of inclusion in mm water level. By writing this value this counter can be reset. (0-32000)",
-        "nl": "Deze waarde geeft de totale hoeveelheid regen vanaf het toevoegen aan de controler in mm weer. Door het instellen van deze waarde kan de teller gereset worden (0-32000)"
+        "nl": "Deze waarde geeft de totale hoeveelheid regen vanaf het toevoegen aan de controler in mm weer. Door het instellen van deze waarde kan de teller gereset worden (0-32000)",
+		"de": "Die Werte zeigen die Gesamtzahl des Regens vom Moment der Einbeziehung in mm Wassermenge. Durch setzen dieses Wertes kann dieser Zähler zurückgesetzt werden. (0-32000)"
       },
       "attr": {
         "min": 0,
@@ -137,11 +141,13 @@
       "value": 99,
       "label": {
         "en": "Rain start command",
-        "nl": "Regen start commando"
+        "nl": "Regen start commando",
+		"de": "Regen beginn Befehl"
       },
       "hint": {
         "en": "This BASIC Set Command value is sent out into Association Group 2 when the device detects start of rain",
-        "nl": "Dit BASIC Set commando wordt naar association group 2 gestuurd als er regen wordt waargenomen."
+        "nl": "Dit BASIC Set commando wordt naar association group 2 gestuurd als er regen wordt waargenomen.",
+		"de": "Dieser Wert wird in die Assoziationsgruppe 2 geschickt, wenn das Gerät den Regenvorgang erkennt"
       },
       "type": "number",
       "attr": {
@@ -158,11 +164,13 @@
       "value": 0,
       "label": {
         "en": "Rain stop command",
-        "nl": "Regen stop commando"
+        "nl": "Regen stop commando",
+		"de": "Regen Ende  Befehl"
       },
       "hint": {
         "en": "This BASIC Set Command value is sent out into Association Group 2 when the device detects stop of rain",
-        "nl": "Dit BASIC Set commando wordt naar association group 2 gestuurd als er geen regen meer wordt waargenomen."
+        "nl": "Dit BASIC Set commando wordt naar association group 2 gestuurd als er geen regen meer wordt waargenomen.",
+		"de": "Dieser Wert wird in die Assoziationsgruppe 2 verschickt, wenn das Gerät den Regenvorgang  beendet hat"
       },
       "type": "number",
       "attr": {
@@ -181,11 +189,13 @@
       "type": "number",
       "label": {
         "en": "Heavy rain definition.",
-        "nl": "Zware regen definitie."
+        "nl": "Zware regen definitie.",
+		"de": "Starkregen Grenzwert"
       },
       "hint": {
         "en": "This threshold defines when a heavy rain condition is hit in mm/hour. In most countries this is defined as > 15 mm rain per hour. (Default 25 mm/h)",
-        "nl": "Stelt in wat als zware regen wordt gezien in mm/uur. In de meeste landen is dit > 15 mm regen per uur. (Default 25 mm/h) "
+        "nl": "Stelt in wat als zware regen wordt gezien in mm/uur. In de meeste landen is dit > 15 mm regen per uur. (Default 25 mm/h)",
+		"de": "Diese Schwelle definiert, wann ein starker Regenzustand getroffen wird. In den meisten Ländern ist dies definiert als > 15 mm Regen pro Stunde. (Standard 25 mm/h)"
       },
       "attr": {
         "min": 0,
@@ -201,11 +211,13 @@
       "value": 98,
       "label": {
         "en": "Heavy rain start command",
-        "nl": "Zware regen start commando"
+        "nl": "Zware regen start commando",
+		"de": "Starkregen beginnt Kommando"
       },
       "hint": {
         "en": "This BASIC Set Command value is sent out into Association Group 3 when the device detects start of heavy rain",
-        "nl": "Dit BASIC Set commando wordt naar association group 3 gestuurd als er zware regen wordt waargenomen."
+        "nl": "Dit BASIC Set commando wordt naar association group 3 gestuurd als er zware regen wordt waargenomen.",
+		"de": "Dieser Wert wird in die Assoziationsgruppe 3 verschickt, wenn das Gerät den Beginn des starken Regens erkennt"
       },
       "type": "number",
       "attr": {
@@ -222,11 +234,13 @@
       "value": 1,
       "label": {
         "en": "Heavy rain stop command",
-        "nl": "Zware regen stop commando"
+        "nl": "Zware regen stop commando",
+		"de": "Starkregen Ende Kommando"
       },
       "hint": {
         "en": "This BASIC Set Command value is sent out into Association Group 3 when the device detects stop of heavy rain",
-        "nl": "Dit BASIC Set commando wordt naar association group 3 gestuurd als er geen zware regen meer wordt waargenomen."
+        "nl": "Dit BASIC Set commando wordt naar association group 3 gestuurd als er geen zware regen meer wordt waargenomen.",
+		"de": "Dieser Wert wird in die Assoziationsgruppe 3 verschickt, wenn das Gerät den Ende des starken Regens erkennt"
       },
       "type": "number",
       "attr": {

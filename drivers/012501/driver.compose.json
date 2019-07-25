@@ -2,7 +2,8 @@
   "id": "012501",
   "name": {
     "en": "Strike Lock Control",
-    "nl": "Strike Lock Control"
+    "nl": "Strike Lock Control",
+	"de": "Türöffner-Steuerung"
   },
   "images": {
     "large": "/drivers/012501/assets/images/large.jpg",
@@ -19,7 +20,8 @@
 		"alarm_contact": {
 			"title": {
 				"en": "Door open (Contact Alarm)",
-				"nl": "Deur open (Contact alarm)"
+				"nl": "Deur open (Contact alarm)",
+				"de": "Tür offen (Kontakt Alarm)"
 			}
 		}
 	},
@@ -32,7 +34,8 @@
       "image": "/drivers/012501/assets/learnmode.svg",
       "instruction": {
         "en": "Push the z-wave button on your Strike Lock Board once.",
-        "nl": "Druk 1 keer op de z-wave knop op de Strike Lock print."
+        "nl": "Druk 1 keer op de z-wave knop op de Strike Lock print.",
+		"de": "Drücke die Taste für 1 Sekunde. "
       }
     },
     "associationGroups": [1, 2]
@@ -46,23 +49,78 @@
     "type": "dropdown",
     "label": {
       "en": "Force FliRS Mode",
-      "nl": "Force FliRS Modus"
+      "nl": "Force FliRS Modus",
+	  "de": "Flirs erzwingen"
     },
+    "hint": {
+        "en": "With this parameter you can force the flirs inclusion, e.g. if you want to operate the device with a 12V battery. ",
+        "nl": "Met deze parameter kunt u het opnemen van de flirs forceren, bijvoorbeeld als u het apparaat met een 12V-batterij wilt gebruiken.",
+		"de": "Mit diesem Parameter kann man die Flirs inklusion erzwingen, z.B Wenn das Gerät mit einer 12V batterie betreiben werden soll."
+      },
     "value": "0",
     "values": [{
         "id": "0",
         "label": {
           "en": "Depends on Power Status in Inclusion Moment",
-          "nl": "Afhankelijk van Power Status op moment van Inclusion"
+          "nl": "Afhankelijk van Power Status op moment van Inclusion",
+		  "de": "Abhängig von Power Status im Inclusion Moment"
         }
       },
       {
         "id": "1",
         "label": {
           "en": "Force FLiRS Mode",
-          "nl": "Force FLiRS Modus"
+          "nl": "Force FLiRS Modus",
+		  "de": "Flirs Modus erzwingen"
         }
       }
     ]
-  }]
+  },
+  	{
+      "id": "value_open_command",
+      "zwave": {
+        "index": 1,
+        "size": 1
+      },
+	  "attr": {
+      "min": 0,
+      "max": 99
+    },
+      "type": "number",
+      "value": 0,
+      "label": {
+        "en": "Value of OPEN-Command",
+        "nl": "Waarde van OPEN-Commando",
+		"de": "Wert des OPEN-Befehls"
+      },
+      "hint": {
+        "en": "This parameter defines the value of the BASIC Set command issued into association group 2 when the dry contact opens. (1-99) (Default: 0)",
+        "nl": "Deze parameter definieert de waarde van de opdracht BASIC Set, die bij het openen van het droge contact in koppelgroep 2 wordt gegeven. (1-99) (standaard: 0)",
+		"de": "Dieser Parameter definiert den Wert des Befehls BASIC Set, der beim Öffnen des potenzialfreien Kontakts in die Assoziationsgruppe 2 ausgegeben wird. (1-99) (Standard: 0)"
+      }
+    },
+		{
+      "id": "value_close_command",
+      "zwave": {
+        "index": 2,
+        "size": 1
+      },
+	  "attr": {
+      "min": 0,
+      "max": 99
+    },
+      "type": "number",
+      "value": 99,
+      "label": {
+        "en": "Value of CLOSE-Command",
+        "nl": "Waarde van CLOSE-Commando",
+		"de": "Wert des CLOSE-Befehls"
+      },
+      "hint": {
+        "en": "This parameter defines the value of the BASIC Set command issued into association group 2 when the dry contact closes. (1-99) (Default: 99)",
+        "nl": "Deze parameter definieert de waarde van de opdracht BASIC Set, die bij het sluiten van het droge contact in koppelgroep 2 wordt gegeven. (1-99) (Standaard: 99)",
+		"de": "Dieser Parameter definiert den Wert des Befehls BASIC Set, der beim Schließen des potenzialfreien Kontakts in die Assoziationsgruppe 2 ausgegeben wird. (1-99, Standard: 99)"
+      }
+    }
+  ]
 }

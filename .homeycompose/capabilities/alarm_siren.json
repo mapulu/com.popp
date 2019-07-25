@@ -14,6 +14,7 @@
 		"de": "Alarm"
       },
       "getable": true,
-      "setable": false
+      "setable": false,
+	  "icon": "/assets/alarm_siren.svg"
     }
   

@@ -47,40 +47,7 @@ class P005107 extends ZwaveDevice {
         return null;
       }
     });
-    this.registerCapability('measure_temperature', 'SENSOR_MULTILEVEL', {
-	get: 'SENSOR_MULTILEVEL_GET',
-	getOpts: {
-		getOnOnline: true,
-		getOnStart: true,
-	},
-	getParser: () => ({
-		'Sensor Type': 'Temperature (version 1)',
-		Properties1: {
-			Scale: 0,
-		},
-	}),
-	report: 'SENSOR_MULTILEVEL_REPORT',
-	reportParser: report => {
-		if (report &&
-			report.hasOwnProperty('Sensor Type') &&
-			(report['Sensor Type'] === 'Temperature (version 1)' || report['Sensor Type'] === 'Temperature (version 1) ') &&
-			report.hasOwnProperty('Sensor Value (Parsed)')) {
-			if (report.hasOwnProperty('Level') &&
-			report.Level.hasOwnProperty('Scale'))
-			{
-			if (report['Sensor Value (Parsed)'] === -999.9) return null;
-			if (report.Level.Scale === 0) return report['Sensor Value (Parsed)'];
-			if (report.Level.Scale === 1) return (report['Sensor Value (Parsed)'] - 32) / 1.8;	
-			}
-			else	
-			{
-			if (report['Sensor Value (Parsed)'] === -999.9) return null;
-			return report['Sensor Value (Parsed)'];
-			}
-		}
-		return null;
-	}
-    });
+    this.registerCapability('measure_temperature', 'SENSOR_MULTILEVEL');
     this.registerCapability('alarm_tamper', 'SENSOR_BINARY');
     this.registerCapability('measure_battery', 'BATTERY');
     this.registerCapability('alarm_battery', 'BATTERY');

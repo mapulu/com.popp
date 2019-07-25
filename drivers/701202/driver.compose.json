@@ -58,22 +58,30 @@
       },
       "2": {
         "hint": {
-          "en": "Temperature High Trigger"
+          "en": "Temperature High Trigger",
+		  "nl": "Temperatuur Hoge Trigger",
+		  "de": "Sendet Befehle an die Assozierten Geräte bei überschreiten des oberen Temperaturschwellwertes"
         }
       },
       "3": {
         "hint": {
-          "en": "Temperature Low Trigger"
+          "en": "Temperature Low Trigger",
+		  "nl": "Temperatuur Lage Trigger",
+		  "de": "Sendet Befehle an die Assozierten Geräte bei unterschreiten des unteren Temperaturschwellwertes"
         }
       },
 	  "4": {
         "hint": {
-          "en": "Humidity High Trigger"
+          "en": "Humidity High Trigger",
+		  "nl": "Vochtigheid Hoge Trigger",
+		  "de": "Sendet Befehle an die Assozierten Geräte bei überschreiten des oberen Feuchtigkeitsschwellwertes"
         }
       },
 	  "5": {
         "hint": {
-          "en": "Humidity Low Trigger"
+          "en": "Humidity Low Trigger",
+		  "nl": "Vochtigheid Lage Trigger",
+		  "de": "Sendet Befehle an die Assozierten Geräte bei unterschreiten des unteren Feuchtigkeitsschwellwertes"
         }
       }
     }
