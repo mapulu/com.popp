@@ -235,6 +235,32 @@
         ]
       },
       {
+        "id": "dewpoint_value",
+        "title": {
+          "en": "The dew point has changed",
+          "nl": "Het dauwpunt is veranderd",
+          "de": "Der Taupunkt hat sich geändert"
+        },
+        "tokens": [
+          {
+            "name": "dewpoint",
+            "type": "number",
+            "title": {
+              "en": "Dew Point",
+              "nl": "Dauwpunt",
+              "de": "Taupunkt"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=005206"
+          }
+        ]
+      },
+      {
         "id": "RC_scene",
         "title": {
           "en": "Scene is activated",
@@ -772,6 +798,62 @@
                 }
               }
             ]
+          }
+        ]
+      },
+      {
+        "id": "mold_alarm_on",
+        "title": {
+          "en": "The mold alarm is on",
+          "nl": "Het schimmelalarm is aan",
+          "de": "Der Schimmel Alarm is angegangen"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=701202"
+          }
+        ]
+      },
+      {
+        "id": "mold_alarm_off",
+        "title": {
+          "en": "The mold alarm is off",
+          "nl": "Het schimmelalarm is uit",
+          "de": "Der Schimmel Alarm is ausgegangen"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=701202"
+          }
+        ]
+      },
+      {
+        "id": "dewpoint_value",
+        "title": {
+          "en": "The dew point has changed",
+          "nl": "Het dauwpunt is veranderd",
+          "de": "Der Taupunkt hat sich geändert"
+        },
+        "tokens": [
+          {
+            "name": "dewpoint",
+            "type": "number",
+            "title": {
+              "en": "Dew Point",
+              "nl": "Dauwpunt",
+              "de": "Taupunkt"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=701202"
           }
         ]
       }
@@ -1353,6 +1435,8 @@
         "measure_pressure",
         "measure_dewpoint",
         "measure_battery",
+        "meter_power.solar",
+        "meter_power.wind",
         "alarm_battery"
       ],
       "images": {
@@ -1391,6 +1475,39 @@
             }
           }
         ]
+      },
+      "capabilitiesOptions": {
+        "measure_luminance": {
+          "units": {
+            "en": "%",
+            "nl": "%",
+            "de": "%"
+          }
+        },
+        "meter_power.solar": {
+          "units": {
+            "en": "kWh/m²",
+            "nl": "kWh/m²",
+            "de": "kWh/m²"
+          },
+          "title": {
+            "en": "Solar energy yield",
+            "nl": "Zonne-energie opbrengst",
+            "de": "Sonnenenergie Ertrag"
+          }
+        },
+        "meter_power.wind": {
+          "units": {
+            "en": "R*8",
+            "nl": "O*8",
+            "de": "U*8"
+          },
+          "title": {
+            "en": "Windmill",
+            "nl": "Windmolen",
+            "de": "Windrad"
+          }
+        }
       },
       "zwave": {
         "manufacturerId": [
@@ -3054,7 +3171,8 @@
       "id": "700168",
       "name": {
         "en": "Z-Rain - Rain Sensor",
-        "nl": "Z-Rain - Regen Sensor"
+        "nl": "Z-Rain - Regen Sensor",
+        "de": "Z-Rain - Regen Sensor"
       },
       "capabilities": [
         "meter_rain",
@@ -3950,6 +4068,103 @@
           }
         }
       ]
+    },
+    {
+      "id": "701202",
+      "name": {
+        "en": "Mold Detector",
+        "nl": "Mold Detector",
+        "de": "Mold Detector"
+      },
+      "capabilities": [
+        "measure_temperature",
+        "measure_humidity",
+        "measure_dewpoint",
+        "alarm_generic.mold",
+        "measure_battery"
+      ],
+      "mobile": {
+        "components": [
+          {
+            "id": "icon"
+          },
+          {
+            "id": "battery",
+            "capabilities": [
+              "measure_battery"
+            ],
+            "options": {
+              "showTitle": true
+            }
+          },
+          {
+            "id": "sensor",
+            "capabilities": [
+              "measure_temperature",
+              "measure_humidity",
+              "measure_dewpoint",
+              "alarm_generic.mold",
+              "measure_battery"
+            ]
+          }
+        ]
+      },
+      "capabilitiesOptions": {
+        "alarm_generic.mold": {
+          "title": {
+            "en": "Mold Alert",
+            "nl": "Schimmel Alarm",
+            "de": "Schimmel Alarm"
+          }
+        }
+      },
+      "zwave": {
+        "manufacturerId": 340,
+        "productTypeId": 4,
+        "productId": 20,
+        "learnmode": {
+          "instruction": {
+            "en": "Tripple clicking the tamper button includes (adds) the device. \nThe LED flashes alternately red/green until inclusion is started and green twice after completion. ",
+            "nl": "De Tripple-klik op de sabotageknop bevat (voegt) het apparaat toe. \nDe LED knippert afwisselend rood/groen tot de opname wordt gestart en tweemaal groen na voltooiing.",
+            "de": "Ein dreifaches Anklicken der Manipulationsschaltfläche beinhaltet (fügt) das Gerät hinzu. \nDie LED blinkt bis zum Start der Inklusion abwechselnd rot/grün und nach der Fertigstellung zweimal grün. "
+          }
+        },
+        "associationGroups": [
+          1
+        ],
+        "associationGroupsOptions": {
+          "1": {
+            "hint": {
+              "en": "Z-Wave Plus Lifeline"
+            }
+          },
+          "2": {
+            "hint": {
+              "en": "Temperature High Trigger"
+            }
+          },
+          "3": {
+            "hint": {
+              "en": "Temperature Low Trigger"
+            }
+          },
+          "4": {
+            "hint": {
+              "en": "Humidity High Trigger"
+            }
+          },
+          "5": {
+            "hint": {
+              "en": "Humidity Low Trigger"
+            }
+          }
+        }
+      },
+      "class": "sensor",
+      "images": {
+        "large": "/drivers/700168/assets/images/large.jpg",
+        "small": "/drivers/700168/assets/images/small.jpg"
+      }
     }
   ],
   "capabilities": {
@@ -3992,14 +4207,16 @@
       "type": "boolean",
       "title": {
         "en": "Siren",
-        "nl": "Sirene"
+        "nl": "Sirene",
+        "de": "Sirene"
       },
       "units": {
         "en": "Status"
       },
       "desc": {
         "en": "Alarm",
-        "nl": "Alarm"
+        "nl": "Alarm",
+        "de": "Alarm"
       },
       "getable": true,
       "setable": false
@@ -4034,32 +4251,17 @@
       "type": "number",
       "title": {
         "en": "DewPoint",
-        "nl": "Dauwpunt"
+        "nl": "Dauwpunt",
+        "de": "Taupunkt"
       },
       "units": {
-        "en": "C"
+        "en": "°C",
+        "nl": "°C",
+        "de": "°C"
       },
       "desc": {
         "en": "Celius (C)",
         "nl": "Celius (C)"
-      },
-      "chartType": "stepLine",
-      "decimals": 2,
-      "getable": true,
-      "setable": false
-    },
-    "measure_wind_strenght": {
-      "type": "number",
-      "title": {
-        "en": "Wind Strenght",
-        "nl": "Windkracht"
-      },
-      "units": {
-        "en": "m/s"
-      },
-      "desc": {
-        "en": "Meters per Second",
-        "nl": "meters per seconden"
       },
       "chartType": "stepLine",
       "decimals": 2,

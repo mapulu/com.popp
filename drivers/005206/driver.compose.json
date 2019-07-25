@@ -14,6 +14,8 @@
     "measure_pressure",
     "measure_dewpoint",
     "measure_battery",
+	"meter_power.solar",
+	"meter_power.wind",
     "alarm_battery"
   ],
   "images": {
@@ -42,6 +44,39 @@
       }
     ]
   },
+ "capabilitiesOptions": {
+    "measure_luminance": {
+      "units": {
+        "en": "%",
+        "nl": "%",
+		"de": "%"
+      }
+	  },
+    "meter_power.solar": {
+      "units": {
+        "en": "kWh/m²",
+        "nl": "kWh/m²",
+		"de": "kWh/m²"
+      },
+	  "title": {
+        "en": "Solar energy yield",
+        "nl": "Zonne-energie opbrengst",
+		"de": "Sonnenenergie Ertrag"
+      }
+},
+    "meter_power.wind": {
+      "units": {
+        "en": "R*8",
+        "nl": "O*8",
+		"de": "U*8"
+      },
+	  "title": {
+        "en": "Windmill",
+        "nl": "Windmolen",
+		"de": "Windrad"
+      }
+}
+},
   "zwave": {
     "manufacturerId": [340, 277],
     "productTypeId": 256,

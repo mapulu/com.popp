@@ -2,7 +2,8 @@
   "id": "700168",
   "name": {
     "en": "Z-Rain - Rain Sensor",
-    "nl": "Z-Rain - Regen Sensor"
+    "nl": "Z-Rain - Regen Sensor",
+	"de": "Z-Rain - Regen Sensor"
   },
   "capabilities": [
     "meter_rain",

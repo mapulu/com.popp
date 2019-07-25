@@ -2,14 +2,16 @@
       "type": "boolean",
       "title": {
         "en": "Siren",
-        "nl": "Sirene"
+        "nl": "Sirene",
+		"de": "Sirene"
       },
       "units": {
         "en": "Status"
       },
       "desc": {
         "en": "Alarm",
-        "nl": "Alarm"
+        "nl": "Alarm",
+		"de": "Alarm"
       },
       "getable": true,
       "setable": false

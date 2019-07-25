@@ -2,14 +2,18 @@
       "type": "number",
       "title": {
         "en": "DewPoint",
-        "nl": "Dauwpunt"
+        "nl": "Dauwpunt",
+		"de": "Taupunkt"
       },
       "units": {
-        "en": "C"
+        "en": "°C",
+		"nl": "°C",
+		"de": "°C"
       },
       "desc": {
         "en": "Celius (C)",
-        "nl": "Celius (C)"
+        "nl": "Celius (C)",
+		"nl": "Celius (C)"
       },
       "chartType": "stepLine",
       "decimals": 2,
