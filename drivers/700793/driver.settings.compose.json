@@ -1,0 +1,42 @@
+[    
+{
+      "id": "condition_power_failure",
+      "zwave": {
+        "index": 1,
+        "size": 1
+      },
+      "type": "dropdown",
+	  "value": "0",
+      "label": {
+        "en": "Condition after power failure",
+        "nl": "Voorwaarde na stroomuitval",
+		"de": "Zustand nach Stromausfall"
+      },
+      "value": "0",
+      "values": [{
+          "id": "0",
+          "label": {
+            "en": "Always off (default)",
+            "nl": "Altijd uit (standaard)",
+            "de": "Immer aus (Standard)"
+          }
+        },
+		{
+          "id": "1",
+          "label": {
+            "en": "Always on",
+            "nl": "Altijd aan",
+			"de": "Immer an"
+          }
+        },
+        {
+          "id": "2",
+          "label": {
+            "en": "Last status",
+            "nl": "Laatste status",
+			"de": "Letzter Status"
+          }
+        }
+      ]
+    }
+  ]

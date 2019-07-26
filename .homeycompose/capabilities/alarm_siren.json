@@ -2,16 +2,22 @@
       "type": "boolean",
       "title": {
         "en": "Siren",
-        "nl": "Sirene"
+        "nl": "Sirene",
+		"de": "Sirene"
       },
       "units": {
         "en": "Status"
       },
       "desc": {
         "en": "Alarm",
-        "nl": "Alarm"
+        "nl": "Alarm",
+		"de": "Alarm"
       },
       "getable": true,
-      "setable": false
+      "setable": false,
+	  "insights": true,
+	  "insightsTitleTrue": { "en": "Alarm", "nl": "Alarm", "de": "Alarm" },
+	  "insightsTitleFalse": { "en": "No Alarm", "nl": "Geen alarm", "de": "Kein Alarm" },
+	  "icon": "/assets/alarm_siren.svg"
     }
   

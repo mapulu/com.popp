@@ -2,7 +2,8 @@
   "id": "004001",
   "name": {
     "en": "Smoke Detector and Siren",
-    "nl": "Rook Detector en Sirene"
+    "nl": "Rook Detector en Sirene",
+	"de": "Rauchwarnmelder plus Sirenenfunktion"
   },
   "mobile": {
     "components": [{
@@ -36,7 +37,8 @@
     "learnmode": {
       "instruction": {
         "en": "To Include, hit the little button on the wireless module for 1 second",
-        "nl": "Voor opname in Z-Wave netwerk 1 seconden op het kleine knopje drukken"
+        "nl": "Voor opname in Z-Wave netwerk 1 seconden op het kleine knopje drukken",
+		"de": "Ein einfacher Klick auf den Taster am Funkmodul (3) inkludiert das Gerät. Wird diese Taste zwei Sekunden lang gedrückt, wird die Inklusion mit unterdrückter Sicherheitsfunktion (Security Command Class ) durchgeführt."
       }
     },
     "associationGroups": [1, 2, 3],
@@ -44,19 +46,22 @@
       "1": {
         "hint": {
           "en": "Z-Wave Plus Lifeline",
-          "nl": "Z-Wave Plus Lifeline"
+          "nl": "Z-Wave Plus Lifeline",
+		  "de": "Z-Wave Plus Lifeline"
         }
       },
       "2": {
         "hint": {
           "en": "Alarm Reports",
-          "nl": "Alarm Reports"
+          "nl": "Alarm Reports",
+		  "de": "Alarmmeldung"
         }
       },
       "3": {
         "hint": {
           "en": "Switch Command when Alarm",
-          "nl": "Switch Command when Alarm"
+          "nl": "Switch Command when Alarm",
+		  "de": "Schaltkommando bei Rauchalarm"
         }
       }
     }
@@ -76,11 +81,13 @@
       "value": 10,
       "label": {
         "en": "Siren alarm sequence interval",
-        "nl": "Sirene alarm opeenvolging interval"
+        "nl": "Sirene alarm opeenvolging interval",
+		"de": "Sirenenalarm- Sequenzintervall"
       },
       "hint": {
         "en": "The additional siren is creating a different acoustic signal differentiate from the smoke alarm. This sound is partly on and partly off. This parameter defines the total length of the interval in seconds.",
-        "nl": "De extra sirene maakt een ander akoestisch signaal te onderscheiden van de rookmelder. Dit geluid is deels op en deels uit. Deze parameter definieert de totale lengte van het interval in seconden."
+        "nl": "De extra sirene maakt een ander akoestisch signaal te onderscheiden van de rookmelder. Dit geluid is deels op en deels uit. Deze parameter definieert de totale lengte van het interval in seconden.",
+		"de": "Die zusätzliche Sirene erzeugt ein anderes akustisches Signal, das sich vom Rauchmelder unterscheidet. Dieser Sound ist teilweise ein- und teilweise ausgeschaltet. Dieser Parameter definiert die Gesamtlänge des Intervalls in Sekunden."
       },
       "type": "number"
     },
@@ -93,11 +100,13 @@
       "value": 8,
       "label": {
         "en": "Siren alarm tone length",
-        "nl": "Sirene alarmtoon lengte"
+        "nl": "Sirene alarmtoon lengte",
+		"de": "Sirenenalarm-Tonlänge"
       },
       "hint": {
         "en": "The additional siren is creating a different acoustic signal differentiate from the smoke alarm. This sound is partly on and partly off. This parameter defines the total length of the sound versus silence within this interval.",
-        "nl": "De extra sirene maakt een ander akoestisch signaal te onderscheiden van de rookmelder. Dit geluid is deels op en deels uit. Deze parameter definieert de totale lengte van het geluid versus stilte binnen dit interval."
+        "nl": "De extra sirene maakt een ander akoestisch signaal te onderscheiden van de rookmelder. Dit geluid is deels op en deels uit. Deze parameter definieert de totale lengte van het geluid versus stilte binnen dit interval.",
+		"de": "Die zusätzliche Sirene erzeugt ein anderes akustisches Signal, das sich vom Rauchmelder unterscheidet. Dieser Sound ist teilweise ein- und teilweise ausgeschaltet. Dieser Parameter definiert die Gesamtlänge des Klangs gegenüber der Stille innerhalb dieses Intervalls."
       },
       "type": "number"
     },
@@ -110,11 +119,13 @@
       "value": 99,
       "label": {
         "en": "Value of BASIC On-Command",
-        "nl": "Waarde van Basic On-Commando"
+        "nl": "Waarde van Basic On-Commando",
+		"de": "Wert des Ein-Befehls"
       },
       "hint": {
         "en": "This defines what command is sent into association group 2",
-        "nl": "Dit definieerd welk commando wordt verzonden naar association group 2"
+        "nl": "Dit definieerd welk commando wordt verzonden naar association group 2",
+		"de": "Hiermit wird definiert, welcher Befehl an die Assoziationsgruppe 2 gesendet wird"
       },
       "type": "number"
     },
@@ -127,11 +138,13 @@
       "value": 0,
       "label": {
         "en": "Value of BASIC Off-Command",
-        "nl": "Waarde van Basic Off-Commando"
+        "nl": "Waarde van Basic Off-Commando",
+		"de": "Wert des Aus-Befehls"
       },
       "hint": {
         "en": "This defines what command is sent into  association group 2",
-        "nl": "Dit definieerd welk commando wordt verzonden naar association group 2"
+        "nl": "Dit definieerd welk commando wordt verzonden naar association group 2",
+        "de": "Hiermit wird definiert, welcher Befehl an die Assoziationsgruppe 2 gesendet wird"
       },
       "type": "number"
     }

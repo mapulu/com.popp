@@ -1,0 +1,27 @@
+{
+  "id": "700793",
+  "name": {
+    "en": "Power Plug",
+    "nl": "Power Plug",
+	"de": "Power Plug"
+  },
+  "zwave": {
+    "manufacturerId": 340,
+    "productTypeId": 3,
+    "productId": 4098,
+    "learnmode": {
+      "instruction": {
+        "en": "Press the button on the wall plug 3 times whithin a period of ariound 2 seconds. ",
+        "nl": "Druk 3 keer op de knop op de wandcontactdoos, binnen een periode van ongeveer 2 seconden. ",
+		"de": "Drücken die Taste am Stecker 3 mal innerhalb von ca. 2 Sekunden. "
+      }
+    },
+    "associationGroups": [1, 1]
+  },
+  "class": "socket",
+  "capabilities": ["onoff", "measure_power", "meter_power"],
+  "images": {
+    "large": "/drivers/700793/assets/images/large.png",
+    "small": "/drivers/700793/assets/images/small.png"
+  }
+}

@@ -2,7 +2,8 @@
   "id": "010101",
   "name": {
     "en": "Wireless Thermo Valve",
-    "nl": "Draadloze Thermostaat Kraan"
+    "nl": "Draadloze Thermostaat Kraan",
+	"de": "Heizkörperthermostat"
   },
   "zwave": {
     "manufacturerId": 2,
@@ -11,8 +12,9 @@
     "wakeUpInterval": 1800,
     "learnmode": {
       "instruction": {
-        "en": "Press the middle button on your POPP Valve",
-        "nl": "Druk op de middelste knop van de POPP Thermostaatkraan"
+        "en": "Click on the middle button will confirm inclusion or exclusion and wakeup the device for wireless communication. A long push for 3 seconds on the middle buttons enters and leaves the management mode indicated by a M",
+        "nl": "Druk op de middelste knop van de POPP Thermostaatkraan",
+		"de": "3 Sekunden die Mitteltaste drücken um den Managementmode zu erreichen. Dieser wird mit einem M im Dislay angezeigt. Ein weiterer Tastendruck inkludiert/excludiert das Gerät."
       }
     },
     "associationGroups": [1]

@@ -3,17 +3,19 @@
   "sdk": 2,
   "name": {
     "en": "PoPP EU Z-Wave Products",
-    "nl": "PoPP EU Z-Wave Producten"
+    "nl": "PoPP EU Z-Wave Producten",
+    "de": "PoPP EU Z-Wave Produkte"
   },
   "description": {
     "en": "PoPP EU Z-Wave products support for Homey @ Athom",
-    "nl": "PoPP EU Z-Wave product ondersteuning voor Homey @ Athom"
+    "nl": "PoPP EU Z-Wave product ondersteuning voor Homey @ Athom",
+    "de": "PoPP EU Z-Wave Produkte unterstützung für Homey @ Athom"
   },
   "images": {
     "large": "/assets/images/large.jpg",
     "small": "/assets/images/small.jpg"
   },
-  "version": "2.0.7",
+  "version": "2.0.8",
   "compatibility": ">=1.5.3",
   "tags": {
     "en": [
@@ -90,11 +92,13 @@
         "id": "004001_alarm_state",
         "title": {
           "en": "Change the alarm state",
-          "nl": "Verander de alarm toestand"
+          "nl": "Verander de alarm toestand",
+          "de": "Ändern des Alarmzustands"
         },
         "hint": {
           "en": "Change the alarm state; sound or silence the alarm",
-          "nl": "Verander de alarm toestand; luiden of uitschakelen van het alarm"
+          "nl": "Verander de alarm toestand; luiden of uitschakelen van het alarm",
+          "de": "Ändern des Alarmzustands; Ertönen oder Stummschalten des Alarms"
         },
         "args": [
           {
@@ -115,14 +119,16 @@
                 "id": "0",
                 "label": {
                   "en": "Silence alarm",
-                  "nl": "Alarm stil"
+                  "nl": "Alarm stil",
+                  "de": "Alarm ausschalten"
                 }
               },
               {
                 "id": "1",
                 "label": {
                   "en": "Sound alarm",
-                  "nl": "Alarm luiden"
+                  "nl": "Alarm luiden",
+                  "de": "Alarm einschalten"
                 }
               }
             ]
@@ -133,11 +139,13 @@
         "id": "alarm_state",
         "title": {
           "en": "Change the alarm state",
-          "nl": "Verander de alarm toestand"
+          "nl": "Verander de alarm toestand",
+          "de": "Ändern des Alarmzustands"
         },
         "hint": {
           "en": "Change the alarm state; sound or silence the alarm",
-          "nl": "Verander de alarm toestand; luiden of uitschakelen van het alarm"
+          "nl": "Verander de alarm toestand; luiden of uitschakelen van het alarm",
+          "de": "Ändern des Alarmstatus; Ertönen oder Ausschalten des Alarms"
         },
         "args": [
           {
@@ -158,14 +166,16 @@
                 "id": "off/disable",
                 "label": {
                   "en": "Silence alarm",
-                  "nl": "Alarm stil"
+                  "nl": "Alarm stil",
+                  "de": "Alarm auschalten"
                 }
               },
               {
                 "id": "on/enable",
                 "label": {
                   "en": "Sound alarm",
-                  "nl": "Alarm luiden"
+                  "nl": "Alarm luiden",
+                  "de": "Alarm einschalten"
                 }
               }
             ]
@@ -215,11 +225,13 @@
         "id": "alarm_siren",
         "title": {
           "en": "Siren Alarm",
-          "nl": "Sirene Alarm"
+          "nl": "Sirene Alarm",
+          "de": "Sirenen Alarm"
         },
         "hint": {
           "en": "This card will trigger when siren is activated.",
-          "nl": "Deze kaart wordt alleen geactiveerd wanneer de sirene actief is."
+          "nl": "Deze kaart wordt alleen geactiveerd wanneer de sirene actief is.",
+          "de": "Diese Karte wird ausgelöst, wenn die Sirene aktiviert wird."
         },
         "args": [
           {
@@ -231,6 +243,32 @@
             "name": "device",
             "type": "device",
             "filter": "driver_id=005107"
+          }
+        ]
+      },
+      {
+        "id": "dewpoint_value",
+        "title": {
+          "en": "The dew point has changed",
+          "nl": "Het dauwpunt is veranderd",
+          "de": "Der Taupunkt hat sich geändert"
+        },
+        "tokens": [
+          {
+            "name": "dewpoint",
+            "type": "number",
+            "title": {
+              "en": "Dew Point",
+              "nl": "Dauwpunt",
+              "de": "Taupunkt"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=005206"
           }
         ]
       },
@@ -263,28 +301,32 @@
                 "id": "1",
                 "label": {
                   "en": "Button 1",
-                  "nl": "Knop 1"
+                  "nl": "Knop 1",
+                  "de": "Taste 1"
                 }
               },
               {
                 "id": "2",
                 "label": {
                   "en": "Button 2",
-                  "nl": "Knop 2"
+                  "nl": "Knop 2",
+                  "de": "Taste 2"
                 }
               },
               {
                 "id": "3",
                 "label": {
                   "en": "Button 3",
-                  "nl": "Knop 3"
+                  "nl": "Knop 3",
+                  "de": "Taste 3"
                 }
               },
               {
                 "id": "4",
                 "label": {
                   "en": "Button 4",
-                  "nl": "Knop 4"
+                  "nl": "Knop 4",
+                  "de": "Taste 4"
                 }
               }
             ]
@@ -297,14 +339,16 @@
                 "id": "Key Pressed 1 time",
                 "label": {
                   "en": "Pressed 1x",
-                  "nl": "1x ingedrukt"
+                  "nl": "1x ingedrukt",
+                  "de": "1x gedrückt"
                 }
               },
               {
                 "id": "Key Pressed 2 times",
                 "label": {
                   "en": "Pressed 2x",
-                  "nl": "2x ingedrukt"
+                  "nl": "2x ingedrukt",
+                  "de": "2x gedrückt"
                 }
               }
             ]
@@ -312,14 +356,16 @@
         ]
       },
       {
-        "id": "RC_scene",
+        "id": "user_validated",
         "title": {
-          "en": "A user verified itself",
-          "nl": "Een gebruiker is gevalideerd"
+          "en": "A specific user verified itself",
+          "nl": "Een specifieke gebruiker is gevalideerd",
+          "de": "Ein bestimmter Benutzer hat seinen Code eingegeben"
         },
         "hint": {
           "en": "This card triggers when a user validates. In the main settings of the device you can choose if this is done with the Global User Code or individual users",
-          "nl": "Deze kaart wordt geactiveerd wanneer een gebruiker valideert. In de hoofdinstellingen van het apparaat kunt u kiezen of dit wordt gedaan met de globale gebruiker code of met individuele gebruikers"
+          "nl": "Deze kaart wordt geactiveerd wanneer een gebruiker valideert. In de hoofdinstellingen van het apparaat kunt u kiezen of dit wordt gedaan met de globale gebruiker code of met individuele gebruikers",
+          "de": "Diese Karte wird ausgelöst, wenn ein Benutzer seinen Code eingegeben hat. In den Haupteinstellungen des Gerätes kannst du wählen, ob dies mit dem Global User Code (20) oder einzelnen Benutzern geschehen soll"
         },
         "args": [
           {
@@ -328,8 +374,216 @@
             "filter": "driver_id=700045"
           },
           {
-            "name": "device",
+            "name": "button",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "User 1",
+                  "nl": "Gebruiker 1",
+                  "de": "Benutzer 1"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "User 2",
+                  "nl": "Gebruiker 2",
+                  "de": "Benutzer 2"
+                }
+              },
+              {
+                "id": "3",
+                "label": {
+                  "en": "User 3",
+                  "nl": "Gebruiker 3",
+                  "de": "Benutzer 3"
+                }
+              },
+              {
+                "id": "4",
+                "label": {
+                  "en": "User 4",
+                  "nl": "Gebruiker 4",
+                  "de": "Benutzer 4"
+                }
+              },
+              {
+                "id": "5",
+                "label": {
+                  "en": "User 5",
+                  "nl": "Gebruiker 5",
+                  "de": "Benutzer 5"
+                }
+              },
+              {
+                "id": "6",
+                "label": {
+                  "en": "User 6",
+                  "nl": "Gebruiker 6",
+                  "de": "Benutzer 6"
+                }
+              },
+              {
+                "id": "7",
+                "label": {
+                  "en": "User 7",
+                  "nl": "Gebruiker 7",
+                  "de": "Benutzer 7"
+                }
+              },
+              {
+                "id": "8",
+                "label": {
+                  "en": "User 8",
+                  "nl": "Gebruiker 8",
+                  "de": "Benutzer 8"
+                }
+              },
+              {
+                "id": "9",
+                "label": {
+                  "en": "User 9",
+                  "nl": "Gebruiker 9",
+                  "de": "Benutzer 9"
+                }
+              },
+              {
+                "id": "10",
+                "label": {
+                  "en": "User 10",
+                  "nl": "Gebruiker 10",
+                  "de": "Benutzer 10"
+                }
+              },
+              {
+                "id": "11",
+                "label": {
+                  "en": "User 11",
+                  "nl": "Gebruiker 11",
+                  "de": "Benutzer 11"
+                }
+              },
+              {
+                "id": "12",
+                "label": {
+                  "en": "User 12",
+                  "nl": "Gebruiker 12",
+                  "de": "Benutzer 12"
+                }
+              },
+              {
+                "id": "13",
+                "label": {
+                  "en": "User 13",
+                  "nl": "Gebruiker 13",
+                  "de": "Benutzer 13"
+                }
+              },
+              {
+                "id": "14",
+                "label": {
+                  "en": "User 14",
+                  "nl": "Gebruiker 14",
+                  "de": "Benutzer 14"
+                }
+              },
+              {
+                "id": "15",
+                "label": {
+                  "en": "User 15",
+                  "nl": "Gebruiker 15",
+                  "de": "Benutzer 15"
+                }
+              },
+              {
+                "id": "16",
+                "label": {
+                  "en": "User 16",
+                  "nl": "Gebruiker 16",
+                  "de": "Benutzer 16"
+                }
+              },
+              {
+                "id": "17",
+                "label": {
+                  "en": "User 17",
+                  "nl": "Gebruiker 17",
+                  "de": "Benutzer 17"
+                }
+              },
+              {
+                "id": "18",
+                "label": {
+                  "en": "User 18",
+                  "nl": "Gebruiker 18",
+                  "de": "Benutzer 18"
+                }
+              },
+              {
+                "id": "19",
+                "label": {
+                  "en": "User 19",
+                  "nl": "Gebruiker 19",
+                  "de": "Benutzer 19"
+                }
+              },
+              {
+                "id": "20",
+                "label": {
+                  "en": "User 20",
+                  "nl": "Gebruiker 20",
+                  "de": "Benutzer 20"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "userid_validated",
+        "title": {
+          "en": "A user verified itself",
+          "nl": "Een gebruiker is gevalideerd",
+          "de": "Ein Benutzer hat seinen Code eingegeben..."
+        },
+        "hint": {
+          "en": "This card triggers when a user validates. In the main settings of the device you can choose if this is done with the Global User Code or individual users",
+          "nl": "Deze kaart wordt geactiveerd wanneer een gebruiker valideert. In de hoofdinstellingen van het apparaat kunt u kiezen of dit wordt gedaan met de globale gebruiker code of met individuele gebruikers",
+          "de": "Diese Karte wird ausgelöst, wenn ein Benutzer seinen Code eingegeben hat. In den Haupteinstellungen des Gerätes kannst du wählen, ob dies mit dem Global User Code (20) oder einzelnen Benutzern geschehen soll"
+        },
+        "tokens": [
+          {
+            "name": "button",
+            "type": "number",
+            "title": {
+              "en": "User-ID",
+              "nl": "Gebruiker-ID",
+              "de": "Benutzer-ID"
+            },
+            "example": "2"
+          }
+        ],
+        "args": [
+          {
             "type": "device",
+            "name": "device",
+            "filter": "driver_id=700045"
+          }
+        ]
+      },
+      {
+        "id": "ring_button",
+        "title": {
+          "en": "The bell button was pressed",
+          "nl": "De belknop is ingedrukt",
+          "de": "Der Klingel Button wurde betätigt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
             "filter": "driver_id=700045"
           },
           {
@@ -339,148 +593,25 @@
               {
                 "id": "0",
                 "label": {
-                  "en": "A User",
-                  "nl": "Een gebruiker"
+                  "en": "Pressed",
+                  "nl": "ingedrukt",
+                  "de": "Gedrückt"
                 }
               },
               {
-                "id": "1",
+                "id": "21",
                 "label": {
-                  "en": "User 1",
-                  "nl": "Gebruiker 1"
+                  "en": "1x pressed",
+                  "nl": "1x ingedrukt",
+                  "de": "1x gedrückt"
                 }
               },
               {
-                "id": "2",
+                "id": "22",
                 "label": {
-                  "en": "User 2",
-                  "nl": "Gebruiker 2"
-                }
-              },
-              {
-                "id": "3",
-                "label": {
-                  "en": "User 3",
-                  "nl": "Gebruiker 3"
-                }
-              },
-              {
-                "id": "4",
-                "label": {
-                  "en": "User 4",
-                  "nl": "Gebruiker 4"
-                }
-              },
-              {
-                "id": "5",
-                "label": {
-                  "en": "User 5",
-                  "nl": "Gebruiker 5"
-                }
-              },
-              {
-                "id": "6",
-                "label": {
-                  "en": "User 6",
-                  "nl": "Gebruiker 6"
-                }
-              },
-              {
-                "id": "7",
-                "label": {
-                  "en": "User 7",
-                  "nl": "Gebruiker 7"
-                }
-              },
-              {
-                "id": "8",
-                "label": {
-                  "en": "User 8",
-                  "nl": "Gebruiker 8"
-                }
-              },
-              {
-                "id": "9",
-                "label": {
-                  "en": "User 9",
-                  "nl": "Gebruiker 9"
-                }
-              },
-              {
-                "id": "10",
-                "label": {
-                  "en": "User 10",
-                  "nl": "Gebruiker 10"
-                }
-              },
-              {
-                "id": "11",
-                "label": {
-                  "en": "User 11",
-                  "nl": "Gebruiker 11"
-                }
-              },
-              {
-                "id": "12",
-                "label": {
-                  "en": "User 12",
-                  "nl": "Gebruiker 12"
-                }
-              },
-              {
-                "id": "13",
-                "label": {
-                  "en": "User 13",
-                  "nl": "Gebruiker 13"
-                }
-              },
-              {
-                "id": "14",
-                "label": {
-                  "en": "User 14",
-                  "nl": "Gebruiker 14"
-                }
-              },
-              {
-                "id": "15",
-                "label": {
-                  "en": "User 15",
-                  "nl": "Gebruiker 15"
-                }
-              },
-              {
-                "id": "16",
-                "label": {
-                  "en": "User 16",
-                  "nl": "Gebruiker 16"
-                }
-              },
-              {
-                "id": "17",
-                "label": {
-                  "en": "User 17",
-                  "nl": "Gebruiker 17"
-                }
-              },
-              {
-                "id": "18",
-                "label": {
-                  "en": "User 18",
-                  "nl": "Gebruiker 18"
-                }
-              },
-              {
-                "id": "19",
-                "label": {
-                  "en": "User 19",
-                  "nl": "Gebruiker 19"
-                }
-              },
-              {
-                "id": "20",
-                "label": {
-                  "en": "User 20",
-                  "nl": "Gebruiker 20"
+                  "en": "2x pressed",
+                  "nl": "2x ingedrukt",
+                  "de": "2x gedrückt"
                 }
               }
             ]
@@ -488,7 +619,23 @@
         ]
       },
       {
+        "id": "code_invalid",
+        "title": {
+          "en": "An invalid code has been entered",
+          "nl": "Er is een ongeldige code ingevoerd",
+          "de": "Ein ungültiger Code wurde eingegeben"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=700045"
+          }
+        ]
+      },
+      {
         "id": "alarm_battery",
+        "deprecated": true,
         "title": {
           "en": "The battery alarm turned on",
           "nl": "De batterijwaarschuwing gaat aan"
@@ -503,6 +650,66 @@
             "name": "device",
             "type": "device",
             "filter": "driver_id=700045"
+          }
+        ]
+      },
+      {
+        "id": "rain_on",
+        "title": {
+          "en": "It started raining.",
+          "nl": "Het begon te regenen",
+          "de": "Es hat angefangen zu regnen"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=700168"
+          }
+        ]
+      },
+      {
+        "id": "rain_off",
+        "title": {
+          "en": "It stopped raining",
+          "nl": "It stopped raining",
+          "de": "Es hat aufgehört zu regnen"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=700168"
+          }
+        ]
+      },
+      {
+        "id": "heavyrain_alarm_on",
+        "title": {
+          "en": "The heavy rain alarm is on",
+          "nl": "Het hevige regenalarm is geactiveerd",
+          "de": "Der Starkregen Alarm ist angegangen"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=700168"
+          }
+        ]
+      },
+      {
+        "id": "heavyrain_alarm_off",
+        "title": {
+          "en": "The heavy rain alarm is off",
+          "nl": "Het hevige regenalarm is afgegaan",
+          "de": "Der Starkregen Alarm ist ausgegangen"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=700168"
           }
         ]
       },
@@ -611,9 +818,95 @@
             ]
           }
         ]
+      },
+      {
+        "id": "mold_alarm_on",
+        "title": {
+          "en": "The mold alarm is on",
+          "nl": "Het schimmelalarm is aan",
+          "de": "Der Schimmel Alarm is angegangen"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=701202"
+          }
+        ]
+      },
+      {
+        "id": "mold_alarm_off",
+        "title": {
+          "en": "The mold alarm is off",
+          "nl": "Het schimmelalarm is uit",
+          "de": "Der Schimmel Alarm is ausgegangen"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=701202"
+          }
+        ]
+      },
+      {
+        "id": "dewpoint_value",
+        "title": {
+          "en": "The dew point has changed",
+          "nl": "Het dauwpunt is veranderd",
+          "de": "Der Taupunkt hat sich geändert"
+        },
+        "tokens": [
+          {
+            "name": "dewpoint",
+            "type": "number",
+            "title": {
+              "en": "Dew Point",
+              "nl": "Dauwpunt",
+              "de": "Taupunkt"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=701202"
+          }
+        ]
       }
     ],
     "conditions": [
+      {
+        "id": "is_raining",
+        "title": {
+          "en": "It is !{{|not}} raining",
+          "nl": "Het regent !{{|niet}}",
+          "de": "Es regnet !{{|nicht}}"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=700168"
+          }
+        ]
+      },
+      {
+        "id": "is_heavyrain_alarm",
+        "title": {
+          "en": "The heavy rain alarm is !{{on|off}}",
+          "nl": "Het hevige regen alarm is !{{aan|uit}}",
+          "de": "Der Starkregen Alarm ist !{{an|aus}}"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=700168"
+          }
+        ]
+      },
       {
         "id": "is_tilted",
         "title": {
@@ -636,7 +929,8 @@
       "id": "004001",
       "name": {
         "en": "Smoke Detector and Siren",
-        "nl": "Rook Detector en Sirene"
+        "nl": "Rook Detector en Sirene",
+        "de": "Rauchwarnmelder plus Sirenenfunktion"
       },
       "mobile": {
         "components": [
@@ -681,7 +975,8 @@
         "learnmode": {
           "instruction": {
             "en": "To Include, hit the little button on the wireless module for 1 second",
-            "nl": "Voor opname in Z-Wave netwerk 1 seconden op het kleine knopje drukken"
+            "nl": "Voor opname in Z-Wave netwerk 1 seconden op het kleine knopje drukken",
+            "de": "Ein einfacher Klick auf den Taster am Funkmodul (3) inkludiert das Gerät. Wird diese Taste zwei Sekunden lang gedrückt, wird die Inklusion mit unterdrückter Sicherheitsfunktion (Security Command Class ) durchgeführt."
           }
         },
         "associationGroups": [
@@ -693,19 +988,22 @@
           "1": {
             "hint": {
               "en": "Z-Wave Plus Lifeline",
-              "nl": "Z-Wave Plus Lifeline"
+              "nl": "Z-Wave Plus Lifeline",
+              "de": "Z-Wave Plus Lifeline"
             }
           },
           "2": {
             "hint": {
               "en": "Alarm Reports",
-              "nl": "Alarm Reports"
+              "nl": "Alarm Reports",
+              "de": "Alarmmeldung"
             }
           },
           "3": {
             "hint": {
               "en": "Switch Command when Alarm",
-              "nl": "Switch Command when Alarm"
+              "nl": "Switch Command when Alarm",
+              "de": "Schaltkommando bei Rauchalarm"
             }
           }
         }
@@ -732,11 +1030,13 @@
           "value": 10,
           "label": {
             "en": "Siren alarm sequence interval",
-            "nl": "Sirene alarm opeenvolging interval"
+            "nl": "Sirene alarm opeenvolging interval",
+            "de": "Sirenenalarm- Sequenzintervall"
           },
           "hint": {
             "en": "The additional siren is creating a different acoustic signal differentiate from the smoke alarm. This sound is partly on and partly off. This parameter defines the total length of the interval in seconds.",
-            "nl": "De extra sirene maakt een ander akoestisch signaal te onderscheiden van de rookmelder. Dit geluid is deels op en deels uit. Deze parameter definieert de totale lengte van het interval in seconden."
+            "nl": "De extra sirene maakt een ander akoestisch signaal te onderscheiden van de rookmelder. Dit geluid is deels op en deels uit. Deze parameter definieert de totale lengte van het interval in seconden.",
+            "de": "Die zusätzliche Sirene erzeugt ein anderes akustisches Signal, das sich vom Rauchmelder unterscheidet. Dieser Sound ist teilweise ein- und teilweise ausgeschaltet. Dieser Parameter definiert die Gesamtlänge des Intervalls in Sekunden."
           },
           "type": "number"
         },
@@ -749,11 +1049,13 @@
           "value": 8,
           "label": {
             "en": "Siren alarm tone length",
-            "nl": "Sirene alarmtoon lengte"
+            "nl": "Sirene alarmtoon lengte",
+            "de": "Sirenenalarm-Tonlänge"
           },
           "hint": {
             "en": "The additional siren is creating a different acoustic signal differentiate from the smoke alarm. This sound is partly on and partly off. This parameter defines the total length of the sound versus silence within this interval.",
-            "nl": "De extra sirene maakt een ander akoestisch signaal te onderscheiden van de rookmelder. Dit geluid is deels op en deels uit. Deze parameter definieert de totale lengte van het geluid versus stilte binnen dit interval."
+            "nl": "De extra sirene maakt een ander akoestisch signaal te onderscheiden van de rookmelder. Dit geluid is deels op en deels uit. Deze parameter definieert de totale lengte van het geluid versus stilte binnen dit interval.",
+            "de": "Die zusätzliche Sirene erzeugt ein anderes akustisches Signal, das sich vom Rauchmelder unterscheidet. Dieser Sound ist teilweise ein- und teilweise ausgeschaltet. Dieser Parameter definiert die Gesamtlänge des Klangs gegenüber der Stille innerhalb dieses Intervalls."
           },
           "type": "number"
         },
@@ -766,11 +1068,13 @@
           "value": 99,
           "label": {
             "en": "Value of BASIC On-Command",
-            "nl": "Waarde van Basic On-Commando"
+            "nl": "Waarde van Basic On-Commando",
+            "de": "Wert des Ein-Befehls"
           },
           "hint": {
             "en": "This defines what command is sent into association group 2",
-            "nl": "Dit definieerd welk commando wordt verzonden naar association group 2"
+            "nl": "Dit definieerd welk commando wordt verzonden naar association group 2",
+            "de": "Hiermit wird definiert, welcher Befehl an die Assoziationsgruppe 2 gesendet wird"
           },
           "type": "number"
         },
@@ -783,11 +1087,13 @@
           "value": 0,
           "label": {
             "en": "Value of BASIC Off-Command",
-            "nl": "Waarde van Basic Off-Commando"
+            "nl": "Waarde van Basic Off-Commando",
+            "de": "Wert des Aus-Befehls"
           },
           "hint": {
             "en": "This defines what command is sent into  association group 2",
-            "nl": "Dit definieerd welk commando wordt verzonden naar association group 2"
+            "nl": "Dit definieerd welk commando wordt verzonden naar association group 2",
+            "de": "Hiermit wird definiert, welcher Befehl an die Assoziationsgruppe 2 gesendet wird"
           },
           "type": "number"
         }
@@ -797,7 +1103,8 @@
       "id": "004407",
       "name": {
         "en": "CO2 Detector",
-        "nl": "CO2 Detector"
+        "nl": "CO2 Detector",
+        "de": "Kohlenmonoxid-Melder"
       },
       "zwave": {
         "manufacturerId": 340,
@@ -807,14 +1114,16 @@
           "image": "/drivers/004407/assets/learnmode.svg",
           "instruction": {
             "en": "Pressing the button 'Inclusion Button' for one second will include the device. If the button is pressed for at least 2 seconds the inclusion will be done without the Security Command Class",
-            "nl": "Als u gedurende één seconde op de knop 'Opnameknop' drukt, wordt het apparaat opgenomen. Als de knop minstens 2 seconden wordt ingedrukt, zal de opname worden uitgevoerd zonder de Security Command Class"
+            "nl": "Als u gedurende één seconde op de knop 'Opnameknop' drukt, wordt het apparaat opgenomen. Als de knop minstens 2 seconden wordt ingedrukt, zal de opname worden uitgevoerd zonder de Security Command Class",
+            "de": "Das drücken des Z-Wave Knopfes auf dem Funkmodul für eine Sekunde, aktiviert die Inklusion des Gerätes. Wenn der Knopf für mindestens 2 Sekunden gedrückt wird, wird die Inklusion ohne die Security Command Class durchgeführt"
           }
         },
         "unlearnmode": {
           "image": "/drivers/004407/assets/learnmode.svg",
           "instruction": {
             "en": "Pressing the button 'Inclusion Button' for one second will include the device. If the button is pressed for at least 2 seconds the inclusion will be done without the Security Command Class",
-            "nl": "Als u gedurende één seconde op de knop 'Opnameknop' drukt, wordt het apparaat opgenomen. Als de knop minstens 2 seconden wordt ingedrukt, zal de opname worden uitgevoerd zonder de Security Command Class"
+            "nl": "Als u gedurende één seconde op de knop 'Opnameknop' drukt, wordt het apparaat opgenomen. Als de knop minstens 2 seconden wordt ingedrukt, zal de opname worden uitgevoerd zonder de Security Command Class",
+            "de": "Das drücken des Z-Wave Knopfes auf dem Funkmodul für eine Sekunde, aktiviert die Exklusion des Gerätes"
           }
         },
         "associationGroups": [
@@ -825,13 +1134,15 @@
           "1": {
             "hint": {
               "en": "Z-Wave Plus Lifeline",
-              "nl": "Z-Wave Plus Lifeline"
+              "nl": "Z-Wave Plus Lifeline",
+              "de": "Z-Wave Plus Lifeline"
             }
           },
           "2": {
             "hint": {
               "en": "Switching Command when Alarm",
-              "nl": "Switching Command when Alarm"
+              "nl": "Switching Command when Alarm",
+              "de": "Bei CO-Alarm"
             }
           }
         }
@@ -850,30 +1161,40 @@
       "settings": [
         {
           "id": "1",
+          "zwave": {
+            "index": 1,
+            "size": 1
+          },
           "value": 99,
           "label": {
             "en": "Value of On-Command (0-255)",
-            "nl": "Value van On-Commando (0-255)"
+            "nl": "Value van On-Commando (0-255)",
+            "de": "Kommando bei CO-Alarm"
           },
           "hint": {
             "en": "Value of On-Command (0-255)",
-            "nl": "Value van On-Commando (0-255)"
+            "nl": "Value van On-Commando (0-255)",
+            "de": "Dieses BASIC Kommando wird ausgesendet, wenn ein CO Alarm erkannt wird"
           },
-          "_size": 1,
           "type": "number"
         },
         {
           "id": "2",
+          "zwave": {
+            "index": 2,
+            "size": 1
+          },
           "value": 0,
           "label": {
             "en": "Value of Off-Command (0-255)",
-            "nl": "Waarde van Off-Commando (0-255)"
+            "nl": "Waarde van Off-Commando (0-255)",
+            "de": "Kommando bei Löschung des CO-Alarms"
           },
           "hint": {
             "en": "Value of Off-Command (0-255)",
-            "nl": "Waarde van Off-Commando (0-255)"
+            "nl": "Waarde van Off-Commando (0-255)",
+            "de": "Dieses BASIC Kommando wird ausgesendet, wenn ein CO Alarm gelöscht wird."
           },
-          "_size": 1,
           "type": "number"
         }
       ]
@@ -922,7 +1243,8 @@
       },
       "name": {
         "en": "Solar Outdoor Siren",
-        "nl": "Solar Buiten Sirene"
+        "nl": "Solar Buiten Sirene",
+        "de": "Solarbetriebene Aussensirene"
       },
       "zwave": {
         "manufacturerId": 340,
@@ -932,7 +1254,8 @@
           "image": "/drivers/005107/assets/learnmode.svg",
           "instruction": {
             "en": "1. Open the case and turn on the power switch 2. Remove the metal mounting plate from the device. 3. Turn your controller into inclusion mode with a short single click on the internal inclusion button.",
-            "nl": "1. Open de behuizing en zet de sirenen aan met de schakelaar 2. Verwijder de metalen montageplaat van het apparaat. 3. Zet uw controller in inclusion mode en geef een korte enkele klik op de interne knop bij de schakelaar voor inclusion."
+            "nl": "1. Open de behuizing en zet de sirenen aan met de schakelaar 2. Verwijder de metalen montageplaat van het apparaat. 3. Zet uw controller in inclusion mode en geef een korte enkele klik op de interne knop bij de schakelaar voor inclusion.",
+            "de": "Öffne das Gehäuse und schalte die Stromversorgung ein (kleiner Schalter). Entferne die Metallplatte vom Gerät. Ein Einzelklick auf den Z-Wave Taster inkludiert das Gerät."
           }
         },
         "associationGroups": [
@@ -987,32 +1310,37 @@
               "id": "0",
               "label": {
                 "en": "Siren triggers when removed from holster. Must be turned off",
-                "nl": "Sirene gaat af zodra deze uit holster wordt genomen. Moet handmatig worden uitgezet"
+                "nl": "Sirene gaat af zodra deze uit holster wordt genomen. Moet handmatig worden uitgezet",
+                "de": "Alarm, wenn die Sirene vom der Halteplatte genommen wird."
               }
             },
             {
               "id": "1",
               "label": {
                 "en": "Siren triggers when removed from holster. Turns off when placed back (standard)",
-                "nl": "Sirene gaat af zodra deze uit holster wordt genomen. Gaat uit bij terugplaatsing (standaard)"
+                "nl": "Sirene gaat af zodra deze uit holster wordt genomen. Gaat uit bij terugplaatsing (standaard)",
+                "de": "Alarm, wenn die Sirene vom der Halteplatte genommen wird. Alarm bleibt ausgeschaltet, wenn wieder an die Halteplatte montiert wird."
               }
             },
             {
               "id": "2",
               "label": {
                 "en": "Siren does not triggers when removed from holster. (Service Mode)",
-                "nl": "Sirene gaat niet af wanneer uit holster genomen. (Service Mode)"
+                "nl": "Sirene gaat niet af wanneer uit holster genomen. (Service Mode)",
+                "de": "Alarm wird nicht ausgelöst, wenn die Sirene abgenommen wird. (Service-Modus)"
               }
             }
           ],
           "value": "1",
           "label": {
             "en": "Sabotage alarm setting",
-            "nl": "Sabotage alarm setting"
+            "nl": "Sabotage alarm setting",
+            "de": "Diebstahlschutz-Modus"
           },
           "hint": {
             "en": "Change the way how the siren reacts when pulled of the wall",
-            "nl": "Aanpassen hoe de sirene reageerd als hij uit zijn holster wordt gehaald"
+            "nl": "Aanpassen hoe de sirene reageerd als hij uit zijn holster wordt gehaald",
+            "de": "Dieser Parameter definiert, wie sich die Sirene verhalten soll, wenn Sie von der Montageplatte genommen wird."
           }
         },
         {
@@ -1027,32 +1355,37 @@
               "id": "0",
               "label": {
                 "en": "When Alarm only make sound",
-                "nl": "Bij Alarm alleen geluid"
+                "nl": "Bij Alarm alleen geluid",
+                "de": "Nur Sirene"
               }
             },
             {
               "id": "1",
               "label": {
                 "en": "When Alarm only blink lights (standard)",
-                "nl": "Bij Alarm alleen licht signalering (stanaard)"
+                "nl": "Bij Alarm alleen licht signalering (stanaard)",
+                "de": "Nur Blitzlicht (Standard)"
               }
             },
             {
               "id": "2",
               "label": {
                 "en": "When Alarm make sound an light",
-                "nl": "Bij Alarm zowel geluid als licht signalering"
+                "nl": "Bij Alarm zowel geluid als licht signalering",
+                "de": "Sirene plus Blitzlicht"
               }
             }
           ],
           "label": {
             "en": "Alarm mode",
-            "nl": "Alarm mode"
+            "nl": "Alarm mode",
+            "de": "Alarm Modus"
           },
           "value": "1",
           "hint": {
             "en": "Change the way the alarm will go off",
-            "nl": "Pas aan hoe het alarm af gaat"
+            "nl": "Pas aan hoe het alarm af gaat",
+            "de": "Dieser Parameter legt fest, wie die Siren bei Alarm reagieren soll."
           }
         },
         {
@@ -1069,33 +1402,36 @@
           "value": 0,
           "label": {
             "en": "Siren Auto Turnoff time",
-            "nl": "Automatische uitschakel tijd van sirene"
+            "nl": "Automatische uitschakel tijd van sirene",
+            "de": "Automatisches Ausschalten"
           },
           "hint": {
-            "en": "The amount of time before siren auto stops in minutes. (default: 0-UIT, range: 1 - 30)",
-            "nl": "De tijd dat de sirene afgaat in minuten voordat hij vanzelf uitgaat. (default: 0-UIT, range: 1 - 30)"
+            "en": "The amount of time before siren auto stops in minutes. (default: 0-Off, range: 1 - 30)",
+            "nl": "De tijd dat de sirene afgaat in minuten voordat hij vanzelf uitgaat. (default: 0-UIT, range: 1 - 30)",
+            "de": "Wenn dieser Parameter gesetzt ist, dann wird der Alarm an der Sirene automatisch nach der festgelegten Zeit in Minuten ausgeschaltet. (Standard: 0-Aus, Bereich: 1 - 30)"
           }
         },
         {
           "id": "siren_temp_correction",
           "zwave": {
             "index": 2,
-            "size": 1,
-            "signed": false
+            "size": 1
           },
           "value": 0,
           "type": "number",
           "label": {
             "en": "Temperature Adjustment",
-            "nl": "Temperatuur Correctie"
+            "nl": "Temperatuur Correctie",
+            "de": "Temperatur-Korrektur"
           },
           "hint": {
             "en": "Temperature correction. The given value changes the displayed temperature by 0.1C (-127 to 127)",
-            "nl": "Temperatuur correctie. De gegeven waarde verandert de weergegeven temperatuur met 0.1C (-127 tot 127)"
+            "nl": "Temperatuur correctie. De gegeven waarde verandert de weergegeven temperatuur met 0.1C (-127 tot 127)",
+            "de": "Mittels dieses Parameters kann der Temperaturwert kalibriert werden.  Der Wert verändert den Temperaturmesswert um 0.1K. (-127 bis 127)"
           },
           "attr": {
-            "min": 0,
-            "max": 255
+            "min": -127,
+            "max": 127
           }
         },
         {
@@ -1108,11 +1444,13 @@
           "value": 10,
           "label": {
             "en": "Send unsolicited Temperature Report",
-            "nl": "Het sturen van ongevraagde Temperatuur Report"
+            "nl": "Het sturen van ongevraagde Temperatuur Report",
+            "de": "Temperaturschwellwert"
           },
           "hint": {
             "en": "Temperature Threshold to send unsolicited Temperature Update. 10= 1 Celcius",
-            "nl": "Temperature Threshold om ongevraagde temperatuur update te sturen. 10 = 1 Celsius"
+            "nl": "Temperature Threshold om ongevraagde temperatuur update te sturen. 10 = 1 Celsius",
+            "de": "Dieser Parameter legt fest, ab welcher Temperaturabweichung automatisch ein Temperaturreport in die Lifeline gesendet wird. 1=0.1°C"
           },
           "type": "number",
           "attr": {
@@ -1130,11 +1468,13 @@
           "value": 15,
           "label": {
             "en": "Send unsolicited Temperature Report periodically after (N) wake up",
-            "nl": "Het sturen van ongevraagde Temperatuur Rapport periodiek na (N) wakker worden"
+            "nl": "Het sturen van ongevraagde Temperatuur Rapport periodiek na (N) wakker worden",
+            "de": "Regelmäßiges Senden eines Temperaturreports"
           },
           "hint": {
             "en": "If the value is set, after N wake up number (measurement is every 4 minutes) the temperature report will be sent. By default it is 15 = every 1 hour",
-            "nl": "Als de waarde is ingesteld, nadat N wake up nummer (meting elke 4 minuten) wordt het temperatuur rapport verzonden. Standaard is 15 = elk 1 uur"
+            "nl": "Als de waarde is ingesteld, nadat N wake up nummer (meting elke 4 minuten) wordt het temperatuur rapport verzonden. Standaard is 15 = elk 1 uur",
+            "de": "Wenn dieser Wert gesetzt ist wird aller X * 4 Minuten ein Temperaturreport in die Lifeline gesendet. (Standard=15, 1 Stunde)"
           },
           "type": "number",
           "attr": {
@@ -1148,7 +1488,8 @@
       "id": "005206",
       "name": {
         "en": "Z-Weather",
-        "nl": "Z-Weather"
+        "nl": "Z-Weather",
+        "de": "Z-Weather"
       },
       "class": "sensor",
       "capabilities": [
@@ -1159,6 +1500,8 @@
         "measure_pressure",
         "measure_dewpoint",
         "measure_battery",
+        "meter_power.solar",
+        "meter_power.wind",
         "alarm_battery"
       ],
       "images": {
@@ -1198,6 +1541,39 @@
           }
         ]
       },
+      "capabilitiesOptions": {
+        "measure_luminance": {
+          "units": {
+            "en": "%",
+            "nl": "%",
+            "de": "%"
+          }
+        },
+        "meter_power.solar": {
+          "units": {
+            "en": "kWh/m²",
+            "nl": "kWh/m²",
+            "de": "kWh/m²"
+          },
+          "title": {
+            "en": "Solar energy yield",
+            "nl": "Zonne-energie opbrengst",
+            "de": "Sonnenenergie Ertrag"
+          }
+        },
+        "meter_power.wind": {
+          "units": {
+            "en": "",
+            "nl": "",
+            "de": ""
+          },
+          "title": {
+            "en": "Windmill Counter",
+            "nl": "Windmolen",
+            "de": "Windrad Zähler"
+          }
+        }
+      },
       "zwave": {
         "manufacturerId": [
           340,
@@ -1208,14 +1584,12 @@
         "learnmode": {
           "instruction": {
             "en": "Push the button 3 times within 1.5 seconds. If the LED is not blinking after releasing the button, Z-Weather has not enough energy and must be charged for several hours in bright sunlight.",
-            "nl": "Druk 2 keer op de knop 3 binnen 1,5 seconden. Als de LED niet knippert na het loslaten van de toets heeft Z-Weather niet genoeg energie en moet worden opgeladen voor enkele uren in fel zonlicht."
+            "nl": "Druk 2 keer op de knop 3 binnen 1,5 seconden. Als de LED niet knippert na het loslaten van de toets heeft Z-Weather niet genoeg energie en moet worden opgeladen voor enkele uren in fel zonlicht.",
+            "de": "Dreimal den Taster drücken innerhalb von 1.5 Sekunden. Wenn die LED nicht leuchtet, dann ist nicht genügend Energie vorhanden und Z-Weather muss bei starker Sonneneinstrahlung mehrere Stunden lang aufgeladen werden."
           }
         },
         "associationGroups": [
-          1,
-          2,
-          3,
-          4
+          1
         ],
         "associationGroupsOptions": {
           "1": {
@@ -1225,17 +1599,20 @@
           },
           "2": {
             "hint": {
-              "en": "Too windy. If the threshold value for wind (Default value: 6m/s ) is exceeded, the basic set is sent to all group members. If the threshold value is exceeded for a long time, e.g. in case of storm for a couple of hours, the basic set value is sent repeatedly upon the scheduled wake up. Because in most cases the sun does not shine in case of storm, the repeated sending schedule may be between every one hour up to every five hours."
+              "en": "Too windy. If the threshold value for wind (Default value: 6m/s ) is exceeded, the basic set is sent to all group members. If the threshold value is exceeded for a long time, e.g. in case of storm for a couple of hours, the basic set value is sent repeatedly upon the scheduled wake up. Because in most cases the sun does not shine in case of storm, the repeated sending schedule may be between every one hour up to every five hours.",
+              "de": "Windstärke von mehr als 6 m/s (22 Km/h)"
             }
           },
           "3": {
             "hint": {
-              "en": "It is getting bright. Sends BASIC SET command in the morning when brightness reached trigger level (Default value: 37%)"
+              "en": "It is getting bright. Sends BASIC SET command in the morning when brightness reached trigger level (Default value: 37%)",
+              "de": "Zum Ende der Morgendämmerung, wenn es hell wird"
             }
           },
           "4": {
             "hint": {
-              "en": "It is getting dark. Sends BASIC SET command in the evening when brightness reached trigger level (Default value: 37%)"
+              "en": "It is getting dark. Sends BASIC SET command in the evening when brightness reached trigger level (Default value: 37%)",
+              "de": "Zum Ende der Abenddämmerung, wenn es dunkel wird"
             }
           }
         }
@@ -1249,10 +1626,12 @@
           },
           "value": 6,
           "label": {
-            "en": "Threshold for too much wind"
+            "en": "Threshold for too much wind",
+            "de": "Schwellwert für zu viel Wind"
           },
           "hint": {
-            "en": "Crossing this value on the rising edge, Z-Weather sends a Basic Set to the associated groups, serves the lifeline and sends a wake up notification."
+            "en": "Crossing this value on the rising edge, Z-Weather sends a Basic Set to the associated groups, serves the lifeline and sends a wake up notification.",
+            "de": "Bei Überschreiten dieses Grenzwertes wird ein Kommando an alle Geräte der Assoziationgruppe 2 gesendet."
           },
           "type": "number"
         },
@@ -1264,10 +1643,11 @@
           },
           "value": 37,
           "label": {
-            "en": "Threshold for twilight"
+            "en": "Schwellwert für Dämmerung"
           },
           "hint": {
-            "en": "Crossing this value from night to day, association group 3 is informed. Crossing this parameter from day to night, association group 4 is informed."
+            "en": "Crossing this value from night to day, association group 3 is informed. Crossing this parameter from day to night, association group 4 is informed.",
+            "de": "Bei Überschreiten dieses Wertes wird ein Kommando in die Geräte der Assoziationsgruppe 3 gesendet. Gleichermaßen wird beim Unterschreiten dieses Wertes wird ein Kommando in die Geräte der Assoziationsgruppe 4 gesendet."
           },
           "type": "number"
         }
@@ -1277,7 +1657,8 @@
       "id": "009006",
       "name": {
         "en": "Switch Indoor",
-        "nl": "Switch Indoor"
+        "nl": "Switch Indoor",
+        "de": "Schuko-Zwischenstecker"
       },
       "zwave": {
         "manufacturerId": 100,
@@ -1287,7 +1668,8 @@
           "image": "/drivers/009006/assets/learnmode.svg",
           "instruction": {
             "en": "Press button three times",
-            "nl": "Druk driemaal op knop"
+            "nl": "Druk driemaal op knop",
+            "de": "Dreifach-Klick auf die Taste inkludiert das Gerät. Schnelles Blinken der LED zeigt an daß sich das Gerät im Auslieferungszustand befindet."
           }
         },
         "associationGroups": [
@@ -1319,11 +1701,13 @@
           "value": 0,
           "label": {
             "en": "Auto switch off after (0 - 65535 sec)",
-            "nl": "Automatisch uitschakelen na (0 - 65535 sec)"
+            "nl": "Automatisch uitschakelen na (0 - 65535 sec)",
+            "de": "Automatisches Ausschalten nach Timeout (0 - 65535 Sek) "
           },
           "hint": {
             "en": "If not zero, automatically switch off after a user defined time in seconds.",
-            "nl": "Indien niet nul, automatisch uitschakelen na de ingestelde tijd in seconden."
+            "nl": "Indien niet nul, automatisch uitschakelen na de ingestelde tijd in seconden.",
+            "de": "Wenn dieser Parameter nicht 0 ist, dann schaltet das Gerät nach einer Zeit X nach erfolgtem Einschalten automatisch wieder aus. Die Verzögerung X wird durch diesen Parameter bestimmt "
           }
         },
         {
@@ -1335,12 +1719,14 @@
           "type": "checkbox",
           "label": {
             "en": "LED Mode",
-            "nl": "LED Modus"
+            "nl": "LED Modus",
+            "de": "LED Modus"
           },
           "value": true,
           "hint": {
             "en": "Led Switch Status indication. Default: enabled",
-            "nl": "Led Status Light indicatie. Standaard: ingeschakeld"
+            "nl": "Led Status Light indicatie. Standaard: ingeschakeld",
+            "de": "Dieser Parameter definiert, wie die LED genutzt werden soll"
           }
         },
         {
@@ -1352,12 +1738,14 @@
           "type": "checkbox",
           "label": {
             "en": "Restore state after power loss",
-            "nl": "Herstel toestand bij spanningsuitval"
+            "nl": "Herstel toestand bij spanningsuitval",
+            "de": "Status des Schalters nach einem Stromausfall"
           },
           "value": true,
           "hint": {
             "en": "After power loss the relay will switch to last known state if enabled (checked) or remain off if disabled (unchecked).\nDefault: enabled = checked)",
-            "nl": "Schakel terug naar laatst bekende schakelstand na spanningsuitval wanneer ingeschakeld (checked) of uit wanneer niet ingeschakeld (unchecked).\nStandaard: uitgeschakeld = unchecked)"
+            "nl": "Schakel terug naar laatst bekende schakelstand na spanningsuitval wanneer ingeschakeld (checked) of uit wanneer niet ingeschakeld (unchecked).\nStandaard: uitgeschakeld = unchecked)",
+            "de": "Dieser Parameter definiert, wie sich der Schalter nach einem Stromausfall verhalten soll. Aktiviert=Ausgewählt."
           }
         },
         {
@@ -1369,47 +1757,54 @@
           "type": "dropdown",
           "label": {
             "en": "Color of Led when turned off",
-            "nl": "Kleur Led wanneer uitgeschakeld"
+            "nl": "Kleur Led wanneer uitgeschakeld",
+            "de": "Farbe LED im Aus-Zustand"
           },
           "value": "0",
           "hint": {
             "en": "Choose youre off color",
-            "nl": "Kies u kleur bij uitstand"
+            "nl": "Kies u kleur bij uitstand",
+            "de": "Dies definiert die Farbe der LED wenn ausgeschaltet."
           },
           "values": [
             {
               "id": "0",
               "label": {
                 "en": "Off (default)",
-                "nl": "Uit (standaard)"
+                "nl": "Uit (standaard)",
+                "de": "Aus (Standard)"
               }
             },
             {
               "id": "1",
               "label": {
                 "en": "Red",
-                "nl": "Rood"
+                "nl": "Rood",
+                "de": "Rot"
               }
             },
             {
               "id": "2",
               "label": {
                 "en": "Green",
-                "nl": "Groen"
+                "nl": "Groen",
+                "de": "Grün"
               }
             },
             {
               "id": "3",
               "label": {
                 "en": "Blue",
-                "nl": "Blauw"
+                "nl": "Blauw",
+                "de": "Blau"
               }
             },
             {
               "id": "4",
               "label": {
                 "en": "Yellow",
-                "nl": "Geel"
+                "nl": "Geel",
+                "de": "Gelb"
               }
             }
           ]
@@ -1423,47 +1818,54 @@
           "type": "dropdown",
           "label": {
             "en": "Color of Led when turned On",
-            "nl": "Kleur Led wanneer Ingeschakeld"
+            "nl": "Kleur Led wanneer Ingeschakeld",
+            "de": "Farbe LED im An-Zustand"
           },
           "value": "3",
           "hint": {
             "en": "Choose youre On color",
-            "nl": "Kies u kleur wanneer Ingeschakeld"
+            "nl": "Kies u kleur wanneer Ingeschakeld",
+            "de": "Dies definiert die Farbe der LED wenn eingeschaltet."
           },
           "values": [
             {
               "id": "0",
               "label": {
                 "en": "Off",
-                "nl": "Uit"
+                "nl": "Uit",
+                "de": "Aus"
               }
             },
             {
               "id": "1",
               "label": {
                 "en": "Red",
-                "nl": "Rood"
+                "nl": "Rood",
+                "de": "Rot"
               }
             },
             {
               "id": "2",
               "label": {
                 "en": "Green",
-                "nl": "Groen"
+                "nl": "Groen",
+                "de": "Grün"
               }
             },
             {
               "id": "3",
               "label": {
                 "en": "Blue (default)",
-                "nl": "Blauw (standaard)"
+                "nl": "Blauw (standaard)",
+                "de": "Blau (Standard)"
               }
             },
             {
               "id": "4",
               "label": {
                 "en": "Yellow",
-                "nl": "Geel"
+                "nl": "Geel",
+                "de": "Gelb"
               }
             }
           ]
@@ -1474,7 +1876,8 @@
       "id": "009105",
       "name": {
         "en": "Switch Outdoor",
-        "nl": "Switch Outdoor"
+        "nl": "Switch Outdoor",
+        "de": "Schaltsteckdose Außenbereich"
       },
       "zwave": {
         "manufacturerId": [
@@ -1493,7 +1896,8 @@
           "image": "/drivers/009105/assets/learnmode.svg",
           "instruction": {
             "en": "Press button three times",
-            "nl": "Druk driemaal op knop"
+            "nl": "Druk driemaal op knop",
+            "de": "Dreifach-Klick auf die Taste inkludiert das Gerät. Schnelles Blinken der LED zeigt an daß sich das Gerät im Auslieferungszustand befindet."
           }
         },
         "associationGroups": [
@@ -1525,11 +1929,13 @@
           "value": 0,
           "label": {
             "en": "Auto switch off after (0 - 65535 sec)",
-            "nl": "Automatisch uitschakelen na (0 - 65535 sec)"
+            "nl": "Automatisch uitschakelen na (0 - 65535 sec)",
+            "de": "Automatisches Ausschalten nach Timeout (0 - 65535 sek)"
           },
           "hint": {
             "en": "If not zero, automatically switch off after a user defined time in seconds.",
-            "nl": "Indien niet nul, automatisch uitschakelen na de ingestelde tijd in seconden."
+            "nl": "Indien niet nul, automatisch uitschakelen na de ingestelde tijd in seconden.",
+            "de": "Wenn dieser Parameter nicht 0 ist, dann schaltet das Gerät nach einer Zeit X nach erfolgtem Einschalten automatisch wieder aus. Die Verzögerung X wird durch diesen Parameter bestimmt"
           }
         },
         {
@@ -1541,12 +1947,14 @@
           "type": "checkbox",
           "label": {
             "en": "LED Mode",
-            "nl": "LED Modus"
+            "nl": "LED Modus",
+            "de": "LED Modus"
           },
           "value": true,
           "hint": {
             "en": "Led Switch Status indication. Default: enabled",
-            "nl": "Led Status Light indicatie. Standaard: ingeschakeld"
+            "nl": "Led Status Light indicatie. Standaard: ingeschakeld",
+            "de": "Dieser Parameter definiert, wie die LED genutzt werden soll. Standard: Aktiviert"
           }
         },
         {
@@ -1558,12 +1966,14 @@
           "type": "checkbox",
           "label": {
             "en": "Restore state after power loss",
-            "nl": "Herstel toestand bij spanningsuitval"
+            "nl": "Herstel toestand bij spanningsuitval",
+            "de": "Status des Schalters nach einem Stromausfall"
           },
           "value": true,
           "hint": {
             "en": "After power loss the relay will switch to last known state if enabled (checked) or remain off if disabled (unchecked).\nDefault: enabled = checked)",
-            "nl": "Schakel terug naar laatst bekende schakelstand na spanningsuitval wanneer ingeschakeld (checked) of uit wanneer niet ingeschakeld (unchecked).\nStandaard: uitgeschakeld = unchecked)"
+            "nl": "Schakel terug naar laatst bekende schakelstand na spanningsuitval wanneer ingeschakeld (checked) of uit wanneer niet ingeschakeld (unchecked).\nStandaard: uitgeschakeld = unchecked)",
+            "de": "Dieser Parameter definiert, wie sich der Schalter nach einem Stromausfall verhalten soll. Wenn aktiviert geht es auf alten Schaltzustand. Wenn deaktiviert bleibt es aus. "
           }
         },
         {
@@ -1575,47 +1985,54 @@
           "type": "dropdown",
           "label": {
             "en": "Color of Led when turned off",
-            "nl": "Kleur Led wanneer uitgeschakeld"
+            "nl": "Kleur Led wanneer uitgeschakeld",
+            "de": "LED Farbe im Aus-Zustand"
           },
           "value": "0",
           "hint": {
             "en": "Choose youre off color",
-            "nl": "Kies u kleur bij uitstand"
+            "nl": "Kies u kleur bij uitstand",
+            "de": "LED Farbe für Aus-Zustand"
           },
           "values": [
             {
               "id": "0",
               "label": {
                 "en": "Off (default)",
-                "nl": "Uit (standaard)"
+                "nl": "Uit (standaard)",
+                "de": "Aus (Standard)"
               }
             },
             {
               "id": "1",
               "label": {
                 "en": "Red",
-                "nl": "Rood"
+                "nl": "Rood",
+                "de": "Rot"
               }
             },
             {
               "id": "2",
               "label": {
                 "en": "Green",
-                "nl": "Groen"
+                "nl": "Groen",
+                "de": "Grün"
               }
             },
             {
               "id": "3",
               "label": {
                 "en": "Blue",
-                "nl": "Blauw"
+                "nl": "Blauw",
+                "de": "Blau"
               }
             },
             {
               "id": "4",
               "label": {
                 "en": "Yellow",
-                "nl": "Geel"
+                "nl": "Geel",
+                "de": "Gelb"
               }
             }
           ]
@@ -1629,47 +2046,54 @@
           "type": "dropdown",
           "label": {
             "en": "Color of Led when turned On",
-            "nl": "Kleur Led wanneer Ingeschakeld"
+            "nl": "Kleur Led wanneer Ingeschakeld",
+            "de": "Farbe im An-Zustand"
           },
           "value": "3",
           "hint": {
             "en": "Choose youre On color",
-            "nl": "Kies u kleur wanneer Ingeschakeld"
+            "nl": "Kies u kleur wanneer Ingeschakeld",
+            "de": "LED Farbe für An-Zustand"
           },
           "values": [
             {
               "id": "0",
               "label": {
                 "en": "Off",
-                "nl": "Uit"
+                "nl": "Uit",
+                "de": "Aus"
               }
             },
             {
               "id": "1",
               "label": {
                 "en": "Red",
-                "nl": "Rood"
+                "nl": "Rood",
+                "de": "Rot"
               }
             },
             {
               "id": "2",
               "label": {
                 "en": "Green",
-                "nl": "Groen"
+                "nl": "Groen",
+                "de": "Grün"
               }
             },
             {
               "id": "3",
               "label": {
                 "en": "Blue (default)",
-                "nl": "Blauw (standaard)"
+                "nl": "Blauw (standaard)",
+                "de": "Blau (Standard)"
               }
             },
             {
               "id": "4",
               "label": {
                 "en": "Yellow",
-                "nl": "Geel"
+                "nl": "Geel",
+                "de": "Gelb"
               }
             }
           ]
@@ -1680,7 +2104,8 @@
       "id": "009204",
       "name": {
         "en": "KFOB-C Remote Control",
-        "nl": "KFOB-C Remote Control"
+        "nl": "KFOB-C Remote Control",
+        "de": "KFOB-C 4 Tasten Mini Fernbedienung"
       },
       "zwave": {
         "manufacturerId": [
@@ -1701,7 +2126,8 @@
           "image": "/drivers/009204/assets/learnmode.svg",
           "instruction": {
             "en": "Activate inclusion on the device by pressing any one of the four buttons for one second",
-            "nl": "Om pairing te activeren, druk langer een seconde op een van de knoppen van de afstandsbediening."
+            "nl": "Om pairing te activeren, druk langer een seconde op een van de knoppen van de afstandsbediening.",
+            "de": "Im Auslieferungszustad genügt das Drücken der Taste 1 für eine Sekunde, um den KFOB in ein Z-Wave zu inkludieren"
           }
         },
         "associationGroups": [
@@ -1719,22 +2145,26 @@
           },
           "2": {
             "hint": {
-              "en": "Control Group A, controlled by button 1 or single clicks of buttons 1 and 3"
+              "en": "Control Group A, controlled by button 1 or single clicks of buttons 1 and 3",
+              "de": "Steuerung durch Tastengruppe A"
             }
           },
           "3": {
             "hint": {
-              "en": "Control Group B, controlled by button 2 or single clicks of buttons 2 and 4 "
+              "en": "Control Group B, controlled by button 2 or single clicks of buttons 2 and 4",
+              "de": "Steuerung durch Tastengruppe B"
             }
           },
           "4": {
             "hint": {
-              "en": "Control Group C, controlled by button 3 or double clicks of buttons 1 and 3"
+              "en": "Control Group C, controlled by button 3 or double clicks of buttons 1 and 3",
+              "de": "Steuerung durch Tastengruppe C"
             }
           },
           "5": {
             "hint": {
-              "en": "Control Group D, controlled by button 4 or double clicks of buttons 2 and 4"
+              "en": "Control Group D, controlled by button 4 or double clicks of buttons 2 and 4",
+              "de": "Steuerung durch Tastengruppe D"
             }
           }
         }
@@ -1750,123 +2180,558 @@
       "settings": [
         {
           "id": "1",
-          "value": 1,
+          "value": "1",
+          "zwave": {
+            "index": 1,
+            "size": 1
+          },
           "label": {
-            "en": "Button 1 and 3 pair mode"
+            "en": "Button 1 and 3 pair mode",
+            "de": "Steuerungsmöglichkeiten der Tasten 1 und 3"
           },
           "hint": {
-            "en": "In separate mode button 1 works with group A, button 3 with groups C. Click is On, Hold is dimming Up, Double click is Off, Click-Hold is dimming Down. In pair button 1/3 are Up/Down correspondingly. Click is On/Off, Hold is dimming Up/Down. Single clicks works with group A, double click with group C."
+            "en": "In separate mode button 1 works with group A, button 3 with groups C. Click is On, Hold is dimming Up, Double click is Off, Click-Hold is dimming Down. In pair button 1/3 are Up/Down correspondingly. Click is On/Off, Hold is dimming Up/Down. Single clicks works with group A, double click with group C.",
+            "de": "Mit diesem Parameter wird festgelegt, welche Tastengruppen die Tasten 1 und 3 steuern sollen."
           },
-          "_size": 1,
-          "type": "number"
-        },
-        {
-          "id": "11",
-          "value": 8,
-          "label": {
-            "en": "Command to Control Group A"
-          },
-          "hint": {
-            "en": "This parameter defines the command to be sent to devices of control group A when the related button is pressed"
-          },
-          "_size": 1,
-          "type": "number"
-        },
-        {
-          "id": "12",
-          "value": 8,
-          "label": {
-            "en": "Command to Control Group B"
-          },
-          "hint": {
-            "en": "This parameter defines the command to be sent to devices of control group B when the related button is pressed"
-          },
-          "_size": 1,
-          "type": "number"
-        },
-        {
-          "id": "13",
-          "value": 8,
-          "label": {
-            "en": "Command to Control Group C"
-          },
-          "hint": {
-            "en": "This parameter defines the command to be sent to devices of control group C when the related button is pressed"
-          },
-          "_size": 1,
-          "type": "number"
-        },
-        {
-          "id": "14",
-          "value": 8,
-          "label": {
-            "en": "Command to Control Group D"
-          },
-          "hint": {
-            "en": "This parameter defines the command to be sent to devices of control group D when the related button is pressed"
-          },
-          "_size": 1,
-          "type": "number"
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Separately",
+                "de": "Eigene Steuergruppe pro Taste"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "In pair without double clicks",
+                "de": "Gemeinsames Steuern der Tastengruppe A, kein Doppelklick"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "In pair with double clicks",
+                "de": "Gemeinsames Steuern der Tastengruppe A, jeweils Doppelklicks für Tastengruppe C"
+              }
+            }
+          ]
         },
         {
           "id": "2",
-          "value": 1,
+          "value": "1",
+          "zwave": {
+            "index": 2,
+            "size": 1
+          },
           "label": {
-            "en": "Button 2 and 4 pair mode "
+            "en": "Button 2 and 4 pair mode",
+            "de": "Steuerungsmöglichkeiten der Tasten 2 und 4"
           },
           "hint": {
-            "en": "In separate mode button 2 works with control group B, button 4 with control group D. Click is On, Hold is dimming Up, Double click is Off, Click-Hold is dimming Down. In pair button B/D are Up/Down correspondingly. Click is On/Off, Hold is dimming Up/Down. Single clicks works with group B, double click with group D."
+            "en": "In separate mode button 2 works with control group B, button 4 with control group D. Click is ON, Hold is dimming UP, Double click is OFF, Click-Hold is dimming DOWN. In pair button B/D are UP/DOWN correspondingly. Click is ON/OFF, Hold is dimming UP/DOWN. Single clicks works with Group B, double click with Group D.",
+            "de": "Mit diesem Parameter wird festgelegt, welche Tastengruppen die Tasten 2 und 4 steuern sollen."
           },
-          "_size": 1,
-          "type": "number"
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Separately",
+                "de": "Eigene Steuergruppe pro Taste"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "In pair without double clicks",
+                "de": "Gemeinsames Steuern der Tastengruppe V, kein Doppelklick"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "In pair with double clicks",
+                "de": "Gemeinsames Steuern der Tastengruppe B, jeweils Doppelklicks für Tastengruppe D"
+              }
+            }
+          ]
+        },
+        {
+          "id": "11",
+          "value": "8",
+          "zwave": {
+            "index": 11,
+            "size": 1
+          },
+          "label": {
+            "en": "Command to Control Group A",
+            "de": "Kommando für Geräte der Tastengruppe A"
+          },
+          "hint": {
+            "en": "This parameter defines the command to be sent to devices of control group A when the related button is pressed",
+            "de": "Mit diesem Parameter wird festgelegt, welches Z-Wave Kommando die Geräte der Tastengruppe A erhalten"
+          },
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Disable",
+                "de": "Deaktiviert"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Switch on/off and Dim (send Basic Set and Switch Multilevel)",
+                "de": "Ein/Aus-Schalten und Dimmen (BASIC Set und Switch Multilevel)"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Switch on/off only (send Basic Set)",
+                "de": "Nur Ein/Aus-Schalten (BASIC Set)"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "Switch all",
+                "de": "Alle Geräte in Umgebung (Switch All)"
+              }
+            },
+            {
+              "id": "4",
+              "label": {
+                "en": "Send scenes",
+                "de": "Komplexe Szenen (mehrere Szenen pro Taste)"
+              }
+            },
+            {
+              "id": "5",
+              "label": {
+                "en": "Send preconfigured scenes",
+                "de": "Einfache Szenen (eine Szene pro Taste)"
+              }
+            },
+            {
+              "id": "6",
+              "label": {
+                "en": "Control devices in proximity",
+                "de": "Geräte in der nähe Steuern"
+              }
+            },
+            {
+              "id": "7",
+              "label": {
+                "en": "Control door lock",
+                "de": "Türschloss (Door Lock)"
+              }
+            },
+            {
+              "id": "8",
+              "label": {
+                "en": "Central scene to gateway (default)",
+                "de": "Zentrale Szenensteuerung im Gateway (Central Scene)"
+              }
+            }
+          ]
+        },
+        {
+          "id": "12",
+          "value": "8",
+          "zwave": {
+            "index": 12,
+            "size": 1
+          },
+          "label": {
+            "en": "Command to Control Group B",
+            "de": "Kommando für Geräte der Tastengruppe B"
+          },
+          "hint": {
+            "en": "This parameter defines the command to be sent to devices of control group B when the related button is pressed",
+            "de": "Mit diesem Parameter wird festgelegt, welches Z-Wave Kommando die Geräte der Tastengruppe B erhalten"
+          },
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Disable",
+                "de": "Deaktiviert"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Switch on/off and Dim (send Basic Set and Switch Multilevel)",
+                "de": "Ein/Aus-Schalten und Dimmen (BASIC Set und Switch Multilevel)"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Switch on/off only (send Basic Set)",
+                "de": "Nur Ein/Aus-Schalten (BASIC Set)"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "Switch all",
+                "de": "Alle Geräte in Umgebung (Switch All)"
+              }
+            },
+            {
+              "id": "4",
+              "label": {
+                "en": "Send scenes",
+                "de": "Komplexe Szenen (mehrere Szenen pro Taste)"
+              }
+            },
+            {
+              "id": "5",
+              "label": {
+                "en": "Send preconfigured scenes",
+                "de": "Einfache Szenen (eine Szene pro Taste)"
+              }
+            },
+            {
+              "id": "6",
+              "label": {
+                "en": "Control devices in proximity",
+                "de": "Geräte in der nähe Steuern"
+              }
+            },
+            {
+              "id": "7",
+              "label": {
+                "en": "Control door lock",
+                "de": "Türschloss (Door Lock)"
+              }
+            },
+            {
+              "id": "8",
+              "label": {
+                "en": "Central scene to gateway (default)",
+                "de": "Zentrale Szenensteuerung im Gateway (Central Scene)"
+              }
+            }
+          ]
+        },
+        {
+          "id": "13",
+          "value": "8",
+          "zwave": {
+            "index": 13,
+            "size": 1
+          },
+          "label": {
+            "en": "Command to Control Group C",
+            "de": "Kommando für Geräte der Tastengruppe C"
+          },
+          "hint": {
+            "en": "This parameter defines the command to be sent to devices of control group C when the related button is pressed",
+            "de": "Mit diesem Parameter wird festgelegt, welches Z-Wave Kommando die Geräte der Tastengruppe C erhalten"
+          },
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Disable",
+                "de": "Deaktiviert"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Switch on/off and Dim (send Basic Set and Switch Multilevel)",
+                "de": "Ein/Aus-Schalten und Dimmen (BASIC Set und Switch Multilevel)"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Switch on/off only (send Basic Set)",
+                "de": "Nur Ein/Aus-Schalten (BASIC Set)"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "Switch all",
+                "de": "Alle Geräte in Umgebung (Switch All)"
+              }
+            },
+            {
+              "id": "4",
+              "label": {
+                "en": "Send scenes",
+                "de": "Komplexe Szenen (mehrere Szenen pro Taste)"
+              }
+            },
+            {
+              "id": "5",
+              "label": {
+                "en": "Send preconfigured scenes",
+                "de": "Einfache Szenen (eine Szene pro Taste)"
+              }
+            },
+            {
+              "id": "6",
+              "label": {
+                "en": "Control devices in proximity",
+                "de": "Geräte in der nähe Steuern"
+              }
+            },
+            {
+              "id": "7",
+              "label": {
+                "en": "Control door lock",
+                "de": "Türschloss (Door Lock)"
+              }
+            },
+            {
+              "id": "8",
+              "label": {
+                "en": "Central scene to gateway (default)",
+                "de": "Zentrale Szenensteuerung im Gateway (Central Scene)"
+              }
+            }
+          ]
+        },
+        {
+          "id": "14",
+          "value": "8",
+          "zwave": {
+            "index": 14,
+            "size": 1
+          },
+          "label": {
+            "en": "Command to Control Group D",
+            "de": "Kommando für Geräte der Tastengruppe D"
+          },
+          "hint": {
+            "en": "This parameter defines the command to be sent to devices of control group D when the related button is pressed",
+            "de": "Mit diesem Parameter wird festgelegt, welches Z-Wave Kommando die Geräte der Tastengruppe D erhalten"
+          },
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Disable",
+                "de": "Deaktiviert"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Switch on/off and Dim (send Basic Set and Switch Multilevel)",
+                "de": "Ein/Aus-Schalten und Dimmen (BASIC Set und Switch Multilevel)"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Switch on/off only (send Basic Set)",
+                "de": "Nur Ein/Aus-Schalten (BASIC Set)"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "Switch all",
+                "de": "Alle Geräte in Umgebung (Switch All)"
+              }
+            },
+            {
+              "id": "4",
+              "label": {
+                "en": "Send scenes",
+                "de": "Komplexe Szenen (mehrere Szenen pro Taste)"
+              }
+            },
+            {
+              "id": "5",
+              "label": {
+                "en": "Send preconfigured scenes",
+                "de": "Einfache Szenen (eine Szene pro Taste)"
+              }
+            },
+            {
+              "id": "6",
+              "label": {
+                "en": "Control devices in proximity",
+                "de": "Geräte in der nähe Steuern"
+              }
+            },
+            {
+              "id": "7",
+              "label": {
+                "en": "Control door lock",
+                "de": "Türschloss (Door Lock)"
+              }
+            },
+            {
+              "id": "8",
+              "label": {
+                "en": "Central scene to gateway (default)",
+                "de": "Zentrale Szenensteuerung im Gateway (Central Scene)"
+              }
+            }
+          ]
         },
         {
           "id": "21",
-          "value": 1,
+          "value": "1",
+          "zwave": {
+            "index": 21,
+            "size": 1,
+            "signed": false
+          },
           "label": {
-            "en": "Send the following Switch All commands "
+            "en": "Send the following switch all commands",
+            "de": "Wie werden Geräte in der Umgebung geschaltet (SwitchAll)"
           },
           "hint": {
-            "en": ""
+            "en": "Send the following switch all commands ",
+            "de": "Dieser Parameter definiert, welche Befehle als Broadcast an alle Geräte in der Umgegend gesendet werden sollen. "
           },
-          "_size": 1,
-          "type": "number"
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "1",
+              "label": {
+                "en": "Switch off only",
+                "de": "Nur Ausschalten"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Switch on only",
+                "de": "Nur Einschalten"
+              }
+            },
+            {
+              "id": "255",
+              "label": {
+                "en": "Switch all on and off",
+                "de": "Einschalten und Ausschalten"
+              }
+            }
+          ]
         },
         {
           "id": "22",
-          "value": true,
+          "value": "0",
+          "zwave": {
+            "index": 22,
+            "size": 1
+          },
           "label": {
-            "en": "Invert buttons"
+            "en": "Invert buttons",
+            "de": "Invertiere Tastenbedeutung"
           },
           "hint": {
-            "en": ""
+            "en": "Invert buttons",
+            "de": "Dieser Parameter ermöglicht, die Kommandos einer Tastengruppe zu invertieren."
           },
-          "_size": 1,
-          "type": "checkbox"
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Yes",
+                "de": "Ja"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "No",
+                "de": "Nein"
+              }
+            }
+          ]
         },
         {
           "id": "25",
-          "value": true,
+          "value": "0",
+          "zwave": {
+            "index": 25,
+            "size": 1
+          },
           "label": {
-            "en": "Blocks wakeup even when wakeup interval is set"
+            "en": "Blocks wake up even when Wake Up Interval is set",
+            "de": "Blockierung des Aufweckens trotz gesetztem Aufweckinterval"
           },
           "hint": {
-            "en": ""
+            "en": "If the KFOB wakes up and there is no controller nearby, several unsuccessful communication attempts will drain battery. ",
+            "de": "Ermöglicht einen zusätzlichen Schutz gegen falsch konfigurierende Gateways"
           },
-          "_size": 1,
-          "type": "checkbox"
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Wake up is blocked",
+                "de": "Erlaubt"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Wake up is possible if configured accordingly",
+                "de": "Blockiert"
+              }
+            }
+          ]
         },
         {
-          "id": "30",
-          "value": 0,
+          "id": "25",
+          "value": "0",
+          "zwave": {
+            "index": 25,
+            "size": 1
+          },
           "label": {
-            "en": "Send unsolicited Battery Report on Wake Up"
+            "en": "Send unsolicited battery report on Wake Up",
+            "de": "Unaufgefordert bei Aufwecken einen Batteriereport senden"
           },
           "hint": {
-            "en": ""
+            "en": "Send unsolicited battery report on Wake Up",
+            "de": "Unaufgefordert bei Aufwecken einen Batteriereport senden"
           },
-          "_size": 1,
-          "type": "number"
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "No",
+                "de": "Nein"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "To same node as Wake Up Notification",
+                "de": "Zum Gateway"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Broadcast to neighbors",
+                "de": "Als Broadcast"
+              }
+            }
+          ]
         }
       ]
     },
@@ -1874,7 +2739,8 @@
       "id": "009402",
       "name": {
         "en": "10 Year Smoke Detector and Siren",
-        "nl": "10 Year Smoke Detector and Siren"
+        "nl": "10 Year Smoke Detector and Siren",
+        "de": "10-Jahres-Rauchmelder / Sirene"
       },
       "mobile": {
         "components": [
@@ -1925,7 +2791,8 @@
         "learnmode": {
           "instruction": {
             "en": "To include the device start the inclusion on your controller and then hit the little button on the wireless module for 1 second",
-            "nl": "Om het apparaat op te nemen start het inclusion proces op uw controller en druk dan de kleine knop op de draadloze module gedurende 1 seconde"
+            "nl": "Om het apparaat op te nemen start het inclusion proces op uw controller en druk dan de kleine knop op de draadloze module gedurende 1 seconde",
+            "de": "Um das Gerät in ein Z-Wave Netz einzubinden, drücken Sie im Inklusions-Modus den Z-Wave-Knopf. Wird der Knopf mindestens 3 Sekunden lang gedrückt, wird das Gerät ohne Security Command Class inkludiert"
           }
         },
         "associationGroups": [
@@ -1943,13 +2810,15 @@
           "2": {
             "hint": {
               "en": "Alarm Reports. All devices in this group will receive Alarm notifications (Smoke , Battery Low, Tamper)",
-              "nl": "Alarmrapporten. Alle apparaten in deze groep ontvangen alarmmeldingen (Rook, Lage Accu, Sabotage"
+              "nl": "Alarmrapporten. Alle apparaten in deze groep ontvangen alarmmeldingen (Rook, Lage Accu, Sabotage",
+              "de": "Alarm Benachrichtigungen"
             }
           },
           "3": {
             "hint": {
               "en": "Switching Command. All devices in this group will receive a BASIC SET command on Smoke Alarms. Configuration parameter 3 and 4 will define when ON and when OFF is sent.",
-              "nl": "Switching Command. Alle apparaten in deze groep krijgen een BASIC SET commando op smoke alarms. Configuratieparameters 3 en 4 zullen bepalen wanneer ON en wanneer OFF is verzonden."
+              "nl": "Switching Command. Alle apparaten in deze groep krijgen een BASIC SET commando op smoke alarms. Configuratieparameters 3 en 4 zullen bepalen wanneer ON en wanneer OFF is verzonden.",
+              "de": "Schaltkommando: Es wird ein BASIC Kommando gesendet."
             }
           }
         }
@@ -1998,11 +2867,13 @@
           "value": 10,
           "label": {
             "en": "Siren alarm sequence interval",
-            "nl": "Siren alarm sequence interval"
+            "nl": "Siren alarm sequence interval",
+            "de": "Sirenenalarm-Sequenzintervall"
           },
           "hint": {
             "en": "The additional siren is creating a different acoustic signal differentiate from the smoke alarm. This sound is partly on and partly off. This parameter defines the total length of the interval in seconds.",
-            "nl": "De extra sirene zorgt voor een ander akoestisch signaal dat onderscheidt van het rookalarm. Dit geluid is gedeeltelijk aan en gedeeltelijk af. Deze parameter definieert de totale lengte van het interval in seconden."
+            "nl": "De extra sirene zorgt voor een ander akoestisch signaal dat onderscheidt van het rookalarm. Dit geluid is gedeeltelijk aan en gedeeltelijk af. Deze parameter definieert de totale lengte van het interval in seconden.",
+            "de": "Die zusätzliche Sirene erzeugt ein anderes akustisches Signal, das sich vom Rauchmelder unterscheidet. Dieser Sound ist teilweise ein- und teilweise ausgeschaltet. Dieser Parameter definiert die Gesamtlänge des Intervalls in Sekunden."
           },
           "_size": 1,
           "type": "number"
@@ -2016,11 +2887,13 @@
           "value": 8,
           "label": {
             "en": "Siren alarm tone length",
-            "nl": "Siren alarm toon lengte"
+            "nl": "Siren alarm toon lengte",
+            "de": "Länge des Sirenenalarms"
           },
           "hint": {
             "en": "The additional siren is creating a different acoustic signal differentiate from the smoke alarm. This sound is partly on and partly off. This parameter defines the total length of the sound versus silence within this interval. Please make sure this value is always smaller (shorter time) than parameter 1 that defines the whole sequence.",
-            "nl": "De extra sirene zorgt voor een ander akoestisch signaal dat onderscheidt van het rookalarm. Dit geluid is gedeeltelijk aan en gedeeltelijk af. Deze parameter bepaalt de totale lengte van het geluid versus stilte binnen dit interval. Zorg ervoor dat deze waarde altijd kleiner is (kortere tijd) dan parameter 1 die de hele volgorde definieert."
+            "nl": "De extra sirene zorgt voor een ander akoestisch signaal dat onderscheidt van het rookalarm. Dit geluid is gedeeltelijk aan en gedeeltelijk af. Deze parameter bepaalt de totale lengte van het geluid versus stilte binnen dit interval. Zorg ervoor dat deze waarde altijd kleiner is (kortere tijd) dan parameter 1 die de hele volgorde definieert.",
+            "de": "Die zusätzliche Sirene erzeugt ein anderes akustisches Signal, das sich vom Rauchmelder unterscheidet. Dieser Sound ist teilweise ein- und teilweise ausgeschaltet. Dieser Parameter definiert die Gesamtlänge des Klangs gegenüber der Stille innerhalb dieses Intervalls. Bitte stellen Sie sicher, dass dieser Wert immer kleiner (kürzere Zeit) ist als Parameter 1, der die gesamte Sequenz definiert."
           },
           "_size": 1,
           "type": "number"
@@ -2029,37 +2902,43 @@
           "id": "3",
           "zwave": {
             "index": 3,
-            "size": 1
+            "size": 1,
+            "signed": false
           },
-          "value": true,
+          "value": 99,
           "label": {
             "en": "Value of On-Command",
-            "nl": "Waarde van On-Commando"
+            "nl": "Waarde van On-Commando",
+            "de": "Kommando bei erkanntem Rauchalarm"
           },
           "hint": {
-            "en": "This value is sent as BASIC Set to Association Group 3 when an Smoke Alarm occurs. If 255 can not be entered in your gateway use -1.",
-            "nl": "Deze waarde wordt verzonden als BASIC Set to Association Group 3 als er een rookmelder optreedt. Als 255 niet in uw gateway kan worden ingevoerd, gebruikt u -1."
+            "en": "This value is sent as BASIC Set to Association Group 3 when an Smoke Alarm occurs.",
+            "nl": "Deze waarde wordt verzonden als BASIC Set to Association Group 3 als er een rookmelder optreedt.",
+            "de": "Dieses Kommando wird in Assoziationgruppe 3 gesendet, wenn ein Rauchalarm erkannt wird. "
           },
           "_size": 1,
-          "type": "checkbox"
+          "type": "number"
         },
         {
           "id": "4",
           "zwave": {
             "index": 4,
-            "size": 1
+            "size": 1,
+            "signed": false
           },
-          "value": true,
+          "value": 0,
           "label": {
             "en": "Value of Off-Command",
-            "nl": "Waarde van Off-Commando"
+            "nl": "Waarde van Off-Commando",
+            "de": "Kommando bei gelöschtem Rauchalarm"
           },
           "hint": {
-            "en": "This value is sent as BASIC Set to Association Group 3 when an Smoke Alarm is cleared. If 255 can not be entered in your gateway use -1.",
-            "nl": "Deze waarde wordt verzonden als BASIC Set to Association Group 3 als een rookmelder is gewist. Als 255 niet in uw gateway kan worden ingevoerd, gebruikt u -1."
+            "en": "This value is sent as BASIC Set to Association Group 3 when an Smoke Alarm is cleared.",
+            "nl": "Deze waarde wordt verzonden als BASIC Set to Association Group 3 als een rookmelder is gewist.",
+            "de": "Dieses Kommando wird in Assoziationgruppe 3 gesendet, wenn ein Rauchalarm gelöscht wurde."
           },
           "_size": 1,
-          "type": "checkbox"
+          "type": "number"
         }
       ]
     },
@@ -2067,7 +2946,8 @@
       "id": "009501",
       "name": {
         "en": "Secure Flow Stop – Valve Shut-Off",
-        "nl": "Secure Flow Stop – Valve Shut-Off"
+        "nl": "Secure Flow Stop – Valve Shut-Off",
+        "de": "Sicherer Absperr-Aktor (Flow Stop)"
       },
       "zwave": {
         "manufacturerId": [
@@ -2080,7 +2960,8 @@
           "image": "/drivers/009501/assets/learnmode.svg",
           "instruction": {
             "en": "For inclusion and exclusion press the red button on the top of the enclosure 3 times",
-            "nl": "Voor inlcusion of exclusion drukt u op de rode knop boven op de behuizing 3 keer"
+            "nl": "Voor inlcusion of exclusion drukt u op de rode knop boven op de behuizing 3 keer",
+            "de": "Den roten Taster drei mal drücken. Um eine Inklsuion ohne Security-Funktion durchzuführen, wird die rote Taste zwei Mal gedrückt."
           }
         },
         "associationGroups": [
@@ -2106,12 +2987,14 @@
           "type": "checkbox",
           "label": {
             "en": "LED Mode",
-            "nl": "LED Modus"
+            "nl": "LED Modus",
+            "de": "LED Modus"
           },
           "value": true,
           "hint": {
             "en": "Led always on or off. Default: enabled",
-            "nl": "Led altijd aan of uit. Standaard: ingeschakeld"
+            "nl": "Led altijd aan of uit. Standaard: ingeschakeld",
+            "de": "LED immer an oder aus."
           }
         },
         {
@@ -2123,47 +3006,54 @@
           "type": "dropdown",
           "label": {
             "en": "Shut-off controller behavior",
-            "nl": "Shut-off controller gedrag"
+            "nl": "Shut-off controller gedrag",
+            "de": "Verhalten des Absperrreglers"
           },
           "value": "0",
           "hint": {
-            "en": "Choose youre off color",
-            "nl": "Kies u kleur bij uitstand"
+            "en": "Shut-off controller behavior",
+            "nl": "Shut-off controller gedrag",
+            "de": "Verhalten des Absperrreglers"
           },
           "values": [
             {
               "id": "0",
               "label": {
                 "en": "Remote and manually open/close(default)",
-                "nl": "Afstandsbediening en handmatig openen / sluiten(standaard)"
+                "nl": "Afstandsbediening en handmatig openen / sluiten(standaard)",
+                "de": "Ferngesteuertes und manuelles Öffnen/Schließen (Standard)"
               }
             },
             {
               "id": "1",
               "label": {
                 "en": "Remote open/close only",
-                "nl": "Afstandsbediening alleen open / sluiten"
+                "nl": "Afstandsbediening alleen open / sluiten",
+                "de": "Nur Ferngesteuertes Öffnen/Schließen"
               }
             },
             {
               "id": "2",
               "label": {
                 "en": "Only remote open; only manually closing",
-                "nl": "Alleen afstandsbediening open; Alleen handmatig sluiten"
+                "nl": "Alleen afstandsbediening open; Alleen handmatig sluiten",
+                "de": "Nur ferngesteuert öffnen; nur manuell schließen"
               }
             },
             {
               "id": "3",
               "label": {
                 "en": "Only manually open; only remote closing",
-                "nl": "Alleen handmatig open; Alleen afstandsbediening sluiten"
+                "nl": "Alleen handmatig open; Alleen afstandsbediening sluiten",
+                "de": "Nur manuell öffnen; nur ferngesteuert schließen"
               }
             },
             {
               "id": "4",
               "label": {
                 "en": "Manually open/close only",
-                "nl": "Handmatig open / sluiten alleen"
+                "nl": "Handmatig open / sluiten alleen",
+                "de": "Nur manuelles Öffnen/Schließen"
               }
             }
           ]
@@ -2174,7 +3064,8 @@
       "id": "010101",
       "name": {
         "en": "Wireless Thermo Valve",
-        "nl": "Draadloze Thermostaat Kraan"
+        "nl": "Draadloze Thermostaat Kraan",
+        "de": "Heizkörperthermostat"
       },
       "zwave": {
         "manufacturerId": 2,
@@ -2183,8 +3074,9 @@
         "wakeUpInterval": 1800,
         "learnmode": {
           "instruction": {
-            "en": "Press the middle button on your POPP Valve",
-            "nl": "Druk op de middelste knop van de POPP Thermostaatkraan"
+            "en": "Click on the middle button will confirm inclusion or exclusion and wakeup the device for wireless communication. A long push for 3 seconds on the middle buttons enters and leaves the management mode indicated by a M",
+            "nl": "Druk op de middelste knop van de POPP Thermostaatkraan",
+            "de": "3 Sekunden die Mitteltaste drücken um den Managementmode zu erreichen. Dieser wird mit einem M im Dislay angezeigt. Ein weiterer Tastendruck inkludiert/excludiert das Gerät."
           }
         },
         "associationGroups": [
@@ -2213,7 +3105,8 @@
       "id": "012501",
       "name": {
         "en": "Strike Lock Control",
-        "nl": "Strike Lock Control"
+        "nl": "Strike Lock Control",
+        "de": "Türöffner-Steuerung"
       },
       "images": {
         "large": "/drivers/012501/assets/images/large.jpg",
@@ -2230,7 +3123,8 @@
         "alarm_contact": {
           "title": {
             "en": "Door open (Contact Alarm)",
-            "nl": "Deur open (Contact alarm)"
+            "nl": "Deur open (Contact alarm)",
+            "de": "Tür offen (Kontakt Alarm)"
           }
         }
       },
@@ -2243,7 +3137,8 @@
           "image": "/drivers/012501/assets/learnmode.svg",
           "instruction": {
             "en": "Push the z-wave button on your Strike Lock Board once.",
-            "nl": "Druk 1 keer op de z-wave knop op de Strike Lock print."
+            "nl": "Druk 1 keer op de z-wave knop op de Strike Lock print.",
+            "de": "Drücke die Taste für 1 Sekunde. "
           }
         },
         "associationGroups": [
@@ -2261,7 +3156,13 @@
           "type": "dropdown",
           "label": {
             "en": "Force FliRS Mode",
-            "nl": "Force FliRS Modus"
+            "nl": "Force FliRS Modus",
+            "de": "Flirs erzwingen"
+          },
+          "hint": {
+            "en": "With this parameter you can force the flirs inclusion, e.g. if you want to operate the device with a 12V battery. ",
+            "nl": "Met deze parameter kunt u het opnemen van de flirs forceren, bijvoorbeeld als u het apparaat met een 12V-batterij wilt gebruiken.",
+            "de": "Mit diesem Parameter kann man die Flirs inklusion erzwingen, z.B Wenn das Gerät mit einer 12V batterie betreiben werden soll."
           },
           "value": "0",
           "values": [
@@ -2269,24 +3170,73 @@
               "id": "0",
               "label": {
                 "en": "Depends on Power Status in Inclusion Moment",
-                "nl": "Afhankelijk van Power Status op moment van Inclusion"
+                "nl": "Afhankelijk van Power Status op moment van Inclusion",
+                "de": "Abhängig von Power Status im Inclusion Moment"
               }
             },
             {
               "id": "1",
               "label": {
                 "en": "Force FLiRS Mode",
-                "nl": "Force FLiRS Modus"
+                "nl": "Force FLiRS Modus",
+                "de": "Flirs Modus erzwingen"
               }
             }
           ]
+        },
+        {
+          "id": "value_open_command",
+          "zwave": {
+            "index": 1,
+            "size": 1
+          },
+          "attr": {
+            "min": 0,
+            "max": 99
+          },
+          "type": "number",
+          "value": 0,
+          "label": {
+            "en": "Value of OPEN-Command",
+            "nl": "Waarde van OPEN-Commando",
+            "de": "Wert des OPEN-Befehls"
+          },
+          "hint": {
+            "en": "This parameter defines the value of the BASIC Set command issued into association group 2 when the dry contact opens. (1-99) (Default: 0)",
+            "nl": "Deze parameter definieert de waarde van de opdracht BASIC Set, die bij het openen van het droge contact in koppelgroep 2 wordt gegeven. (1-99) (standaard: 0)",
+            "de": "Dieser Parameter definiert den Wert des Befehls BASIC Set, der beim Öffnen des potenzialfreien Kontakts in die Assoziationsgruppe 2 ausgegeben wird. (1-99) (Standard: 0)"
+          }
+        },
+        {
+          "id": "value_close_command",
+          "zwave": {
+            "index": 2,
+            "size": 1
+          },
+          "attr": {
+            "min": 0,
+            "max": 99
+          },
+          "type": "number",
+          "value": 99,
+          "label": {
+            "en": "Value of CLOSE-Command",
+            "nl": "Waarde van CLOSE-Commando",
+            "de": "Wert des CLOSE-Befehls"
+          },
+          "hint": {
+            "en": "This parameter defines the value of the BASIC Set command issued into association group 2 when the dry contact closes. (1-99) (Default: 99)",
+            "nl": "Deze parameter definieert de waarde van de opdracht BASIC Set, die bij het sluiten van het droge contact in koppelgroep 2 wordt gegeven. (1-99) (Standaard: 99)",
+            "de": "Dieser Parameter definiert den Wert des Befehls BASIC Set, der beim Schließen des potenzialfreien Kontakts in die Assoziationsgruppe 2 ausgegeben wird. (1-99, Standard: 99)"
+          }
         }
       ]
     },
     {
       "id": "123580",
       "name": {
-        "en": "Dimmer 67G"
+        "en": "Dimmer 67G",
+        "de": "Zwischenstecker Dimmer 67G"
       },
       "zwave": {
         "manufacturerId": 340,
@@ -2296,7 +3246,8 @@
           "image": "/drivers/123580/assets/learnmode.svg",
           "instruction": {
             "en": "Press the (action) button 3 times on the Smart Dimmer to enter learn mode",
-            "nl": "Druk drie keer op de (actie) knop op de Smart Dimmer om de leer modus te activeren"
+            "nl": "Druk drie keer op de (actie) knop op de Smart Dimmer om de leer modus te activeren",
+            "de": "Drücke die (Aktions-)Taste am Smart Dimmer dreimal, um in den Lernmodus zu gelangen."
           }
         },
         "associationGroups": [
@@ -2360,40 +3311,46 @@
           "type": "dropdown",
           "label": {
             "en": "Led mode",
-            "nl": "Led mode"
+            "nl": "Led mode",
+            "de": "LED Modus"
           },
           "value": "3",
           "hint": {
             "en": "Set LED indication mode",
-            "nl": "Configureer de LED indicatie mode"
+            "nl": "Configureer de LED indicatie mode",
+            "de": "LED-Modus einstellen"
           },
           "values": [
             {
               "id": "0",
               "label": {
                 "en": "Disabled",
-                "nl": "Uitgeschakeld"
+                "nl": "Uitgeschakeld",
+                "de": "Ausgeschaltet"
               }
             },
             {
               "id": "1",
               "label": {
                 "en": "Show switch state",
-                "nl": "Toon de status (aan/uit)"
+                "nl": "Toon de status (aan/uit)",
+                "de": "Zeige den Schaltstatus"
               }
             },
             {
               "id": "2",
               "label": {
                 "en": "Night mode (inverted switch state)",
-                "nl": "Nacht modes (omgekeerde status)"
+                "nl": "Nacht modes (omgekeerde status)",
+                "de": "Nachtmodus (invertierter Schaltzustand)"
               }
             },
             {
               "id": "3",
               "label": {
                 "en": "Operated by Indicator Command Class (Default)",
-                "nl": "Werking volgens de configuratie van de Command Class (Standaard)"
+                "nl": "Werking volgens de configuratie van de Command Class (Standaard)",
+                "de": "Wird von der Indikatorbefehlsklasse gesteuert (Standard)"
               }
             }
           ]
@@ -2408,7 +3365,8 @@
           "type": "number",
           "label": {
             "en": "Automatically switch off after",
-            "nl": "Automatisch uitschakelen na"
+            "nl": "Automatisch uitschakelen na",
+            "de": "Automatisch ausschalten nach"
           },
           "value": 0,
           "attr": {
@@ -2417,7 +3375,8 @@
           },
           "hint": {
             "en": "If not zero, automatically switch off after a user defined time. Unit: Sec, Min: 0, Max: 65535, Default: 0",
-            "nl": "Als waarde niet 0 is dan uitschakelen na de opgegeven tijd. Eenheid sec., Min: 0, Max: 65535, Default: 0"
+            "nl": "Als waarde niet 0 is dan uitschakelen na de opgegeven tijd. Eenheid sec., Min: 0, Max: 65535, Default: 0",
+            "de": "Wenn nicht Null, schaltet sich das Gerät nach einer benutzerdefinierten Zeit automatisch aus. Einheit: Sekunden, Min: 0, Max: 65535, Standard: 0"
           }
         },
         {
@@ -2429,40 +3388,46 @@
           "type": "dropdown",
           "label": {
             "en": "What to do on RF off com",
-            "nl": "Wat moet er gebeuren bij RF uit commando"
+            "nl": "Wat moet er gebeuren bij RF uit commando",
+            "de": "Was tun bei RF off Kommando?"
           },
           "value": "0",
           "hint": {
             "en": "Defines how to interpret RF Off command. Can be used in conjunction with Auto Off function: Ignore - to switch on the light by motion detectors and switch it off after some amount of time: in case of multiple motion detectors each would try to switch the light off that would break logics; Switch on - to switch on the light on both On and Off paddle press on the remote and switch it off after some amount of time. Button off click will still work (if button operations are not disabled).",
-            "nl": "Defineert hoe moet worden gereageerd op RF off commando. Kan samen met Auto Off functie worden gebruikt: Negeren - om lampen aan te zetten in geval van beweging om vervolgens uit te schakelen na een bepaalde periode. In geval van meerdere bewegings sensoren zullen ze afzonderlijk de lamp proberen uit te zetten. Dat kan soms niet handig zijn. Aan zetten - Om de dimmer aan te zetten met zowel aan- als uit opdracht van de afstandbediening om vervolgens na een bepaalde periode uit te gaan. De uitknop zal dan nog steeds werken (wanneer de knop opdracht niet zijn uitgeschakeld.)"
+            "nl": "Defineert hoe moet worden gereageerd op RF off commando. Kan samen met Auto Off functie worden gebruikt: Negeren - om lampen aan te zetten in geval van beweging om vervolgens uit te schakelen na een bepaalde periode. In geval van meerdere bewegings sensoren zullen ze afzonderlijk de lamp proberen uit te zetten. Dat kan soms niet handig zijn. Aan zetten - Om de dimmer aan te zetten met zowel aan- als uit opdracht van de afstandbediening om vervolgens na een bepaalde periode uit te gaan. De uitknop zal dan nog steeds werken (wanneer de knop opdracht niet zijn uitgeschakeld.)",
+            "de": "Definiert, wie der Befehl RF Off zu interpretieren ist. Kann in Verbindung mit der Auto-Aus-Funktion verwendet werden: Ignorieren - das Licht durch Bewegungsmelder einzuschalten und nach einiger Zeit auszuschalten: bei mehreren Bewegungsmeldern würde jeder versuchen, das Licht auszuschalten, was die Logik unterbrechen würde; Schalte ein - um das Licht sowohl beim Ein- als auch beim Ausschalten einzuschalten, drücke die Fernbedienung und schalte es nach einiger Zeit aus. Der Klick auf den Button off funktioniert weiterhin (wenn die Tastenfunktionen nicht deaktiviert ist)."
           },
           "values": [
             {
               "id": "0",
               "label": {
                 "en": "Switch off (Default)",
-                "nl": "Uit zetten (Standaard)"
+                "nl": "Uit zetten (Standaard)",
+                "de": "Ausschalten (Standard)"
               }
             },
             {
               "id": "1",
               "label": {
                 "en": "Ignore",
-                "nl": "Negeren"
+                "nl": "Negeren",
+                "de": "Ignorieren"
               }
             },
             {
               "id": "2",
               "label": {
                 "en": "Switch on",
-                "nl": "Aan zetten"
+                "nl": "Aan zetten",
+                "de": "Einschalten"
               }
             },
             {
               "id": "3",
               "label": {
                 "en": "Switch on if load is off else switch off",
-                "nl": "Aan gaan wanneer er geen spanning is, ander uitschakelen"
+                "nl": "Aan gaan wanneer er geen spanning is, ander uitschakelen",
+                "de": "Einschalten bei ausgeschalteter Last ansonsten Ausschalten"
               }
             }
           ]
@@ -2476,26 +3441,30 @@
           "type": "dropdown",
           "label": {
             "en": "Ignore start level",
-            "nl": "Negeer het start niveau"
+            "nl": "Negeer het start niveau",
+            "de": "Startlevel ignorieren"
           },
           "value": "1",
           "hint": {
             "en": "Defines if the dimmer shall ignore start level in Start Level Change command despite it is specified or not",
-            "nl": "Defineert of de dimmer het start niveau zal negeren bij het Level Change commando. Ondanks of het wel of niet is gespecifieerd."
+            "nl": "Defineert of de dimmer het start niveau zal negeren bij het Level Change commando. Ondanks of het wel of niet is gespecifieerd.",
+            "de": "Legt fest, ob der Dimmer den Startpegel im Befehl Start Level Change ignorieren soll, obwohl er angegeben ist oder nicht."
           },
           "values": [
             {
               "id": "0",
               "label": {
                 "en": "No",
-                "nl": "Nee"
+                "nl": "Nee",
+                "de": "Nein"
               }
             },
             {
               "id": "1",
               "label": {
                 "en": "Yes (Default)",
-                "nl": "Ja (Standaard)"
+                "nl": "Ja (Standaard)",
+                "de": "Ja (Standard)"
               }
             }
           ]
@@ -2510,7 +3479,8 @@
           "type": "number",
           "label": {
             "en": "Speed for fast dimming",
-            "nl": "Snelheid bij snel dimmen"
+            "nl": "Snelheid bij snel dimmen",
+            "de": "Geschwindigkeit für schnelles dimmen"
           },
           "value": 30,
           "attr": {
@@ -2519,7 +3489,8 @@
           },
           "hint": {
             "en": "Time to dim on button presses and Set command (if it has no duration specified). If not 0, dimming will be done smoothly to preserve bulb life. 0=Instantly, 1-255 in 10ms units (Default 30)",
-            "nl": "Tijd voor het dimmen na het drukken van de knop en het Set commando (wanneer er geen periode is gedefineerd) Wanneer de waarde niet 0 is zal het dimmer geleidelijk worden gedaan om de lamp te sparen.  0=Direct, 1-255 in 10ms eenheden (Standaard 30)"
+            "nl": "Tijd voor het dimmen na het drukken van de knop en het Set commando (wanneer er geen periode is gedefineerd) Wanneer de waarde niet 0 is zal het dimmer geleidelijk worden gedaan om de lamp te sparen.  0=Direct, 1-255 in 10ms eenheden (Standaard 30)",
+            "de": "Zeit zum Dimmen bei Tastendruck und Set-Befehl (wenn keine Dauer angegeben ist). Wenn nicht 0, wird das Dimmen sanft durchgeführt, um die Lebensdauer der Lampe zu erhalten. 0=Sofort, 1-255 in 10ms Einheiten (Standard 30)"
           }
         },
         {
@@ -2532,7 +3503,8 @@
           "type": "number",
           "label": {
             "en": "Speed for slow dimming",
-            "nl": "Snelheid bij langzaam dimmen"
+            "nl": "Snelheid bij langzaam dimmen",
+            "de": "Geschwindigkeit für langsames dimmen"
           },
           "value": 3,
           "attr": {
@@ -2540,7 +3512,7 @@
             "max": 255
           },
           "hint": {
-            "en": "Time to dim on button holds and Start Level Change command (if it has no duration specified). Unit in Seconds 1-255 (Default 3)",
+            "en": "Zeit zum Dimmen bei gedrückter Taste und Start Level commando starten (wenn keine Dauer angegeben ist). Einheit in Sekunden 1-255 (Standard 3)",
             "nl": "Tijd om te dimmen na ingedrukte knop of Start Level commando (Wanneer er geen periode is gedefineerd) Eenheden in seconden 1-255 (Standaard 3)"
           }
         },
@@ -2553,11 +3525,12 @@
           "type": "dropdown",
           "label": {
             "en": "Behavior on 'Switch On",
-            "nl": "Gedrag bij aanschakelen"
+            "nl": "Gedrag bij aanschakelen",
+            "de": "Verhalten beim einschalten"
           },
           "value": "0",
           "hint": {
-            "en": "Defines the dim level on command 'ON'. On default he dimmer restores last dim level. This parameter allows configuring the maximum level on second On command (if already On) or to always switch on to maximum level.",
+            "en": "Definiert den Dimmwert bei Befehl 'ON'. Standardmäßig stellt der Dimmer den letzten Dimmwert wieder her. Mit diesem Parameter kann der Maximalpegel auf den zweiten Ein-Befehl eingestellt werden (falls bereits eingeschaltet) oder immer auf den Maximalpegel eingeschaltet werden",
             "nl": "Defineerd het dim niveau bij het AAN commando. Standaard zal de dimmer het laatste niveau gebruiken. Met deze instelling kan de maximale dim niveau voor het tweede AAN commando (wanneer de dimmer al aan staat) worden geconfigureerd of altijd aan gaan naar het maximale dim niveau. "
           },
           "values": [
@@ -2565,21 +3538,24 @@
               "id": "0",
               "label": {
                 "en": "last dim level (Default)",
-                "nl": "laatste dim niveau (Standaard)"
+                "nl": "laatste dim niveau (Standaard)",
+                "de": "Letzter Dim-Wert (Standard)"
               }
             },
             {
               "id": "1",
               "label": {
                 "en": "maximum dim level when already turned on",
-                "nl": "maximale dim niveau wanneer de dimmer al aan staat"
+                "nl": "maximale dim niveau wanneer de dimmer al aan staat",
+                "de": "Maximaler Dim-Wert wenn bereits eingeschaltet"
               }
             },
             {
               "id": "2",
               "label": {
                 "en": "always maximum dim level",
-                "nl": "Altijd het maximale dim niveau"
+                "nl": "Altijd het maximale dim niveau",
+                "de": "Immer Maximaler Dim-Wert"
               }
             }
           ]
@@ -2589,7 +3565,8 @@
     {
       "id": "123610",
       "name": {
-        "en": "Switch 68G"
+        "en": "Switch 68G",
+        "de": "Zwischenstecker Schalter 68G"
       },
       "zwave": {
         "manufacturerId": 340,
@@ -2630,40 +3607,46 @@
           "type": "dropdown",
           "label": {
             "en": "Led mode",
-            "nl": "Led mode"
+            "nl": "Led mode",
+            "de": "LED Modus"
           },
           "value": "3",
           "hint": {
             "en": "Set LED indication mode",
-            "nl": "Configureer de LED indicatie mode"
+            "nl": "Configureer de LED indicatie mode",
+            "de": "LED-Modus einstellen"
           },
           "values": [
             {
               "id": "0",
               "label": {
                 "en": "Disabled",
-                "nl": "Uitgeschakeld"
+                "nl": "Uitgeschakeld",
+                "de": "Ausgeschaltet"
               }
             },
             {
               "id": "1",
               "label": {
                 "en": "Show switch state",
-                "nl": "Toon de status (aan/uit)"
+                "nl": "Toon de status (aan/uit)",
+                "de": "Zeige den Schaltstatus"
               }
             },
             {
               "id": "2",
               "label": {
                 "en": "Night mode (inverted switch state)",
-                "nl": "Nacht modes (omgekeerde status)"
+                "nl": "Nacht modes (omgekeerde status)",
+                "de": "Nachtmodus (invertierter Schaltzustand)"
               }
             },
             {
               "id": "3",
               "label": {
                 "en": "Operated by Indicator Command Class (Default)",
-                "nl": "Werking volgens de configuratie van de Command Class (Standaard)"
+                "nl": "Werking volgens de configuratie van de Command Class (Standaard)",
+                "de": "Wird von der Indikatorbefehlsklasse gesteuert (Standard)"
               }
             }
           ]
@@ -2678,7 +3661,8 @@
           "type": "number",
           "label": {
             "en": "Automatically switch off after",
-            "nl": "Automatisch uitschakelen na"
+            "nl": "Automatisch uitschakelen na",
+            "de": "Automatisch ausschalten nach"
           },
           "value": 0,
           "attr": {
@@ -2687,7 +3671,8 @@
           },
           "hint": {
             "en": "If not zero, automatically switch off after a user defined time. Unit: Sec, Min: 0, Max: 65535, Default: 0",
-            "nl": "Als waarde niet 0 is dan uitschakelen na de opgegeven tijd. Eenheid sec., Min: 0, Max: 65535, Default: 0"
+            "nl": "Als waarde niet 0 is dan uitschakelen na de opgegeven tijd. Eenheid sec., Min: 0, Max: 65535, Default: 0",
+            "de": "Wenn nicht Null, schaltet sich das Gerät nach einer benutzerdefinierten Zeit automatisch aus. Einheit: Sekunden, Min: 0, Max: 65535, Standard: 0"
           }
         },
         {
@@ -2699,40 +3684,46 @@
           "type": "dropdown",
           "label": {
             "en": "What to do on RF off com",
-            "nl": "Wat moet er gebeuren bij RF uit commando"
+            "nl": "Wat moet er gebeuren bij RF uit commando",
+            "de": "Was tun bei RF off Kommando?"
           },
           "value": "0",
           "hint": {
             "en": "Defines how to interpret RF Off command. Can be used in conjunction with Auto Off function: Ignore - to switch on the light by motion detectors and switch it off after some amount of time: in case of multiple motion detectors each would try to switch the light off that would break logics; Switch on - to switch on the light on both On and Off paddle press on the remote and switch it off after some amount of time. Button off click will still work (if button operations are not disabled).",
-            "nl": "Defineert hoe moet worden gereageerd op RF off commando. Kan samen met Auto Off functie worden gebruikt: Negeren - om lampen aan te zetten in geval van beweging om vervolgens uit te schakelen na een bepaalde periode. In geval van meerdere bewegings sensoren zullen ze afzonderlijk de lamp proberen uit te zetten. Dat kan soms niet handig zijn. Aan zetten - Om de dimmer aan te zetten met zowel aan- als uit opdracht van de afstandbediening om vervolgens na een bepaalde periode uit te gaan. De uitknop zal dan nog steeds werken (wanneer de knop opdracht niet zijn uitgeschakeld.)"
+            "nl": "Defineert hoe moet worden gereageerd op RF off commando. Kan samen met Auto Off functie worden gebruikt: Negeren - om lampen aan te zetten in geval van beweging om vervolgens uit te schakelen na een bepaalde periode. In geval van meerdere bewegings sensoren zullen ze afzonderlijk de lamp proberen uit te zetten. Dat kan soms niet handig zijn. Aan zetten - Om de dimmer aan te zetten met zowel aan- als uit opdracht van de afstandbediening om vervolgens na een bepaalde periode uit te gaan. De uitknop zal dan nog steeds werken (wanneer de knop opdracht niet zijn uitgeschakeld.)",
+            "de": "Definiert, wie der Befehl RF Off zu interpretieren ist. Kann in Verbindung mit der Auto-Aus-Funktion verwendet werden: Ignorieren - das Licht durch Bewegungsmelder einzuschalten und nach einiger Zeit auszuschalten: bei mehreren Bewegungsmeldern würde jeder versuchen, das Licht auszuschalten, was die Logik unterbrechen würde; Schalte ein - um das Licht sowohl beim Ein- als auch beim Ausschalten einzuschalten, drücke die Fernbedienung und schalte es nach einiger Zeit aus. Der Klick auf den Button off funktioniert weiterhin (wenn die Tastenfunktionen nicht deaktiviert ist)."
           },
           "values": [
             {
               "id": "0",
               "label": {
                 "en": "Switch off (Default)",
-                "nl": "Uit zetten (Standaard)"
+                "nl": "Uit zetten (Standaard)",
+                "de": "Ausschalten (Standard)"
               }
             },
             {
               "id": "1",
               "label": {
                 "en": "Ignore",
-                "nl": "Negeren"
+                "nl": "Negeren",
+                "de": "Ignorieren"
               }
             },
             {
               "id": "2",
               "label": {
                 "en": "Switch on",
-                "nl": "Aan zetten"
+                "nl": "Aan zetten",
+                "de": "Einschalten"
               }
             },
             {
               "id": "3",
               "label": {
                 "en": "Switch on if load is off else switch off",
-                "nl": "Aan gaan wanneer er geen spanning is, ander uitschakelen"
+                "nl": "Aan gaan wanneer er geen spanning is, ander uitschakelen",
+                "de": "Einschalten bei ausgeschalteter Last ansonsten Ausschalten"
               }
             }
           ]
@@ -2746,12 +3737,14 @@
           "type": "checkbox",
           "label": {
             "en": "Switch state after power cycle",
-            "nl": "Schakelaar status na power restore"
+            "nl": "Schakelaar status na power restore",
+            "de": "Schaltzustand nach Stromausfall"
           },
           "value": true,
           "hint": {
             "en": "Defines if if the switch will go back to its previous state before loss of power",
-            "nl": "Defineert of de schakelaar terug gaat in zijn vorige status na spannings uitval/verlies."
+            "nl": "Defineert of de schakelaar terug gaat in zijn vorige status na spannings uitval/verlies.",
+            "de": "Legt fest, ob der Schalter vor Stromausfall in den vorherigen Zustand zurückkehrt."
           }
         }
       ]
@@ -2779,7 +3772,6 @@
           {
             "id": "sensor",
             "capabilities": [
-              "alarm_contact",
               "alarm_tamper",
               "alarm_battery"
             ],
@@ -2804,43 +3796,46 @@
         "learnmode": {
           "image": "/drivers/700045/assets/learnmode.svg",
           "instruction": {
-            "en": "Turn into Management Mode (remove cover), hit button 1 and confirm with * (Star Key)",
-            "nl": "Zet de keypad in Magaement Mode (verwijder cover), druk toets 1 en bevestig met * (Ster Kop)"
+            "en": "Turn into Network Mode (remove cover), hit button 4 and confirm with * (Star Key)",
+            "nl": "Zet de keypad in Network Mode (verwijder cover), druk toets 4 en bevestig met * (Ster Kop)",
+            "de": "Wechsel in den Netzwerkmodus (Abdeckung entfernen), Taste 4 drücken und mit * (Sterntaste) bestätigen"
           }
         },
         "unlearnmode": {
           "image": "/drivers/700045/assets/learnmode.svg",
           "instruction": {
-            "en": "Turn into Management Mode (remove cover), hit button 1 and confirm with * (Star Key)",
-            "nl": "Zet de keypad in Magaement Mode (verwijder cover), druk toets 1 en bevestig met * (Ster Kop)"
+            "en": "Turn into Network Mode (remove cover), hit button 4 and confirm with * (Star Key)",
+            "nl": "Zet de keypad in Network Mode (verwijder cover), druk toets 4 en bevestig met * (Ster Kop)",
+            "de": "Wechsel in den Netzwerkmodus (Abdeckung entfernen), Taste 4 drücken und mit * (Sterntaste) bestätigen"
           }
         },
         "associationGroups": [
-          1,
-          2,
-          3
+          1
         ],
         "associationGroupsOptions": {
           "1": {
             "hint": {
-              "en": "Z-Wave Plus Lifeline"
+              "en": "Z-Wave Plus Lifeline",
+              "nl": "Z-Wave Plus Lifeline",
+              "de": "Z-Wave Plus Lifeline"
             }
           },
           "2": {
             "hint": {
-              "en": "Door Lock Control"
+              "en": "Türschloss-Steuerung"
             }
           },
           "3": {
             "hint": {
-              "en": "Ring Button Control"
+              "en": "Ring Button Control",
+              "nl": "Ring Button Control",
+              "de": "Klingeltaster-Steuerung"
             }
           }
         }
       },
       "class": "other",
       "capabilities": [
-        "alarm_contact",
         "alarm_tamper",
         "measure_battery",
         "alarm_battery"
@@ -2848,105 +3843,23 @@
       "images": {
         "large": "/drivers/700045/assets/images/large.jpg",
         "small": "/drivers/700045/assets/images/small.jpg"
-      },
-      "settings": [
-        {
-          "id": "1",
-          "value": 0,
-          "label": {
-            "en": "Door Lock Automatic Secure Timeout (0-127 seconds)",
-            "nl": "Deurvergrendeling automatische vergrendeling time-out (0-127 seconden)"
-          },
-          "hint": {
-            "en": "After this time a CLOSE command is sent to the controlled door lock. On default no CLOSE command is sent assuming that the strike lock has its own timeout set",
-            "nl": "Na deze tijd wordt een CLOSE-opdracht naar het gecontroleerde deurslot verzonden. Standaard wordt er geen CLOSE-opdracht verzonden, ervan uitgaande dat de strike-lock zijn eigen time-out heeft ingesteld"
-          },
-          "_size": 1,
-          "type": "number"
-        },
-        {
-          "id": "2",
-          "value": 3,
-          "label": {
-            "en": "Ring Button Press Basic Command OFF Timeout (3-127 seconds)",
-            "nl": "Deurbel signaal time-out (0-127 seconden)"
-          },
-          "hint": {
-            "en": "After this time the Door Bell will receive an OF command regardless of the actuall button is pressed or not",
-            "nl": "Na deze tijd ontvangt de deurbel een OFF-commando, ongeacht of de actuall-knop is ingedrukt of niet"
-          },
-          "_size": 1,
-          "type": "number"
-        },
-        {
-          "id": "3",
-          "value": 255,
-          "label": {
-            "en": "Ring Button ON Command",
-            "nl": "Deurbell Knop ON commando"
-          },
-          "hint": {
-            "en": "This value is sent into Association Group 3 when the door bell button is pressed (0-255)",
-            "nl": "Deze waarde wordt naar Associatiegroep 3 verzonden wanneer op de belknop wordt gedrukt (0-255)"
-          },
-          "_size": 1,
-          "type": "number"
-        },
-        {
-          "id": "4",
-          "value": 0,
-          "label": {
-            "en": "Ring Button OFF Command"
-          },
-          "hint": {
-            "en": "This value is sent into Association Group 3 when the door bell button is released or the timeout has reached (0-255)",
-            "nl": "Deze waarde wordt naar Associatiegroep 3 verzonden wanneer op de belknop wordt losgelaten (0-255)"
-          },
-          "_size": 1,
-          "type": "number"
-        },
-        {
-          "id": "5",
-          "value": true,
-          "label": {
-            "en": "Central Scene ID for User Codes",
-            "nl": "Central Scene ID voor gebruikerscodes"
-          },
-          "hint": {
-            "en": "This parameter defines if different user codes shall cause individual or similar scene ID sent to the main controller",
-            "nl": "Deze parameter bepaalt of verschillende gebruikerscodes individuele of soortgelijke scene-ID's naar de hoofdcontroller moeten sturen"
-          },
-          "_size": 1,
-          "type": "checkbox"
-        },
-        {
-          "id": "6",
-          "value": true,
-          "label": {
-            "en": "Buzzer Confirmation",
-            "nl": "Buzzer confirmatie"
-          },
-          "hint": {
-            "en": "This parameter defines if the internal buzzer shall be used to confirm button presses",
-            "nl": "Deze parameter bepaalt of de interne zoemer moet worden gebruikt om het indrukken van de knoppen te bevestigen"
-          },
-          "_size": 1,
-          "type": "checkbox"
-        }
-      ]
+      }
     },
     {
       "id": "700168",
       "name": {
         "en": "Z-Rain - Rain Sensor",
-        "nl": "Z-Rain - Regen Sensor"
+        "nl": "Z-Rain - Regen Sensor",
+        "de": "Z-Rain - Regen Sensor"
       },
       "capabilities": [
         "meter_rain",
         "measure_rain",
+        "measure_rain.total",
         "measure_battery",
         "alarm_battery",
-        "alarm_rain"
+        "is_rain",
+        "alarm_heavyrain"
       ],
       "mobile": {
         "components": [
@@ -2972,6 +3885,22 @@
           }
         ]
       },
+      "capabilitiesOptions": {
+        "measure_rain.total": {
+          "title": {
+            "en": "Rain Total",
+            "nl": "Rain Totel",
+            "de": "Regen Gesamt"
+          }
+        },
+        "measure_rain": {
+          "units": {
+            "en": "mm/h",
+            "nl": "mm/h",
+            "de": "mm/h"
+          }
+        }
+      },
       "zwave": {
         "manufacturerId": 340,
         "productTypeId": 4,
@@ -2995,12 +3924,14 @@
           },
           "2": {
             "hint": {
-              "en": "Switching Command when Rain (> 0 mm/h). Basic Set Command is sent."
+              "en": "Switching Command when Rain (> 0 mm/h). Basic Set Command is sent.",
+              "de": "Schaltbefehl bei Regen (> 0 mm/h). Der Befehl Basic Set wird gesendet."
             }
           },
           "3": {
             "hint": {
-              "en": "Heavy Rain detected. Basic Set Command is sent."
+              "en": "Heavy Rain detected. Basic Set Command is sent.",
+              "de": "Starker Regen festgestellt. Der Befehl Basic Set wird gesendet."
             }
           }
         },
@@ -3024,6 +3955,11 @@
             "id": 7,
             "size": 1,
             "value": 1
+          },
+          {
+            "id": 5,
+            "size": 1,
+            "value": 25
           }
         ]
       },
@@ -3043,11 +3979,13 @@
           "type": "number",
           "label": {
             "en": "Total rain counter",
-            "nl": "Totale regen teller"
+            "nl": "Totale regen teller",
+            "de": "Gesamtregenzähler"
           },
           "hint": {
             "en": "This values shows the total count of rain from the moment of inclusion in mm water level. By writing this value this counter can be reset. (0-32000)",
-            "nl": "Deze waarde geeft de totale hoeveelheid regen vanaf het toevoegen aan de controler in mm weer. Door het instellen van deze waarde kan de teller gereset worden (0-32000)"
+            "nl": "Deze waarde geeft de totale hoeveelheid regen vanaf het toevoegen aan de controler in mm weer. Door het instellen van deze waarde kan de teller gereset worden (0-32000)",
+            "de": "Die Werte zeigen die Gesamtzahl des Regens vom Moment der Einbeziehung in mm Wassermenge. Durch setzen dieses Wertes kann dieser Zähler zurückgesetzt werden. (0-32000)"
           },
           "attr": {
             "min": 0,
@@ -3063,11 +4001,13 @@
           "value": 99,
           "label": {
             "en": "Rain start command",
-            "nl": "Regen start commando"
+            "nl": "Regen start commando",
+            "de": "Regen beginn Befehl"
           },
           "hint": {
             "en": "This BASIC Set Command value is sent out into Association Group 2 when the device detects start of rain",
-            "nl": "Dit BASIC Set commando wordt naar association group 2 gestuurd als er regen wordt waargenomen."
+            "nl": "Dit BASIC Set commando wordt naar association group 2 gestuurd als er regen wordt waargenomen.",
+            "de": "Dieser Wert wird in die Assoziationsgruppe 2 geschickt, wenn das Gerät den Regenvorgang erkennt"
           },
           "type": "number",
           "attr": {
@@ -3084,11 +4024,13 @@
           "value": 0,
           "label": {
             "en": "Rain stop command",
-            "nl": "Regen stop commando"
+            "nl": "Regen stop commando",
+            "de": "Regen Ende  Befehl"
           },
           "hint": {
             "en": "This BASIC Set Command value is sent out into Association Group 2 when the device detects stop of rain",
-            "nl": "Dit BASIC Set commando wordt naar association group 2 gestuurd als er geen regen meer wordt waargenomen."
+            "nl": "Dit BASIC Set commando wordt naar association group 2 gestuurd als er geen regen meer wordt waargenomen.",
+            "de": "Dieser Wert wird in die Assoziationsgruppe 2 verschickt, wenn das Gerät den Regenvorgang  beendet hat"
           },
           "type": "number",
           "attr": {
@@ -3103,15 +4045,17 @@
             "size": 1,
             "signed": false
           },
-          "value": 255,
+          "value": 25,
           "type": "number",
           "label": {
             "en": "Heavy rain definition.",
-            "nl": "Zware regen definitie."
+            "nl": "Zware regen definitie.",
+            "de": "Starkregen Grenzwert"
           },
           "hint": {
-            "en": "This threshold defines when a heavy rain condition is hit in mm/hour. In most countries this is defined as > 15 mm rain per hour. The default value however is to turn this function off.",
-            "nl": "Stelt in wat als zware regen wordt gezien in mm/uur. In de meeste landen is dit > 15 mm regen per uur. Standaard staat deze functie uit."
+            "en": "This threshold defines when a heavy rain condition is hit in mm/hour. In most countries this is defined as > 15 mm rain per hour. (Default 25 mm/h)",
+            "nl": "Stelt in wat als zware regen wordt gezien in mm/uur. In de meeste landen is dit > 15 mm regen per uur. (Default 25 mm/h)",
+            "de": "Diese Schwelle definiert, wann ein starker Regenzustand getroffen wird. In den meisten Ländern ist dies definiert als > 15 mm Regen pro Stunde. (Standard 25 mm/h)"
           },
           "attr": {
             "min": 0,
@@ -3127,11 +4071,13 @@
           "value": 98,
           "label": {
             "en": "Heavy rain start command",
-            "nl": "Zware regen start commando"
+            "nl": "Zware regen start commando",
+            "de": "Starkregen beginnt Kommando"
           },
           "hint": {
             "en": "This BASIC Set Command value is sent out into Association Group 3 when the device detects start of heavy rain",
-            "nl": "Dit BASIC Set commando wordt naar association group 3 gestuurd als er zware regen wordt waargenomen."
+            "nl": "Dit BASIC Set commando wordt naar association group 3 gestuurd als er zware regen wordt waargenomen.",
+            "de": "Dieser Wert wird in die Assoziationsgruppe 3 verschickt, wenn das Gerät den Beginn des starken Regens erkennt"
           },
           "type": "number",
           "attr": {
@@ -3148,17 +4094,95 @@
           "value": 1,
           "label": {
             "en": "Heavy rain stop command",
-            "nl": "Zware regen stop commando"
+            "nl": "Zware regen stop commando",
+            "de": "Starkregen Ende Kommando"
           },
           "hint": {
             "en": "This BASIC Set Command value is sent out into Association Group 3 when the device detects stop of heavy rain",
-            "nl": "Dit BASIC Set commando wordt naar association group 3 gestuurd als er geen zware regen meer wordt waargenomen."
+            "nl": "Dit BASIC Set commando wordt naar association group 3 gestuurd als er geen zware regen meer wordt waargenomen.",
+            "de": "Dieser Wert wird in die Assoziationsgruppe 3 verschickt, wenn das Gerät den Ende des starken Regens erkennt"
           },
           "type": "number",
           "attr": {
             "min": 0,
             "max": 99
           }
+        }
+      ]
+    },
+    {
+      "id": "700793",
+      "name": {
+        "en": "Power Plug",
+        "nl": "Power Plug",
+        "de": "Power Plug"
+      },
+      "zwave": {
+        "manufacturerId": 340,
+        "productTypeId": 3,
+        "productId": 4098,
+        "learnmode": {
+          "instruction": {
+            "en": "Press the button on the wall plug 3 times whithin a period of ariound 2 seconds. ",
+            "nl": "Druk 3 keer op de knop op de wandcontactdoos, binnen een periode van ongeveer 2 seconden. ",
+            "de": "Drücken die Taste am Stecker 3 mal innerhalb von ca. 2 Sekunden. "
+          }
+        },
+        "associationGroups": [
+          1,
+          1
+        ]
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "measure_power",
+        "meter_power"
+      ],
+      "images": {
+        "large": "/drivers/700793/assets/images/large.png",
+        "small": "/drivers/700793/assets/images/small.png"
+      },
+      "settings": [
+        {
+          "id": "condition_power_failure",
+          "zwave": {
+            "index": 1,
+            "size": 1
+          },
+          "type": "dropdown",
+          "value": "0",
+          "label": {
+            "en": "Condition after power failure",
+            "nl": "Voorwaarde na stroomuitval",
+            "de": "Zustand nach Stromausfall"
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Always off (default)",
+                "nl": "Altijd uit (standaard)",
+                "de": "Immer aus (Standard)"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Always on",
+                "nl": "Altijd aan",
+                "de": "Immer an"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Last status",
+                "nl": "Laatste status",
+                "de": "Letzter Status"
+              }
+            }
+          ]
         }
       ]
     },
@@ -3564,46 +4588,48 @@
           "id": "basic_group_on",
           "zwave": {
             "index": 7,
-            "size": 1
+            "size": 1,
+            "signed": false
           },
           "attr": {
-            "min": -128,
-            "max": 127
+            "min": 0,
+            "max": 255
           },
           "type": "number",
-          "value": -1,
+          "value": 255,
           "label": {
             "en": "BASIC command value sent to 2nd Association Group on On event",
             "nl": "BASIC command verzonden naar 2de Associatiegroep On evenement",
             "de": "BASIC Command wird an die Assoziationsgruppe 2 gesendet, wenn das Ereignis On eintritt "
           },
           "hint": {
-            "en": "This is the BASIC command value sent in case of On event. (1-99, 255) (Default: 255=-1) In order to set values in the range 128 ... 255 the value sent in the application shall be the desired value minus 256.",
-            "nl": "BASIC-commandowaarde verzonden in het geval van On event. (1-99, 255) (Standaard: 255=-1) Om waarden in het bereik 128 .... 255 in te stellen, moet de waarde in de toepassing de gewenste waarde minus 256 zijn",
-            "de": "Dies ist das BASIC Command, das im Falle des Ereignisses On gesendet wird. (1-99, Standard: 255=-1) Um Werte zwischen 128 und 255 zu programmieren, muss der gewünschte Wert minus 256 eingegeben werden."
+            "en": "This is the BASIC command value sent in case of On event. (1-99, 255) (Default: 255)",
+            "nl": "BASIC-commandowaarde verzonden in het geval van On event. (1-99, 255) (Standaard: 255)",
+            "de": "Dies ist das BASIC Command, das im Falle des Ereignisses On gesendet wird. (1-99, Standard: 255)"
           }
         },
         {
           "id": "basic_group_off",
           "zwave": {
             "index": 8,
-            "size": 1
+            "size": 1,
+            "signed": false
           },
           "attr": {
-            "min": -128,
-            "max": 127
+            "min": 0,
+            "max": 255
           },
           "type": "number",
-          "value": -1,
+          "value": 255,
           "label": {
             "en": "BASIC command value sent to 2nd Association Group off event",
             "nl": "BASIC command verzonden naar 2de Associatiegroep off evenement",
             "de": "BASIC Command wird an die Assoziationsgruppe 2 gesendet, wenn das Ereignis Off eintritt "
           },
           "hint": {
-            "en": "This is the BASIC command value sent in case of Off event. (1-99, 255) (Default: 255=-1) In order to set values in the range 128 ... 255 the value sent in the application shall be the desired value minus 256.",
-            "nl": "BASIC-commandowaarde verzonden in het geval van Off event. (1-99, 255) (Standaard: 255=-1) Om waarden in het bereik 128 .... 255 in te stellen, moet de waarde in de toepassing de gewenste waarde minus 256 zijn",
-            "de": "Dies ist das BASIC Command, das im Falle des Ereignisses Off gesendet wird. (1-99, 255) (Standard: 255=-1) Um Werte zwischen 128 und 255 zu programmieren, muss der gewünschte Wert minus 256 eingegeben werden."
+            "en": "This is the BASIC command value sent in case of Off event. (1-99, 255) (Default: 255)",
+            "nl": "BASIC-commandowaarde verzonden in het geval van Off event. (1-99, 255) (Standaard: 255=-1)",
+            "de": "Dies ist das BASIC Command, das im Falle des Ereignisses Off gesendet wird. (1-99, 255) (Standard: 255=-1)"
           }
         },
         {
@@ -3810,9 +4836,403 @@
           }
         }
       ]
+    },
+    {
+      "id": "701202",
+      "name": {
+        "en": "Mold Detector",
+        "nl": "Mold Detector",
+        "de": "Mold Detector"
+      },
+      "capabilities": [
+        "measure_temperature",
+        "measure_humidity",
+        "measure_dewpoint",
+        "alarm_generic.mold",
+        "measure_battery"
+      ],
+      "mobile": {
+        "components": [
+          {
+            "id": "icon"
+          },
+          {
+            "id": "battery",
+            "capabilities": [
+              "measure_battery"
+            ],
+            "options": {
+              "showTitle": true
+            }
+          },
+          {
+            "id": "sensor",
+            "capabilities": [
+              "measure_temperature",
+              "measure_humidity",
+              "measure_dewpoint",
+              "alarm_generic.mold",
+              "measure_battery"
+            ]
+          }
+        ]
+      },
+      "capabilitiesOptions": {
+        "alarm_generic.mold": {
+          "title": {
+            "en": "Mold Alert",
+            "nl": "Schimmel Alarm",
+            "de": "Schimmel Alarm"
+          }
+        }
+      },
+      "zwave": {
+        "manufacturerId": 340,
+        "productTypeId": 4,
+        "productId": 20,
+        "learnmode": {
+          "instruction": {
+            "en": "Tripple clicking the tamper button includes (adds) the device. \nThe LED flashes alternately red/green until inclusion is started and green twice after completion. ",
+            "nl": "De Tripple-klik op de sabotageknop bevat (voegt) het apparaat toe. \nDe LED knippert afwisselend rood/groen tot de opname wordt gestart en tweemaal groen na voltooiing.",
+            "de": "Ein dreifaches Anklicken der Manipulationsschaltfläche beinhaltet (fügt) das Gerät hinzu. \nDie LED blinkt bis zum Start der Inklusion abwechselnd rot/grün und nach der Fertigstellung zweimal grün. "
+          }
+        },
+        "associationGroups": [
+          1
+        ],
+        "associationGroupsOptions": {
+          "1": {
+            "hint": {
+              "en": "Z-Wave Plus Lifeline"
+            }
+          },
+          "2": {
+            "hint": {
+              "en": "Temperature High Trigger",
+              "nl": "Temperatuur Hoge Trigger",
+              "de": "Sendet Befehle an die Assozierten Geräte bei überschreiten des oberen Temperaturschwellwertes"
+            }
+          },
+          "3": {
+            "hint": {
+              "en": "Temperature Low Trigger",
+              "nl": "Temperatuur Lage Trigger",
+              "de": "Sendet Befehle an die Assozierten Geräte bei unterschreiten des unteren Temperaturschwellwertes"
+            }
+          },
+          "4": {
+            "hint": {
+              "en": "Humidity High Trigger",
+              "nl": "Vochtigheid Hoge Trigger",
+              "de": "Sendet Befehle an die Assozierten Geräte bei überschreiten des oberen Feuchtigkeitsschwellwertes"
+            }
+          },
+          "5": {
+            "hint": {
+              "en": "Humidity Low Trigger",
+              "nl": "Vochtigheid Lage Trigger",
+              "de": "Sendet Befehle an die Assozierten Geräte bei unterschreiten des unteren Feuchtigkeitsschwellwertes"
+            }
+          }
+        }
+      },
+      "class": "sensor",
+      "images": {
+        "large": "/drivers/700168/assets/images/large.jpg",
+        "small": "/drivers/700168/assets/images/small.jpg"
+      },
+      "settings": [
+        {
+          "id": "tempchange_to_report",
+          "zwave": {
+            "index": 1,
+            "size": 1
+          },
+          "attr": {
+            "min": 0,
+            "max": 100
+          },
+          "type": "number",
+          "value": 20,
+          "label": {
+            "en": "Minimum Temperature change to report",
+            "nl": "Minimale temperatuursverandering te melden",
+            "de": "Minimale Temperaturänderung für den Bericht"
+          },
+          "hint": {
+            "en": "This value defines the minimum change of temperature to cause an unsolicited report of humidity to the central controller using Lifeline. If the value is set to 0, there will be no reports sent to the controller, when the temperature changes. However, periodic reports, managed by configuration parameter 4, may still be active. (0-100, 1/10 degree)",
+            "nl": "Deze waarde definieert de minimale temperatuursverandering die een ongevraagde melding van de luchtvochtigheid aan de centrale met behulp van Lifeline veroorzaakt. Als de waarde op 0 is ingesteld, worden er geen meldingen naar de regelaar gestuurd wanneer de temperatuur verandert. Periodieke rapporten, beheerd door configuratieparameter 4, kunnen echter nog steeds actief zijn. (0-100, 1/10 graad)",
+            "de": "Dieser Wert definiert die minimale Temperaturänderung, um eine unaufgeforderte Meldung der Luftfeuchtigkeit an die zentrale Steuerung über die Lifeline zu veranlassen.Wenn der Wert auf 0 gesetzt ist, werden keine Meldungen an die Steuerung gesendet, wenn sich die Temperatur ändert. Periodische Berichte, die über den Konfigurationsparameter 4 verwaltet werden, können jedoch weiterhin aktiv sein. (0-100, 0.1° Schritte)"
+          }
+        },
+        {
+          "id": "humiditychange_to_report",
+          "zwave": {
+            "index": 2,
+            "size": 1
+          },
+          "attr": {
+            "min": 0,
+            "max": 100
+          },
+          "type": "number",
+          "value": 7,
+          "label": {
+            "en": "Minimum humidity change to report",
+            "nl": "Minimale vochtigheidsverandering te melden",
+            "de": "Minimale Feuchtigkeitsänderung für den Bericht"
+          },
+          "hint": {
+            "en": "This parameter defines the time interval to send an unsolicited report. If the value is set to 0, there will be no periodic reports sent to the controller. However, reports on temperature/humidity changes, managed by configuration parameters 1 and 2, may still be active. (0-100, %)",
+            "nl": "Deze parameter definieert het tijdsinterval voor het verzenden van een ongevraagde melding. Als de waarde op 0 is ingesteld, worden er geen periodieke rapporten naar de regelaar gestuurd. Het is echter mogelijk dat er nog steeds rapporten over temperatuur- en vochtigheidsveranderingen, beheerd door de configuratieparameters 1 en 2, actief zijn. (0-100, %)",
+            "de": "Dieser Wert definiert die minimale Änderung der Luftfeuchtigkeit, um eine unaufgeforderte Meldung der Luftfeuchtigkeit an die zentrale Steuerung über Lifeline zu veranlassen.Wenn der Wert auf 0 gesetzt ist, werden keine Meldungen an die Steuerung gesendet, wenn sich die Luftfeuchtigkeit ändert. Periodische Berichte, die über den Konfigurationsparameter 4 verwaltet werden, können jedoch weiterhin aktiv sein.  (0-100, in %)"
+          }
+        },
+        {
+          "id": "periodic_report",
+          "zwave": {
+            "index": 4,
+            "size": 2,
+            "signed": false
+          },
+          "attr": {
+            "min": 0,
+            "max": 65535
+          },
+          "type": "number",
+          "value": 43200,
+          "label": {
+            "en": "Periodic Reports",
+            "nl": "Periodieke rapporten",
+            "de": "Periodische Berichte"
+          },
+          "hint": {
+            "en": "This parameter defines the time interval to send an unsolicited report. If the value is set to 0, there will be no periodic reports sent to the controller. However, reports on temperature/humidity changes, managed by configuration parameters 1 and 2, may still be active. (0, 900-65535)",
+            "nl": "Deze parameter definieert het tijdsinterval voor het verzenden van een ongevraagde melding. Als de waarde op 0 is ingesteld, worden er geen periodieke rapporten naar de regelaar gestuurd. Het is echter mogelijk dat er nog steeds rapporten over temperatuur- en vochtigheidsveranderingen, beheerd door de configuratieparameters 1 en 2, actief zijn.  (0, 900-65535)",
+            "de": "Dieser Parameter definiert das Zeitintervall für das Senden eines unaufgeforderten Berichts.Wenn der Wert auf 0 gesetzt ist, werden keine regelmäßigen Berichte an die Steuerung gesendet. Es ist jedoch möglich, dass Berichte über Temperatur-/Feuchteänderungen, die über die Konfigurationsparameter 1 und 2 verwaltet werden, noch aktiv sind. (0, 900-65535)"
+          }
+        },
+        {
+          "id": "temperature_report_upper",
+          "zwave": {
+            "index": 5,
+            "size": 2,
+            "signed": false
+          },
+          "attr": {
+            "min": 0,
+            "max": 1000
+          },
+          "type": "number",
+          "value": 0,
+          "label": {
+            "en": "Temperature Upper Watermark value",
+            "nl": "Temperatuur Bovenste watermerk waarde",
+            "de": "Oberer Temperaturschwellwert"
+          },
+          "hint": {
+            "en": "This parameter defines a temperature. If the measured temperature surpasses this watermark a BASIC command is sent into Association Group 2  (0-1000, 1/10 degree)",
+            "nl": "Deze parameter definieert een temperatuur. Als de gemeten temperatuur dit watermerk overschrijdt, wordt een BASIC-commando naar Associatiegroep 2 gestuurd (0-1000, 1/10 graad).",
+            "de": "Dieser Parameter definiert eine Temperatur. Überschreitet die gemessene Temperatur diesen Schwellwert, wird ein BASIC-Befehl an die Verknüpfungsgruppe 2 gesendet (0-1000, 0.1° Schritte)"
+          }
+        },
+        {
+          "id": "temperature_report_lower",
+          "zwave": {
+            "index": 6,
+            "size": 2,
+            "signed": false
+          },
+          "attr": {
+            "min": 0,
+            "max": 65535
+          },
+          "type": "number",
+          "value": 0,
+          "label": {
+            "en": "Temperature Lower Watermark value",
+            "nl": "Temperatuur Lagere watermerkwaarde",
+            "de": "Unterer Temperaturschwellwert"
+          },
+          "hint": {
+            "en": "This parameter defines a temperature. If the measured temperature dropps below this watermark a BASIC command is sent into Association Group 3. (1 - 1000: 1/10 degree [0,1°C - 100°C]. 65336 - 65535: 1/10 degree [-20,0°C - -0,1°C])",
+            "nl": "Deze parameter definieert een temperatuur. Als de gemeten temperatuur onder dit watermerk daalt, wordt een BASIC-commando naar Associatiegroep 3 gestuurd. (1 - 1000: 1/10 graad [0,1°C - 100°C]. 65336 - 65535: 1/10 graad [-20,0°C - -0,1°C])",
+            "de": "Dieser Parameter definiert eine Temperatur. Unterschreitet die gemessene Temperatur diesen Schwellwert, wird ein BASIC-Befehl an die  Verknüpfungsgruppe 3 gesendet. (1 - 1000: 0,1°C bis 100,0°C.  65336-65535: -20,0°C bis -0,1°C) "
+          }
+        },
+        {
+          "id": "humidtiy_report_upper",
+          "zwave": {
+            "index": 7,
+            "size": 1
+          },
+          "attr": {
+            "min": 0,
+            "max": 100
+          },
+          "type": "number",
+          "value": 0,
+          "label": {
+            "en": "Humidity Upper Watermark value",
+            "nl": "Vochtigheid Bovenste watermerkwaarde",
+            "de": "Luftfeuchtigkeit oberer Schwellwert "
+          },
+          "hint": {
+            "en": "This parameter defines a relative humidity. If the measured relative humidity surpasses this watermark a BASIC command is sent into Association Group 4 (0, 10-100 %)",
+            "nl": "Deze parameter definieert een relatieve vochtigheid. Als de gemeten relatieve vochtigheid dit watermerk overschrijdt, wordt een BASIC-commando naar Associatiegroep 4 gestuurd (0, 10-100 %)",
+            "de": "Dieser Parameter definiert eine relative Luftfeuchtigkeit. Überschreitet die gemessene relative Luftfeuchtigkeit diesen Schwellwert, wird ein BASIC-Befehl an die Verknüpfungsgruppe 4 gesendet. (0, 10-100 in %)"
+          }
+        },
+        {
+          "id": "humidtiy_report_lower",
+          "zwave": {
+            "index": 8,
+            "size": 1
+          },
+          "attr": {
+            "min": 0,
+            "max": 90
+          },
+          "type": "number",
+          "value": 0,
+          "label": {
+            "en": "Humidity Lower Watermark value",
+            "nl": "Vochtigheid Lagere watermerkwaarde ",
+            "de": "Luftfeuchtigkeit unterer Schwellwert"
+          },
+          "hint": {
+            "en": "This parameter defines a relative humidity. If the measured temperature dropps below this relative humidity a BASIC command is sent into Association Group 5 (0, 1-90 %)",
+            "nl": "Deze parameter definieert een relatieve vochtigheid. Als de gemeten temperatuur onder deze relatieve vochtigheid zakt, wordt een BASIC-commando naar Associatiegroep 5 gestuurd.  (0, 1-90 %)",
+            "de": "Dieser Parameter definiert eine relative Luftfeuchtigkeit. Fällt die gemessene Luftfeuchtigkeit unter diesen Schwellwert, wird ein BASIC-Befehl an die Verknüpfungsgruppe 5 gesendet.  (0, 1-90 in %)"
+          }
+        },
+        {
+          "id": "low_temp_trigger",
+          "zwave": {
+            "index": 9,
+            "size": 1,
+            "signed": false
+          },
+          "attr": {
+            "min": 0,
+            "max": 255
+          },
+          "type": "number",
+          "value": 255,
+          "label": {
+            "en": "Low Temperature Trigger BASIC Set Command Value",
+            "nl": "Lage temperatuur Trigger BASIC Ingestelde opdrachtwaarde voor lage temperatuur Trigger ",
+            "de": "Basic Werte bei unterer Temperaturschwelle"
+          },
+          "hint": {
+            "en": "This defines what BASIC command shall be sent out into association group 3",
+            "nl": "Dit definieert wat het BASIC-commando moet worden verzonden naar groep 3 van de vereniging",
+            "de": "Hiermit wird definiert, welcher BASIC-Befehl in die Assoziationsgruppe 3 gesendet werden soll. "
+          }
+        },
+        {
+          "id": "high_temp_trigger",
+          "zwave": {
+            "index": 10,
+            "size": 1,
+            "signed": false
+          },
+          "attr": {
+            "min": 0,
+            "max": 255
+          },
+          "type": "number",
+          "value": 0,
+          "label": {
+            "en": "High Temperature Trigger BASIC Set Command Value",
+            "nl": "Hoge Temperatuur Trigger BASIC Ingestelde Commandowaarde",
+            "de": "Basic Wert bei oberen Temperaturschwellwert"
+          },
+          "hint": {
+            "en": "This defines what BASIC command shall be sent out into association group 2",
+            "nl": "Dit definieert wat het BASIC-commando moet worden verzonden naar associaties met groep 2",
+            "de": "Hiermit wird definiert, welcher BASIC-Befehl in die Assoziationsgruppe 2 gesendet werden soll. "
+          }
+        },
+        {
+          "id": "low_humidity_trigger",
+          "zwave": {
+            "index": 11,
+            "size": 1,
+            "signed": false
+          },
+          "attr": {
+            "min": 0,
+            "max": 255
+          },
+          "type": "number",
+          "value": 255,
+          "label": {
+            "en": "Low Humidity  Trigger BASIC Set Command Value",
+            "nl": "Laage Vochtigheid Trigger BASIC Ingestelde Commandowaarde",
+            "de": "Basic Wert bei unterem Luftfeuchtigkeitsschwellwert "
+          },
+          "hint": {
+            "en": "This defines what BASIC command shall be sent out into association group 5",
+            "nl": "Dit definieert wat het BASIC-commando moet worden verzonden naar associaties met groep 5",
+            "de": "Hiermit wird definiert, welcher BASIC-Befehl in die Assoziationsgruppe 5 gesendet werden soll. "
+          }
+        },
+        {
+          "id": "high_humidity_trigger",
+          "zwave": {
+            "index": 12,
+            "size": 1,
+            "signed": false
+          },
+          "attr": {
+            "min": 0,
+            "max": 255
+          },
+          "type": "number",
+          "value": 0,
+          "label": {
+            "en": "High Humidity Trigger BASIC Set Command Value",
+            "nl": "Hoge Vochtigheid Trigger BASIC Ingestelde Commandowaarde",
+            "de": "Basic Wert bei oberen Luftfeuchtigkeitsschwellwert"
+          },
+          "hint": {
+            "en": "This defines what BASIC command shall be sent out into association group 4",
+            "nl": "Dit definieert wat het BASIC-commando moet worden verzonden naar associaties met groep 4",
+            "de": "Hiermit wird definiert, welcher BASIC-Befehl in die Assoziationsgruppe 4 gesendet werden soll. "
+          }
+        }
+      ]
     }
   ],
   "capabilities": {
+    "alarm_heavyrain": {
+      "type": "boolean",
+      "title": {
+        "en": "Heavy Rain Alarm",
+        "nl": "Stortregens Alarm",
+        "de": "Starkregen Alarm"
+      },
+      "desc": {
+        "en": "Heavy Rain Alarm",
+        "nl": "Stortregens Alarm",
+        "de": "Starkregen Alarm"
+      },
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "insightsTitleTrue": {
+        "en": "Heavy Rain",
+        "nl": "Stortregens",
+        "de": "Starkregen"
+      },
+      "insightsTitleFalse": {
+        "en": "No Heavy Rain",
+        "nl": "Geen stortregens",
+        "de": "Kein Starkregen"
+      },
+      "icon": "/assets/alarm_rain.svg"
+    },
     "alarm_rain": {
       "type": "number",
       "title": {
@@ -3830,23 +5250,38 @@
       "max": 3,
       "step": 1,
       "getable": true,
-      "setable": false
+      "setable": false,
+      "icon": "/assets/alarm_rain.svg"
     },
     "alarm_siren": {
       "type": "boolean",
       "title": {
         "en": "Siren",
-        "nl": "Sirene"
+        "nl": "Sirene",
+        "de": "Sirene"
       },
       "units": {
         "en": "Status"
       },
       "desc": {
         "en": "Alarm",
-        "nl": "Alarm"
+        "nl": "Alarm",
+        "de": "Alarm"
       },
       "getable": true,
-      "setable": false
+      "setable": false,
+      "insights": true,
+      "insightsTitleTrue": {
+        "en": "Alarm",
+        "nl": "Alarm",
+        "de": "Alarm"
+      },
+      "insightsTitleFalse": {
+        "en": "No Alarm",
+        "nl": "Geen alarm",
+        "de": "Kein Alarm"
+      },
+      "icon": "/assets/alarm_siren.svg"
     },
     "info_tilt": {
       "type": "boolean",
@@ -3857,43 +5292,68 @@
       },
       "getable": true,
       "setable": false,
+      "insights": true,
+      "insightsTitleTrue": {
+        "en": "Tilt",
+        "nl": "Gekanteld",
+        "de": "Gekippt"
+      },
+      "insightsTitleFalse": {
+        "en": "No Tilt",
+        "nl": "Geen gekanteld",
+        "de": "Nicht Gekippt"
+      },
       "icon": "/assets/tilt.svg"
+    },
+    "is_rain": {
+      "type": "boolean",
+      "title": {
+        "en": "Rain",
+        "nl": "Regen",
+        "de": "Regen"
+      },
+      "desc": {
+        "en": "Rain",
+        "nl": "Regen",
+        "de": "Regen"
+      },
+      "getable": true,
+      "setable": false,
+      "insights": true,
+      "insightsTitleTrue": {
+        "en": "Raining",
+        "nl": "Regen",
+        "de": "Regen"
+      },
+      "insightsTitleFalse": {
+        "en": "Not raining",
+        "nl": "Geen regen",
+        "de": "Kein Regen"
+      },
+      "icon": "/assets/alarm_rain.svg"
     },
     "measure_dewpoint": {
       "type": "number",
       "title": {
         "en": "DewPoint",
-        "nl": "Dauwpunt"
+        "nl": "Dauwpunt",
+        "de": "Taupunkt"
       },
       "units": {
-        "en": "C"
+        "en": "°C",
+        "nl": "°C",
+        "de": "°C"
       },
       "desc": {
         "en": "Celius (C)",
         "nl": "Celius (C)"
       },
       "chartType": "stepLine",
+      "insights": true,
       "decimals": 2,
       "getable": true,
-      "setable": false
-    },
-    "measure_wind_strenght": {
-      "type": "number",
-      "title": {
-        "en": "Wind Strenght",
-        "nl": "Windkracht"
-      },
-      "units": {
-        "en": "m/s"
-      },
-      "desc": {
-        "en": "Meters per Second",
-        "nl": "meters per seconden"
-      },
-      "chartType": "stepLine",
-      "decimals": 2,
-      "getable": true,
-      "setable": false
+      "setable": false,
+      "icon": "/assets/measure_dewpoint.svg"
     }
   }
 }

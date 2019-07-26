@@ -6,10 +6,9 @@ Want the next donation to go to your favorite charity ? Don’t hesitate and tel
     
 ## Supported devices    
 * 004001 - Smoke Detector and Siren  
-* 004001 - CO2 Sensor  
+* 004407 - CO2 Sensor  
 * 005107 - Solar Outside Siren  
-* 005206 - Z-Weather  
-* 700168 - Z-Rain
+* 005206 - Z-Weather
 * 009006 - Wall Plug Switch Indoor    
 * 009105 - Wall Plug Switch Outdoor 
 * 009204 - KFOB-C Remote Control     
@@ -20,18 +19,23 @@ Want the next donation to go to your favorite charity ? Don’t hesitate and tel
 * 123580 - Dimmer 67G   
 * 123610 - Switch 68G 
 * 700892 - Door and Window Sensor with Tilt Detection
+* 700168 - Z-Rain
+* 700793 - Power Plug
+* 701202 - Mold Detector
+
     
 ## Untested devices    
-* 005206 - Weather - Need help some reports dont get in  
 * 004001 - CO2 Sensor - Please confirm if its working when you have it    
 * 009204 - KFOB-C Remote Control - Please confirm if its working when you have it 
+* 700793 - Power Plug -  Please confirm if its working when you have it 
    
 ## Unsupported devices ?    
 You are welcome to help , please send in you're git pull requests to add more devices to the list.    
     
 ## Supported Languages:    
 * English    
-* Dutch    
+* Dutch
+* German    
     
 ## Support notes:    
 Most reliable way to update battery powered devices   
@@ -47,6 +51,13 @@ c. check if effective and retry to the desired value
 
 ## Change Log:    
    
+### v 2.0.8
+**fixed:** Keypad, Z-Rain, Z-Weather (Please reinclude that devices)
+Added support for Power Plug
+Added support for Mold Detector
+Added German language
+Minor Bugfixes
+
 ### v 2.0.7
 Added support for Door and Window Sensor with Tilt Detection
 

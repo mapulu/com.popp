@@ -5,7 +5,8 @@ const ZwaveDevice = require('homey-meshdriver').ZwaveDevice;
 
 class P700045 extends ZwaveDevice {
   onMeshInit() {
-    this.registerCapability('alarm_contact', 'SENSOR_BINARY');
+	    //this.enableDebug();
+		//this.printNode();
     this.registerCapability('alarm_tamper', 'NOTIFICATION');
     this.registerCapability('measure_battery', 'BATTERY');
     this.registerCapability('alarm_battery', 'BATTERY');
@@ -18,12 +19,16 @@ class P700045 extends ZwaveDevice {
         //this.log(args, state);
         return Promise.resolve(args.button === state.button || (args.button == 0 && state.button >= 1 && state.button <= 20) /* && args.scene === state.scene */ );
       })
+	  
+	let triggerUserID = new Homey.FlowCardTriggerDevice('userid_validated');
+    triggerUserID
+      .register()
 
     let triggerRing = new Homey.FlowCardTriggerDevice('ring_button');
     triggerRing
       .register()
       .registerRunListener((args, state) => {
-        return Promise.resolve(args.button === state.button );
+        return Promise.resolve(args.button === state.button  || (args.button == 0));
       })
 
     let triggerInvalid = new Homey.FlowCardTriggerDevice('code_invalid');
@@ -33,7 +38,7 @@ class P700045 extends ZwaveDevice {
         return Promise.resolve(state.button === '23' );
       })
 
-    // register a report listener (SDK2 style not yet operational)
+    // register a report listener
     this.registerReportListener('CENTRAL_SCENE', 'CENTRAL_SCENE_NOTIFICATION', (rawReport, parsedReport) => {
       if (rawReport.hasOwnProperty('Properties1') &&
         rawReport.Properties1.hasOwnProperty('Key Attributes') &&
@@ -46,7 +51,6 @@ class P700045 extends ZwaveDevice {
             scene: rawReport.Properties1['Key Attributes'],
           };
           PreviousSequenceNo = rawReport['Sequence Number'];
-          this.log('Triggering sequence:', PreviousSequenceNo, 'remoteValue', remoteValue);
           // Trigger the trigger card with 2 dropdown options
           if(remoteValue.button == 21 || remoteValue.button == 22) { // bell-button: 21=once; 22=twice
             triggerRing
@@ -56,7 +60,12 @@ class P700045 extends ZwaveDevice {
             triggerInvalid
               .trigger(this, triggerInvalid.getArgumentValues, remoteValue)
               .catch( err => { this.log('ReportListener', err) } );
-          } else { //assuming user code 1-20
+          } else if(remoteValue.button <= 20 && remoteValue.button >= 1) { // user code 1-20
+		   const token = {
+				button: rawReport['Scene Number'] };
+			   triggerUserID
+              .trigger(this, token, this.device_data)
+              .catch( err => { this.log('ReportListener', err) } );
             triggerUser
               .trigger(this, triggerUser.getArgumentValues, remoteValue)
               .catch( err => { this.log('ReportListener', err) } );
