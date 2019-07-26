@@ -58,7 +58,7 @@ Added support for Mold Detector
 Added German language
 Minor Bugfixes
 
-### v 2.0.7
+### v 2.0.8
 Added support for Door and Window Sensor with Tilt Detection
 
 ### v 2.0.6   
