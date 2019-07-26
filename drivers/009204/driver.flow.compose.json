@@ -21,28 +21,32 @@
           "id": "1",
           "label": {
             "en": "Button 1",
-            "nl": "Knop 1"
+            "nl": "Knop 1",
+			"de": "Taste 1"
           }
         },
         {
           "id": "2",
           "label": {
             "en": "Button 2",
-            "nl": "Knop 2"
+            "nl": "Knop 2",
+			"de": "Taste 2"
           }
         },
         {
           "id": "3",
           "label": {
             "en": "Button 3",
-            "nl": "Knop 3"
+            "nl": "Knop 3",
+			"de": "Taste 3"
           }
         },
         {
           "id": "4",
           "label": {
             "en": "Button 4",
-            "nl": "Knop 4"
+            "nl": "Knop 4",
+			"de": "Taste 4"
           }
         }
       ]
@@ -54,14 +58,16 @@
           "id": "Key Pressed 1 time",
           "label": {
             "en": "Pressed 1x",
-            "nl": "1x ingedrukt"
+            "nl": "1x ingedrukt",
+			"de": "1x gedrückt"
           }
         },
         {
           "id": "Key Pressed 2 times",
           "label": {
             "en": "Pressed 2x",
-            "nl": "2x ingedrukt"
+            "nl": "2x ingedrukt",
+			"de": "2x gedrückt"
           }
         }
       ]

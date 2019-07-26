@@ -1,7 +1,8 @@
 {
   "id": "123580",
   "name": {
-    "en": "Dimmer 67G"
+    "en": "Dimmer 67G",
+	"de": "Zwischenstecker Dimmer 67G"
   },
   "zwave": {
     "manufacturerId": 340,
@@ -11,7 +12,8 @@
       "image": "/drivers/123580/assets/learnmode.svg",
       "instruction": {
         "en": "Press the (action) button 3 times on the Smart Dimmer to enter learn mode",
-        "nl": "Druk drie keer op de (actie) knop op de Smart Dimmer om de leer modus te activeren"
+        "nl": "Druk drie keer op de (actie) knop op de Smart Dimmer om de leer modus te activeren",
+		"de": "Drücke die (Aktions-)Taste am Smart Dimmer dreimal, um in den Lernmodus zu gelangen."
       }
     },
     "associationGroups": [
@@ -73,39 +75,45 @@
       "type": "dropdown",
       "label": {
         "en": "Led mode",
-        "nl": "Led mode"
+        "nl": "Led mode",
+		"de": "LED Modus"
       },
       "value": "3",
       "hint": {
         "en": "Set LED indication mode",
-        "nl": "Configureer de LED indicatie mode"
+        "nl": "Configureer de LED indicatie mode",
+		"de": "LED-Modus einstellen"
       },
       "values": [{
           "id": "0",
           "label": {
             "en": "Disabled",
-            "nl": "Uitgeschakeld"
+            "nl": "Uitgeschakeld",
+			"de": "Ausgeschaltet"
           }
         },
         {
           "id": "1",
           "label": {
             "en": "Show switch state",
-            "nl": "Toon de status (aan/uit)"
+            "nl": "Toon de status (aan/uit)",
+			"de": "Zeige den Schaltstatus"
           }
         },
         {
           "id": "2",
           "label": {
             "en": "Night mode (inverted switch state)",
-            "nl": "Nacht modes (omgekeerde status)"
+            "nl": "Nacht modes (omgekeerde status)",
+			"de": "Nachtmodus (invertierter Schaltzustand)"
           }
         },
         {
           "id": "3",
           "label": {
             "en": "Operated by Indicator Command Class (Default)",
-            "nl": "Werking volgens de configuratie van de Command Class (Standaard)"
+            "nl": "Werking volgens de configuratie van de Command Class (Standaard)",
+			"de": "Wird von der Indikatorbefehlsklasse gesteuert (Standard)"
           }
         }
       ]
@@ -120,7 +128,8 @@
       "type": "number",
       "label": {
         "en": "Automatically switch off after",
-        "nl": "Automatisch uitschakelen na"
+        "nl": "Automatisch uitschakelen na",
+		"de": "Automatisch ausschalten nach"
       },
       "value": 0,
       "attr": {
@@ -129,7 +138,8 @@
       },
       "hint": {
         "en": "If not zero, automatically switch off after a user defined time. Unit: Sec, Min: 0, Max: 65535, Default: 0",
-        "nl": "Als waarde niet 0 is dan uitschakelen na de opgegeven tijd. Eenheid sec., Min: 0, Max: 65535, Default: 0"
+        "nl": "Als waarde niet 0 is dan uitschakelen na de opgegeven tijd. Eenheid sec., Min: 0, Max: 65535, Default: 0",
+		"de": "Wenn nicht Null, schaltet sich das Gerät nach einer benutzerdefinierten Zeit automatisch aus. Einheit: Sekunden, Min: 0, Max: 65535, Standard: 0"
       }
     },
     {
@@ -141,39 +151,45 @@
       "type": "dropdown",
       "label": {
         "en": "What to do on RF off com",
-        "nl": "Wat moet er gebeuren bij RF uit commando"
+        "nl": "Wat moet er gebeuren bij RF uit commando",
+		"de": "Was tun bei RF off Kommando?"
       },
       "value": "0",
       "hint": {
         "en": "Defines how to interpret RF Off command. Can be used in conjunction with Auto Off function: Ignore - to switch on the light by motion detectors and switch it off after some amount of time: in case of multiple motion detectors each would try to switch the light off that would break logics; Switch on - to switch on the light on both On and Off paddle press on the remote and switch it off after some amount of time. Button off click will still work (if button operations are not disabled).",
-        "nl": "Defineert hoe moet worden gereageerd op RF off commando. Kan samen met Auto Off functie worden gebruikt: Negeren - om lampen aan te zetten in geval van beweging om vervolgens uit te schakelen na een bepaalde periode. In geval van meerdere bewegings sensoren zullen ze afzonderlijk de lamp proberen uit te zetten. Dat kan soms niet handig zijn. Aan zetten - Om de dimmer aan te zetten met zowel aan- als uit opdracht van de afstandbediening om vervolgens na een bepaalde periode uit te gaan. De uitknop zal dan nog steeds werken (wanneer de knop opdracht niet zijn uitgeschakeld.)"
+        "nl": "Defineert hoe moet worden gereageerd op RF off commando. Kan samen met Auto Off functie worden gebruikt: Negeren - om lampen aan te zetten in geval van beweging om vervolgens uit te schakelen na een bepaalde periode. In geval van meerdere bewegings sensoren zullen ze afzonderlijk de lamp proberen uit te zetten. Dat kan soms niet handig zijn. Aan zetten - Om de dimmer aan te zetten met zowel aan- als uit opdracht van de afstandbediening om vervolgens na een bepaalde periode uit te gaan. De uitknop zal dan nog steeds werken (wanneer de knop opdracht niet zijn uitgeschakeld.)",
+		"de": "Definiert, wie der Befehl RF Off zu interpretieren ist. Kann in Verbindung mit der Auto-Aus-Funktion verwendet werden: Ignorieren - das Licht durch Bewegungsmelder einzuschalten und nach einiger Zeit auszuschalten: bei mehreren Bewegungsmeldern würde jeder versuchen, das Licht auszuschalten, was die Logik unterbrechen würde; Schalte ein - um das Licht sowohl beim Ein- als auch beim Ausschalten einzuschalten, drücke die Fernbedienung und schalte es nach einiger Zeit aus. Der Klick auf den Button off funktioniert weiterhin (wenn die Tastenfunktionen nicht deaktiviert ist)."
       },
       "values": [{
           "id": "0",
           "label": {
             "en": "Switch off (Default)",
-            "nl": "Uit zetten (Standaard)"
+            "nl": "Uit zetten (Standaard)",
+			"de": "Ausschalten (Standard)"
           }
         },
         {
           "id": "1",
           "label": {
             "en": "Ignore",
-            "nl": "Negeren"
+            "nl": "Negeren",
+			"de": "Ignorieren"
           }
         },
         {
           "id": "2",
           "label": {
             "en": "Switch on",
-            "nl": "Aan zetten"
+            "nl": "Aan zetten",
+			"de": "Einschalten"
           }
         },
         {
           "id": "3",
           "label": {
             "en": "Switch on if load is off else switch off",
-            "nl": "Aan gaan wanneer er geen spanning is, ander uitschakelen"
+            "nl": "Aan gaan wanneer er geen spanning is, ander uitschakelen",
+			"de": "Einschalten bei ausgeschalteter Last ansonsten Ausschalten"
           }
         }
       ]
@@ -187,25 +203,29 @@
       "type": "dropdown",
       "label": {
         "en": "Ignore start level",
-        "nl": "Negeer het start niveau"
+        "nl": "Negeer het start niveau",
+		"de": "Startlevel ignorieren"
       },
       "value": "1",
       "hint": {
         "en": "Defines if the dimmer shall ignore start level in Start Level Change command despite it is specified or not",
-        "nl": "Defineert of de dimmer het start niveau zal negeren bij het Level Change commando. Ondanks of het wel of niet is gespecifieerd."
+        "nl": "Defineert of de dimmer het start niveau zal negeren bij het Level Change commando. Ondanks of het wel of niet is gespecifieerd.",
+		"de": "Legt fest, ob der Dimmer den Startpegel im Befehl Start Level Change ignorieren soll, obwohl er angegeben ist oder nicht."
       },
       "values": [{
           "id": "0",
           "label": {
             "en": "No",
-            "nl": "Nee"
+            "nl": "Nee",
+			"de": "Nein"
           }
         },
         {
           "id": "1",
           "label": {
             "en": "Yes (Default)",
-            "nl": "Ja (Standaard)"
+            "nl": "Ja (Standaard)",
+			"de": "Ja (Standard)"
           }
         }
       ]
@@ -220,7 +240,8 @@
       "type": "number",
       "label": {
         "en": "Speed for fast dimming",
-        "nl": "Snelheid bij snel dimmen"
+        "nl": "Snelheid bij snel dimmen",
+		"de": "Geschwindigkeit für schnelles dimmen"
       },
       "value": 30,
       "attr": {
@@ -229,7 +250,8 @@
       },
       "hint": {
         "en": "Time to dim on button presses and Set command (if it has no duration specified). If not 0, dimming will be done smoothly to preserve bulb life. 0=Instantly, 1-255 in 10ms units (Default 30)",
-        "nl": "Tijd voor het dimmen na het drukken van de knop en het Set commando (wanneer er geen periode is gedefineerd) Wanneer de waarde niet 0 is zal het dimmer geleidelijk worden gedaan om de lamp te sparen.  0=Direct, 1-255 in 10ms eenheden (Standaard 30)"
+        "nl": "Tijd voor het dimmen na het drukken van de knop en het Set commando (wanneer er geen periode is gedefineerd) Wanneer de waarde niet 0 is zal het dimmer geleidelijk worden gedaan om de lamp te sparen.  0=Direct, 1-255 in 10ms eenheden (Standaard 30)",
+        "de": "Zeit zum Dimmen bei Tastendruck und Set-Befehl (wenn keine Dauer angegeben ist). Wenn nicht 0, wird das Dimmen sanft durchgeführt, um die Lebensdauer der Lampe zu erhalten. 0=Sofort, 1-255 in 10ms Einheiten (Standard 30)"
       }
     },
     {
@@ -242,7 +264,8 @@
       "type": "number",
       "label": {
         "en": "Speed for slow dimming",
-        "nl": "Snelheid bij langzaam dimmen"
+        "nl": "Snelheid bij langzaam dimmen",
+		"de": "Geschwindigkeit für langsames dimmen"
       },
       "value": 3,
       "attr": {
@@ -251,7 +274,8 @@
       },
       "hint": {
         "en": "Time to dim on button holds and Start Level Change command (if it has no duration specified). Unit in Seconds 1-255 (Default 3)",
-        "nl": "Tijd om te dimmen na ingedrukte knop of Start Level commando (Wanneer er geen periode is gedefineerd) Eenheden in seconden 1-255 (Standaard 3)"
+        "nl": "Tijd om te dimmen na ingedrukte knop of Start Level commando (Wanneer er geen periode is gedefineerd) Eenheden in seconden 1-255 (Standaard 3)",
+		"en": "Zeit zum Dimmen bei gedrückter Taste und Start Level commando starten (wenn keine Dauer angegeben ist). Einheit in Sekunden 1-255 (Standard 3)"
       }
     },
     {
@@ -263,32 +287,37 @@
       "type": "dropdown",
       "label": {
         "en": "Behavior on 'Switch On",
-        "nl": "Gedrag bij aanschakelen"
+        "nl": "Gedrag bij aanschakelen",
+		"de": "Verhalten beim einschalten"
       },
       "value": "0",
       "hint": {
         "en": "Defines the dim level on command 'ON'. On default he dimmer restores last dim level. This parameter allows configuring the maximum level on second On command (if already On) or to always switch on to maximum level.",
-        "nl": "Defineerd het dim niveau bij het AAN commando. Standaard zal de dimmer het laatste niveau gebruiken. Met deze instelling kan de maximale dim niveau voor het tweede AAN commando (wanneer de dimmer al aan staat) worden geconfigureerd of altijd aan gaan naar het maximale dim niveau. "
+        "nl": "Defineerd het dim niveau bij het AAN commando. Standaard zal de dimmer het laatste niveau gebruiken. Met deze instelling kan de maximale dim niveau voor het tweede AAN commando (wanneer de dimmer al aan staat) worden geconfigureerd of altijd aan gaan naar het maximale dim niveau. ",
+		"en": "Definiert den Dimmwert bei Befehl 'ON'. Standardmäßig stellt der Dimmer den letzten Dimmwert wieder her. Mit diesem Parameter kann der Maximalpegel auf den zweiten Ein-Befehl eingestellt werden (falls bereits eingeschaltet) oder immer auf den Maximalpegel eingeschaltet werden"
       },
       "values": [{
           "id": "0",
           "label": {
             "en": "last dim level (Default)",
-            "nl": "laatste dim niveau (Standaard)"
+            "nl": "laatste dim niveau (Standaard)",
+			"de": "Letzter Dim-Wert (Standard)"
           }
         },
         {
           "id": "1",
           "label": {
             "en": "maximum dim level when already turned on",
-            "nl": "maximale dim niveau wanneer de dimmer al aan staat"
+            "nl": "maximale dim niveau wanneer de dimmer al aan staat",
+			"de": "Maximaler Dim-Wert wenn bereits eingeschaltet"
           }
         },
         {
           "id": "2",
           "label": {
             "en": "always maximum dim level",
-            "nl": "Altijd het maximale dim niveau"
+            "nl": "Altijd het maximale dim niveau",
+			"de": "Immer Maximaler Dim-Wert"
           }
         }
       ]

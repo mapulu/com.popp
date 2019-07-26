@@ -12,5 +12,8 @@
       },
       "getable": true,
       "setable": false,
+	  "insights": true,
+	  "insightsTitleTrue": { "en": "Raining", "nl": "Regen", "de": "Regen" },
+	  "insightsTitleFalse": { "en": "Not raining", "nl": "Geen regen", "de": "Kein Regen" },
 	  "icon": "/assets/alarm_rain.svg"
     }

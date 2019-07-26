@@ -15,11 +15,13 @@
     "id": "alarm_siren",
     "title": {
       "en": "Siren Alarm",
-      "nl": "Sirene Alarm"
+      "nl": "Sirene Alarm",
+	  "de": "Sirenen Alarm"
     },
     "hint": {
       "en": "This card will trigger when siren is activated.",
-      "nl": "Deze kaart wordt alleen geactiveerd wanneer de sirene actief is."
+      "nl": "Deze kaart wordt alleen geactiveerd wanneer de sirene actief is.",
+	  "de": "Diese Karte wird ausgelöst, wenn die Sirene aktiviert wird."
     },
     "args": [{
       "name": "device",
@@ -33,11 +35,13 @@
   "id": "alarm_state",
   "title": {
     "en": "Change the alarm state",
-    "nl": "Verander de alarm toestand"
+    "nl": "Verander de alarm toestand",
+	"de": "Ändern des Alarmzustands"
   },
   "hint": {
     "en": "Change the alarm state; sound or silence the alarm",
-    "nl": "Verander de alarm toestand; luiden of uitschakelen van het alarm"
+    "nl": "Verander de alarm toestand; luiden of uitschakelen van het alarm",
+	"de": "Ändern des Alarmstatus; Ertönen oder Ausschalten des Alarms"
   },
   "args": [{
       "name": "device",
@@ -51,14 +55,16 @@
           "id": "off/disable",
           "label": {
             "en": "Silence alarm",
-            "nl": "Alarm stil"
+            "nl": "Alarm stil",
+			"de": "Alarm auschalten"
           }
         },
         {
           "id": "on/enable",
           "label": {
             "en": "Sound alarm",
-            "nl": "Alarm luiden"
+            "nl": "Alarm luiden",
+			"de": "Alarm einschalten"
           }
         }
       ]

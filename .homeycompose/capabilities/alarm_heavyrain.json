@@ -12,5 +12,8 @@
       },
       "getable": true,
       "setable": false,
+	  "insights": true,
+	  "insightsTitleTrue": { "en": "Heavy Rain", "nl": "Stortregens", "de": "Starkregen" },
+	  "insightsTitleFalse": { "en": "No Heavy Rain", "nl": "Geen stortregens", "de": "Kein Starkregen" },
       "icon": "/assets/alarm_rain.svg"
     }

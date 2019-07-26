@@ -101,11 +101,13 @@
       "value": 10,
       "label": {
         "en": "Siren alarm sequence interval",
-        "nl": "Siren alarm sequence interval"
+        "nl": "Siren alarm sequence interval",
+		"de": "Sirenenalarm-Sequenzintervall"
       },
       "hint": {
         "en": "The additional siren is creating a different acoustic signal differentiate from the smoke alarm. This sound is partly on and partly off. This parameter defines the total length of the interval in seconds.",
-        "nl": "De extra sirene zorgt voor een ander akoestisch signaal dat onderscheidt van het rookalarm. Dit geluid is gedeeltelijk aan en gedeeltelijk af. Deze parameter definieert de totale lengte van het interval in seconden."
+        "nl": "De extra sirene zorgt voor een ander akoestisch signaal dat onderscheidt van het rookalarm. Dit geluid is gedeeltelijk aan en gedeeltelijk af. Deze parameter definieert de totale lengte van het interval in seconden.",
+		"de": "Die zusätzliche Sirene erzeugt ein anderes akustisches Signal, das sich vom Rauchmelder unterscheidet. Dieser Sound ist teilweise ein- und teilweise ausgeschaltet. Dieser Parameter definiert die Gesamtlänge des Intervalls in Sekunden."
       },
       "_size": 1,
       "type": "number"
@@ -119,11 +121,13 @@
       "value": 8,
       "label": {
         "en": "Siren alarm tone length",
-        "nl": "Siren alarm toon lengte"
+        "nl": "Siren alarm toon lengte",
+		"de": "Länge des Sirenenalarms"
       },
       "hint": {
         "en": "The additional siren is creating a different acoustic signal differentiate from the smoke alarm. This sound is partly on and partly off. This parameter defines the total length of the sound versus silence within this interval. Please make sure this value is always smaller (shorter time) than parameter 1 that defines the whole sequence.",
-        "nl": "De extra sirene zorgt voor een ander akoestisch signaal dat onderscheidt van het rookalarm. Dit geluid is gedeeltelijk aan en gedeeltelijk af. Deze parameter bepaalt de totale lengte van het geluid versus stilte binnen dit interval. Zorg ervoor dat deze waarde altijd kleiner is (kortere tijd) dan parameter 1 die de hele volgorde definieert."
+        "nl": "De extra sirene zorgt voor een ander akoestisch signaal dat onderscheidt van het rookalarm. Dit geluid is gedeeltelijk aan en gedeeltelijk af. Deze parameter bepaalt de totale lengte van het geluid versus stilte binnen dit interval. Zorg ervoor dat deze waarde altijd kleiner is (kortere tijd) dan parameter 1 die de hele volgorde definieert.",
+		"de": "Die zusätzliche Sirene erzeugt ein anderes akustisches Signal, das sich vom Rauchmelder unterscheidet. Dieser Sound ist teilweise ein- und teilweise ausgeschaltet. Dieser Parameter definiert die Gesamtlänge des Klangs gegenüber der Stille innerhalb dieses Intervalls. Bitte stellen Sie sicher, dass dieser Wert immer kleiner (kürzere Zeit) ist als Parameter 1, der die gesamte Sequenz definiert."
       },
       "_size": 1,
       "type": "number"
@@ -132,37 +136,43 @@
       "id": "3",
       "zwave": {
         "index": 3,
-        "size": 1
+        "size": 1,
+		"signed": false
       },
-      "value": true,
+      "value": 99,
       "label": {
         "en": "Value of On-Command",
-        "nl": "Waarde van On-Commando"
+        "nl": "Waarde van On-Commando",
+		"de": "Kommando bei erkanntem Rauchalarm"
       },
       "hint": {
-        "en": "This value is sent as BASIC Set to Association Group 3 when an Smoke Alarm occurs. If 255 can not be entered in your gateway use -1.",
-        "nl": "Deze waarde wordt verzonden als BASIC Set to Association Group 3 als er een rookmelder optreedt. Als 255 niet in uw gateway kan worden ingevoerd, gebruikt u -1."
+        "en": "This value is sent as BASIC Set to Association Group 3 when an Smoke Alarm occurs.",
+        "nl": "Deze waarde wordt verzonden als BASIC Set to Association Group 3 als er een rookmelder optreedt.",
+		"de": "Dieses Kommando wird in Assoziationgruppe 3 gesendet, wenn ein Rauchalarm erkannt wird. "
       },
       "_size": 1,
-      "type": "checkbox"
+      "type": "number"
     },
     {
       "id": "4",
       "zwave": {
         "index": 4,
-        "size": 1
+        "size": 1,
+		"signed": false
       },
-      "value": true,
+      "value": 0,
       "label": {
         "en": "Value of Off-Command",
-        "nl": "Waarde van Off-Commando"
+        "nl": "Waarde van Off-Commando",
+		"de": "Kommando bei gelöschtem Rauchalarm"
       },
       "hint": {
-        "en": "This value is sent as BASIC Set to Association Group 3 when an Smoke Alarm is cleared. If 255 can not be entered in your gateway use -1.",
-        "nl": "Deze waarde wordt verzonden als BASIC Set to Association Group 3 als een rookmelder is gewist. Als 255 niet in uw gateway kan worden ingevoerd, gebruikt u -1."
+        "en": "This value is sent as BASIC Set to Association Group 3 when an Smoke Alarm is cleared.",
+        "nl": "Deze waarde wordt verzonden als BASIC Set to Association Group 3 als een rookmelder is gewist.",
+		"de": "Dieses Kommando wird in Assoziationgruppe 3 gesendet, wenn ein Rauchalarm gelöscht wurde."
       },
       "_size": 1,
-      "type": "checkbox"
+      "type": "number"
     }
   ]
 }

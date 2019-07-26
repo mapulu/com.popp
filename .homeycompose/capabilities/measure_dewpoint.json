@@ -16,6 +16,7 @@
 		"nl": "Celius (C)"
       },
       "chartType": "stepLine",
+	  "insights": true,
       "decimals": 2,
       "getable": true,
       "setable": false,

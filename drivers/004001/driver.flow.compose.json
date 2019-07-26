@@ -5,11 +5,13 @@
   "id": "004001_alarm_state",
   "title": {
     "en": "Change the alarm state",
-    "nl": "Verander de alarm toestand"
+    "nl": "Verander de alarm toestand",
+	"de": "Ändern des Alarmzustands"
   },
   "hint": {
     "en": "Change the alarm state; sound or silence the alarm",
-    "nl": "Verander de alarm toestand; luiden of uitschakelen van het alarm"
+    "nl": "Verander de alarm toestand; luiden of uitschakelen van het alarm",
+	"de": "Ändern des Alarmzustands; Ertönen oder Stummschalten des Alarms"
   },
   "args": [{
       "name": "device",
@@ -23,14 +25,16 @@
           "id": "0",
           "label": {
             "en": "Silence alarm",
-            "nl": "Alarm stil"
+            "nl": "Alarm stil",
+			"de": "Alarm ausschalten"
           }
         },
         {
           "id": "1",
           "label": {
             "en": "Sound alarm",
-            "nl": "Alarm luiden"
+            "nl": "Alarm luiden",
+			"de": "Alarm einschalten"
           }
         }
       ]

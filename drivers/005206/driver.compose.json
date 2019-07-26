@@ -66,14 +66,14 @@
 },
     "meter_power.wind": {
       "units": {
-        "en": "R*8",
-        "nl": "O*8",
-		"de": "U*8"
+        "en": "",
+        "nl": "",
+		"de": ""
       },
 	  "title": {
-        "en": "Windmill",
+        "en": "Windmill Counter",
         "nl": "Windmolen",
-		"de": "Windrad"
+		"de": "Windrad Zähler"
       }
 }
 },
