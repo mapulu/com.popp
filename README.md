@@ -51,14 +51,14 @@ c. check if effective and retry to the desired value
 
 ## Change Log:    
    
-### v 2.0.7
+### v 2.0.8
 **fixed:** Keypad, Z-Rain, Z-Weather (Please reinclude that devices)
 Added support for Power Plug
 Added support for Mold Detector
 Added German language
 Minor Bugfixes
 
-### v 2.0.8
+### v 2.0.7
 Added support for Door and Window Sensor with Tilt Detection
 
 ### v 2.0.6   
