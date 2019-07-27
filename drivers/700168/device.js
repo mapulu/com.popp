@@ -22,11 +22,6 @@ onMeshInit() {
 		}
 		else if (report && report.hasOwnProperty('Value') && this.getSetting('rain_stop_command') === report['Value'])
 		{ 
-		if(args.device.getCapabilityValue('alarm_heavyrain') === true)
-		{
-		this._heavyRainAlarmOffTrigger.trigger(this, null, null);
-		this.setCapabilityValue('alarm_heavyrain', false).catch(this.error);
-		}
 		this._rainOffTrigger.trigger(this, null, null);
 		return false;
 		}
@@ -40,11 +35,6 @@ onMeshInit() {
 		if (report && report.hasOwnProperty('Value') && this.getSetting('heavy_rain_start_command') === report['Value'])
 		{
 		this._heavyRainAlarmOnTrigger.trigger(this, null, null);
-		if(args.device.getCapabilityValue('measure_rain.is_rain') === false)
-		{
-		this._rainOnTrigger.trigger(this, null, null);
-		this.setCapabilityValue('is_rain', true).catch(this.error);
-		}
 		return true;
 		}
 		else if (report && report.hasOwnProperty('Value') && this.getSetting('heavy_rain_stop_command') === report['Value'])
