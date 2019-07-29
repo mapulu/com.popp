@@ -50,7 +50,13 @@ b. change the setting to another value with above steps
 c. check if effective and retry to the desired value    
 
 ## Change Log:    
-   
+
+### v 2.0.10
+Z-Weather add setting for metres above sea level for showing relative air pressure
+
+### v 2.0.9
+Bugfixes
+ 
 ### v 2.0.8
 **fixed:** Keypad, Z-Rain, Z-Weather (Please reinclude that devices)
 Added support for Power Plug
