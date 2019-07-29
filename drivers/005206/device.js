@@ -40,7 +40,14 @@ class P005206 extends ZwaveDevice {
               report: 'SENSOR_MULTILEVEL_REPORT',
               reportParser: report => {
                 if (report && report.hasOwnProperty('Sensor Type') && report.hasOwnProperty('Sensor Value (Parsed)') && report['Sensor Type'] === 'Barometric pressure (version 2)' || report['Sensor Type'] === 'Barometric pressure (version 2) ') {
-                  return report['Sensor Value (Parsed)']*10;
+                  if (this.getSetting('metres_over_sea_level') >= 1)
+				  {
+				  return Math.round(report['Sensor Value (Parsed)']*10/Math.pow(1-(0.0065*this.getSetting('metres_over_sea_level'))/288.15, 5.255)) //simplified Barometric formula
+				  }
+				  else
+				  {
+				  return report['Sensor Value (Parsed)']*10;
+				  }
                 }
                 return null;
               }

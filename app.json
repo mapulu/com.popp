@@ -1650,6 +1650,23 @@
             "de": "Bei Überschreiten dieses Wertes wird ein Kommando in die Geräte der Assoziationsgruppe 3 gesendet. Gleichermaßen wird beim Unterschreiten dieses Wertes wird ein Kommando in die Geräte der Assoziationsgruppe 4 gesendet."
           },
           "type": "number"
+        },
+        {
+          "id": "metres_over_sea_level",
+          "value": 0,
+          "label": {
+            "en": "Metres above sea level",
+            "de": "Höhe über dem Meeresspiegel"
+          },
+          "attr": {
+            "min": 0,
+            "max": 8848
+          },
+          "hint": {
+            "en": "Indicate the altitude above sea level where the Z-Weather is installed. This is used to convert from absolute to relative air pressure.",
+            "de": "Gib die Höhe über dem Meeresspiegel an wo der Z-Weather installiert ist. Dies dient zur Umrechnung vom Absoluten auf Relativen Luftdruck"
+          },
+          "type": "number"
         }
       ]
     },
