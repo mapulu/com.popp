@@ -1,0 +1,27 @@
+{
+  "id": "700397",
+  "name": {
+    "en": "Smart Outdoor Plug",
+    "nl": "Smart Outdoor Plug",
+	"de": "Smart Outdoor Plug"
+  },
+  "zwave": {
+    "manufacturerId": 340,
+    "productTypeId": 3,
+    "productId": 10,
+    "learnmode": {
+      "instruction": {
+        "en": "Press the button on the wall plug 3 times whithin a period of arround 2 seconds. ",
+        "nl": "Druk 3 keer op de knop op de wandcontactdoos, binnen een periode van ongeveer 2 seconden. ",
+		"de": "Drücke die Taste am Stecker 3 mal innerhalb von ca. 2 Sekunden. "
+      }
+    },
+    "associationGroups": [1, 1]
+  },
+  "class": "socket",
+  "capabilities": ["onoff", "meter_power", "measure_power", "measure_voltage", "measure_current"],
+  "images": {
+    "large": "/drivers/700793/assets/images/large.png",
+    "small": "/drivers/700793/assets/images/small.png"
+  }
+}

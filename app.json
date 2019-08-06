@@ -15,7 +15,7 @@
     "large": "/assets/images/large.jpg",
     "small": "/assets/images/small.jpg"
   },
-  "version": "2.0.10",
+  "version": "2.0.11",
   "compatibility": ">=1.5.3",
   "tags": {
     "en": [
@@ -179,6 +179,26 @@
                 }
               }
             ]
+          }
+        ]
+      },
+      {
+        "id": "P700397_reset_meter",
+        "title": {
+          "en": "Reset meter values",
+          "nl": "Meter waarden resetten",
+          "de": "Stromzähler zurücksetzen"
+        },
+        "hint": {
+          "en": "Reset the accumulated power usage (kWh). Can not be reversed.",
+          "nl": "Reset de stroomverbruik (kWh) waarden. Kan niet ongedaan worden gemaakt.",
+          "de": "Setzt Stromverbrauch (kWh) zurück. Kann nicht rückgängig gemacht werden."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=700397"
           }
         ]
       },
@@ -710,6 +730,83 @@
             "type": "device",
             "name": "device",
             "filter": "driver_id=700168"
+          }
+        ]
+      },
+      {
+        "id": "button_trigger",
+        "title": {
+          "en": "Button Trigger",
+          "nl": "Druk op de toetsen",
+          "de": "Taste wurde gedruckt"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=700397"
+          },
+          {
+            "name": "scene",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "Key Pressed 1 time",
+                "label": {
+                  "en": "Pressed/switched 1x",
+                  "nl": "1x Ingedrukt/geschakeld",
+                  "de": "1x gedrückt"
+                }
+              },
+              {
+                "id": "Key Released",
+                "label": {
+                  "en": "Hold released",
+                  "nl": "Lang ingedrukt los",
+                  "de": "Lang gedrückt losgelassen"
+                }
+              },
+              {
+                "id": "Key Held Down",
+                "label": {
+                  "en": "Hold button",
+                  "nl": "Lang ingedrukt",
+                  "de": "Lang gedrückt"
+                }
+              },
+              {
+                "id": "Key Pressed 2 times",
+                "label": {
+                  "en": "Pressed/switched 2x",
+                  "nl": "2x Ingedrukt/geschakeld",
+                  "de": "2x gedrückt"
+                }
+              },
+              {
+                "id": "Key Pressed 3 times",
+                "label": {
+                  "en": "Pressed/switched 3x",
+                  "nl": "3x Ingedrukt/geschakeld",
+                  "de": "3x gedrückt"
+                }
+              },
+              {
+                "id": "Key Pressed 4 times",
+                "label": {
+                  "en": "Pressed/switched 4x",
+                  "nl": "4x Ingedrukt/geschakeld",
+                  "de": "4x gedrückt"
+                }
+              },
+              {
+                "id": "Key Pressed 5 times",
+                "label": {
+                  "en": "Pressed/switched 5x",
+                  "nl": "5x Ingedrukt/geschakeld",
+                  "de": "5x gedrückt"
+                }
+              }
+            ]
           }
         ]
       },
@@ -2971,8 +3068,14 @@
           340,
           338
         ],
-        "productTypeId": 3,
-        "productId": 1298,
+        "productTypeId": [
+          3,
+          5
+        ],
+        "productId": [
+          1298,
+          3
+        ],
         "learnmode": {
           "image": "/drivers/009501/assets/learnmode.svg",
           "instruction": {
@@ -4123,6 +4226,456 @@
           "attr": {
             "min": 0,
             "max": 99
+          }
+        }
+      ]
+    },
+    {
+      "id": "700397",
+      "name": {
+        "en": "Smart Outdoor Plug",
+        "nl": "Smart Outdoor Plug",
+        "de": "Smart Outdoor Plug"
+      },
+      "zwave": {
+        "manufacturerId": 340,
+        "productTypeId": 3,
+        "productId": 10,
+        "learnmode": {
+          "instruction": {
+            "en": "Press the button on the wall plug 3 times whithin a period of arround 2 seconds. ",
+            "nl": "Druk 3 keer op de knop op de wandcontactdoos, binnen een periode van ongeveer 2 seconden. ",
+            "de": "Drücke die Taste am Stecker 3 mal innerhalb von ca. 2 Sekunden. "
+          }
+        },
+        "associationGroups": [
+          1,
+          1
+        ]
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "meter_power",
+        "measure_power",
+        "measure_voltage",
+        "measure_current"
+      ],
+      "images": {
+        "large": "/drivers/700793/assets/images/large.png",
+        "small": "/drivers/700793/assets/images/small.png"
+      },
+      "settings": [
+        {
+          "id": "led_mode",
+          "zwave": {
+            "index": 1,
+            "size": 1
+          },
+          "type": "dropdown",
+          "value": "1",
+          "label": {
+            "en": "LED Operation Mode",
+            "nl": "LED-bedieningsmodus",
+            "de": "LED Betriebsmodus"
+          },
+          "hint": {
+            "en": "Defines when the LED shall shine and how",
+            "nl": "Bepaalt wanneer de LED moet gaan branden en hoe de LED moet gaan branden",
+            "de": "Definiert, wann und wie die LED leuchten soll"
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "LED off, only blinks on traffic",
+                "nl": "LED uit, knippert alleen op het verkeer",
+                "de": "LED aus, blinkt nur bei Traffic"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Defined by Parameter 21 and 22",
+                "nl": "Bepaald door de parameters 21 en 22",
+                "de": "Definiert durch die Parameter 21 und 22"
+              }
+            }
+          ]
+        },
+        {
+          "id": "led_mode_off",
+          "zwave": {
+            "index": 21,
+            "size": 1
+          },
+          "type": "dropdown",
+          "value": "0",
+          "label": {
+            "en": "21: LED Color on OFF state",
+            "nl": "21: LED kleur UIT staat",
+            "de": "21: LED Farbe aus Zustand"
+          },
+          "hint": {
+            "en": "Defines the behavior of the LED when the load is switched off ",
+            "nl": "Legt het gedrag van de led vast bij uitgeschakelde belasting",
+            "de": "Definiert das Verhalten der LED bei ausgeschalteter Last"
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Off",
+                "nl": "Uit",
+                "de": "Aus"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Red",
+                "nl": "Rood",
+                "de": "Rot"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Green",
+                "nl": "Groen",
+                "de": "Grün"
+              }
+            }
+          ]
+        },
+        {
+          "id": "led_mode_on",
+          "zwave": {
+            "index": 22,
+            "size": 1
+          },
+          "type": "dropdown",
+          "value": "0",
+          "label": {
+            "en": "LED Color on ON state (22)",
+            "nl": "LED kleur AAN staat (22)",
+            "de": "LED Farbe an Zustand (22)"
+          },
+          "hint": {
+            "en": "Defines the behavior of the LED when the load is switched on",
+            "nl": "Legt het gedrag van de led vast bij aangeschakelde belasting",
+            "de": "Definiert das Verhalten der LED bei eingeschalteter Last"
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Off",
+                "nl": "Uit",
+                "de": "Aus"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Red",
+                "nl": "Rood",
+                "de": "Rot"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Green",
+                "nl": "Groen",
+                "de": "Grün"
+              }
+            }
+          ]
+        },
+        {
+          "id": "condition_power_failure",
+          "zwave": {
+            "index": 5,
+            "size": 1
+          },
+          "type": "dropdown",
+          "value": "0",
+          "label": {
+            "en": "Condition after power failure",
+            "nl": "Voorwaarde na stroomuitval",
+            "de": "Zustand nach Stromausfall"
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Always off",
+                "nl": "Altijd uit",
+                "de": "Immer aus"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Last status (default)",
+                "nl": "Laatste status (standaard)",
+                "de": "Letzter Status (Standard)"
+              }
+            }
+          ]
+        },
+        {
+          "id": "button_mode",
+          "zwave": {
+            "index": 4,
+            "size": 1
+          },
+          "type": "dropdown",
+          "value": "0",
+          "label": {
+            "en": "Button Mode",
+            "nl": "Button Mode",
+            "de": "Tasten Modus"
+          },
+          "hint": {
+            "en": "This parameter defines if the local button shall control (switch) the load or it is only used to send out scene control commands to the central controller. ",
+            "nl": "Deze parameter bepaalt of de lokale knop de belasting moet regelen (schakelen) of dat deze alleen wordt gebruikt om opdrachten voor scènebesturing naar de centrale controller te sturen. ",
+            "de": "Dieser Parameter legt fest, ob die lokale Taste die Last steuern (schalten) soll oder ob sie nur zum Senden von Szenensteuerbefehlen verwendet wird"
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Controls Load + Controls Scenes",
+                "nl": "Belasting + Scènes",
+                "de": "Steuert die Last + Szenen"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Scene Control Only",
+                "nl": "Alleen scènecontrole",
+                "de": "Nur Szenensteuerung"
+              }
+            }
+          ]
+        },
+        {
+          "id": "auto_off",
+          "zwave": {
+            "index": 2,
+            "size": 2,
+            "signed": false
+          },
+          "attr": {
+            "min": 0,
+            "max": 65535
+          },
+          "type": "number",
+          "value": 0,
+          "label": {
+            "en": "Auto Off",
+            "nl": "Auto Uit",
+            "de": "Automatisch Aus"
+          },
+          "hint": {
+            "en": "Defines if and after which time the device shall turn off without any user interaction (0=Off, 1-65535 sec)",
+            "nl": "Bepaalt of en na welke tijd de inrichting moet worden uitgeschakeld zonder enige interactie met de gebruiker (0=Uit, 1-65535 sec.).",
+            "de": "Legt fest, ob und nach welcher Zeit das Gerät ohne Benutzereingriff ausgeschaltet werden soll (0=Aus, 1-65535 sek)"
+          }
+        },
+        {
+          "id": "switch_wireless_off",
+          "zwave": {
+            "index": 3,
+            "size": 1
+          },
+          "type": "dropdown",
+          "value": "0",
+          "label": {
+            "en": "Switching behavior when receiving wireless OFF",
+            "nl": "Schakelgedrag bij het ontvangen van draadloze ontvangst UIT",
+            "de": "Schaltverhalten beim Empfang von drahtlosen Signalen AUS"
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Switches off",
+                "nl": "Schakelt uit",
+                "de": "Schaltet aus"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Ignores Off command",
+                "nl": "Negeert het commando uit",
+                "de": "Ignoriert Aus Befehl"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Switches on",
+                "nl": "Schakelt aan",
+                "de": "Schaltet ein"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                "en": "Switches on, when receiving off command and current state is off",
+                "nl": "Schakelt aan, wanneer het ontvangen van bevel en de huidige staat is weg wanneer het ontvangen van van bevel en huidige staat weg is",
+                "de": "Schaltet sich ein, wenn der Aus-Befehl empfangen wird und der aktuelle Zustand ausgeschaltet ist."
+              }
+            }
+          ]
+        },
+        {
+          "id": "voltage_report",
+          "zwave": {
+            "index": 23,
+            "size": 1,
+            "signed": false
+          },
+          "attr": {
+            "min": 0,
+            "max": 250
+          },
+          "type": "number",
+          "value": 100,
+          "label": {
+            "en": "Voltage Report Threshold",
+            "nl": "De drempel van het voltagerapport",
+            "de": "Grenzwert für den Spannungsbericht"
+          },
+          "hint": {
+            "en": "Report the voltage when the voltage has changed by more then X  * 1 V. When disabled the device will report every 10 minutes regardless of current voltage. ",
+            "nl": "Meld de spanning wanneer de spanning met meer dan X * 1 V is veranderd. Als het apparaat is uitgeschakeld, zal het om de 10 minuten rapporteren, ongeacht de huidige spanning.",
+            "de": "Meldet die Spannung, wenn sich die Spannung um mehr als X * 1 V geändert hat. Wenn deaktiviert, meldet das Gerät alle 10 Minuten, unabhängig von der aktuellen Spannung. "
+          }
+        },
+        {
+          "id": "current_report",
+          "zwave": {
+            "index": 24,
+            "size": 1,
+            "signed": false
+          },
+          "attr": {
+            "min": 0,
+            "max": 255
+          },
+          "type": "number",
+          "value": 10,
+          "label": {
+            "en": "Current Report Threshold",
+            "nl": "De drempel van het Stroom",
+            "de": "Grenzwert für den Stromstärkebericht"
+          },
+          "hint": {
+            "en": "Report the current when the current has changed by more then X  * 0,01 A. When disabled the device will report every 10 minutes regardless of current change.",
+            "nl": "Meld de stroom wanneer de stroom meer dan X * 0,01 Ais veranderd. Wanneer het apparaat is uitgeschakeld, zal het om de 10 minuten rapporteren, ongeacht de huidige verandering.",
+            "de": "Meldet die Stromstärke, wenn sich die Stromstärke um mehr als X * 0,01 A geändert hat. Wenn deaktiviert, meldet das Gerät alle 10 Minuten, unabhängig von der aktuellen Stromstärken änderung."
+          }
+        },
+        {
+          "id": "power_report",
+          "zwave": {
+            "index": 25,
+            "size": 1,
+            "signed": false
+          },
+          "attr": {
+            "min": 0,
+            "max": 255
+          },
+          "type": "number",
+          "value": 50,
+          "label": {
+            "en": "Power Report Threshold",
+            "nl": "De drempel van het machtsrapport",
+            "de": "Schwellenwert für den Leistungsbericht"
+          },
+          "hint": {
+            "en": "Report the power when the power has changed by more then X  * 1 W. When disabled the device will report every 10 minutes regardless of power consumption change.",
+            "nl": "Meld het vermogen wanneer het vermogen met meer dan X * 1 W is veranderd. Wanneer het apparaat is uitgeschakeld, rapporteert het om de 10 minuten, ongeacht de verandering in het stroomverbruik.",
+            "de": "Meldet die Leistung, wenn sich die Leistung um mehr als X * 1 W geändert hat. Wenn deaktiviert, meldet das Gerät alle 10 Minuten, unabhängig von der aktuellen Leistungsänderung."
+          }
+        },
+        {
+          "id": "soft_circuit_breaker",
+          "zwave": {
+            "index": 26,
+            "size": 2,
+            "signed": false
+          },
+          "attr": {
+            "min": 0,
+            "max": 3600
+          },
+          "type": "number",
+          "value": 3600,
+          "label": {
+            "en": "Soft Circuit Breaker Threshold",
+            "nl": "Zachte Stroomonderbrekerdrempel",
+            "de": "Schwellenwert für den Gerätschutzschalter"
+          },
+          "hint": {
+            "en": "When the power draw exceeds the value set in this parameter for a time set in parameter 28 the soft ciruit breaker will disconnect the load.",
+            "nl": "Wanneer de stroomopname de in deze parameter ingestelde waarde gedurende een in parameter 28 ingestelde tijd overschrijdt, schakelt de soft ciruitbreker de belasting uit.",
+            "de": "Wenn die Leistungsaufnahme den in diesem Parameter eingestellten Wert für eine in Parameter 28 eingestellte Zeit überschreitet, trennt der Geräteschutzschalter die Last."
+          }
+        },
+        {
+          "id": "soft_circuit_recovery",
+          "zwave": {
+            "index": 27,
+            "size": 1,
+            "signed": false
+          },
+          "attr": {
+            "min": 0,
+            "max": 255
+          },
+          "type": "number",
+          "value": 0,
+          "label": {
+            "en": "Soft Circuit Breaker Recovery Time",
+            "nl": "Zachte stroomonderbreker hersteltijd",
+            "de": "Wiederherstellungszeit des Geräteschutzschalter"
+          },
+          "hint": {
+            "en": "Once the soft circuit breaker tipps and the load is disconnected the load will be automatically reconneced after X seconds. When disabled the load must be repowered manually or with wireless command.  (0: never 1-255 sec.)",
+            "nl": "Zodra de zachte stroomonderbreker kantelt en de belasting wordt losgekoppeld, wordt de belasting na X seconden automatisch weer ingeschakeld. Wanneer de belasting wordt uitgeschakeld, moet de belasting handmatig of met een draadloos commando opnieuw worden ingeschakeld. (0: nooit 1-255 sec.)",
+            "de": "Sobald der Geräteschutzschalter auslöst und die Last abgeklemmt ist, wird die Last nach X Sekunden automatisch wieder eingeschaltet. Wenn deaktiviert, muss die Last manuell oder mit einem drahtlosen Befehl neu eingeschaltet werden. (0: niemals 1-255 sec.)"
+          }
+        },
+        {
+          "id": "soft_circuit_delay",
+          "zwave": {
+            "index": 28,
+            "size": 1,
+            "signed": false
+          },
+          "attr": {
+            "min": 0,
+            "max": 255
+          },
+          "type": "number",
+          "value": 10,
+          "label": {
+            "en": "Soft Circuit Breaker Delay Time (28)",
+            "nl": "Zachte stroomonderbreker hersteltijd (28)",
+            "de": "Wiederherstellungszeit des Geräteschutzschalter (28)"
+          },
+          "hint": {
+            "en": "This delay time defines how fast the soft circuit breaker wil react when the threshold power is exceeded. The power is cut off only if the power draw remains over the threshold level for the defines time. (0: never 1-255 * 0,1 sec.)",
+            "nl": "Deze vertragingstijd bepaalt hoe snel de zachte stroomonderbreker reageert wanneer het drempelvermogen wordt overschreden. De stroom wordt alleen uitgeschakeld als de stroomtoevoer gedurende de gedefinieerde tijd boven de drempelwaarde blijft. (0: nooit 1-255 * 0,1 sec.)",
+            "de": "Diese Verzögerungszeit definiert, wie schnell der Geräteschutzschalter bei Überschreitung der Schwellenleistung reagiert. Die Stromversorgung wird nur dann unterbrochen, wenn die Leistungsaufnahme für die definierte Zeit über dem Schwellenwert bleibt. (0: nie 1-255 * 0,1 Sek.)"
           }
         }
       ]

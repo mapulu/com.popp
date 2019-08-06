@@ -7,8 +7,8 @@
   },
   "zwave": {
     "manufacturerId": [340, 338],
-    "productTypeId": 3,
-    "productId": 1298,
+    "productTypeId": [3, 5],
+    "productId": [1298, 3],
     "learnmode": {
       "image": "/drivers/009501/assets/learnmode.svg",
       "instruction": {
