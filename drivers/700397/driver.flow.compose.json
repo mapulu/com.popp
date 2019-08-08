@@ -1,0 +1,93 @@
+{
+  "triggers": [
+    {
+      "id": "button_trigger",
+      "title": {
+        "en": "Button Trigger",
+        "nl": "Druk op de toetsen",
+		"de": "Taste wurde gedruckt"
+      },
+      "args": [
+        {
+          "name": "scene",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "Key Pressed 1 time",
+              "label": {
+                "en": "Pressed/switched 1x",
+                "nl": "1x Ingedrukt/geschakeld",
+				"de": "1x gedrückt"
+              }
+            },
+            {
+              "id": "Key Released",
+              "label": {
+                "en": "Hold released",
+                "nl": "Lang ingedrukt los",
+				"de": "Lang gedrückt losgelassen"
+              }
+            },
+			{
+              "id": "Key Held Down",
+              "label": {
+                "en": "Hold button",
+                "nl": "Lang ingedrukt",
+				"de": "Lang gedrückt"
+              }
+            },
+            {
+              "id": "Key Pressed 2 times",
+              "label": {
+                "en": "Pressed/switched 2x",
+                "nl": "2x Ingedrukt/geschakeld",
+				"de": "2x gedrückt"
+              }
+            },
+            {
+              "id": "Key Pressed 3 times",
+              "label": {
+                "en": "Pressed/switched 3x",
+                "nl": "3x Ingedrukt/geschakeld",
+				"de": "3x gedrückt"
+              }
+            },
+			  {
+              "id": "Key Pressed 4 times",
+              "label": {
+                "en": "Pressed/switched 4x",
+                "nl": "4x Ingedrukt/geschakeld",
+				"de": "4x gedrückt"
+              }
+            },
+			            {
+              "id": "Key Pressed 5 times",
+              "label": {
+                "en": "Pressed/switched 5x",
+                "nl": "5x Ingedrukt/geschakeld",
+				"de": "5x gedrückt"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conditions": [],
+  "actions": [
+    {
+      "id": "P700397_reset_meter",
+      "title": {
+        "en": "Reset meter values",
+        "nl": "Meter waarden resetten",
+		"de": "Stromzähler zurücksetzen"
+      },
+      "hint": {
+        "en": "Reset the accumulated power usage (kWh). Can not be reversed.",
+        "nl": "Reset de stroomverbruik (kWh) waarden. Kan niet ongedaan worden gemaakt.",
+		"de": "Setzt Stromverbrauch (kWh) zurück. Kann nicht rückgängig gemacht werden."
+      },
+      "args": []
+    }
+  ]
+}
