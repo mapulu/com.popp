@@ -51,7 +51,7 @@ c. check if effective and retry to the desired value
 
 ## Change Log:    
    
-### v 2.0.11
+### v 2.0.12
 Fix App crash on Smart Outdoor Plug
 
 ### v 2.0.11
