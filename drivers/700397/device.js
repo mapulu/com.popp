@@ -38,7 +38,6 @@ this.registerReportListener('CENTRAL_SCENE', 'CENTRAL_SCENE_NOTIFICATION', (repo
 }
 		
 		
-	}
 	
 	resetMeterRunListener(args, state) {
 		if (this.node &&
