@@ -1,9 +1,9 @@
 {
   "id": "004001",
   "name": {
-    "en": "Smoke Detector and Siren",
-    "nl": "Rook Detector en Sirene",
-	"de": "Rauchwarnmelder plus Sirenenfunktion"
+    "en": "Smoke Detector Test and Siren",
+    "nl": "Rook Detector Test en Sirene",
+	"de": "Rauchwarnmelder Test plus Sirenenfunktion"
   },
   "mobile": {
     "components": [{

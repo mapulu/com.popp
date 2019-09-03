@@ -50,7 +50,14 @@ b. change the setting to another value with above steps
 c. check if effective and retry to the desired value    
 
 ## Change Log:    
+   
+### v 2.0.12
+Fix App crash on Smart Outdoor Plug
 
+### v 2.0.11
+Adds support for Smart Outdoor Plug		
+Extra device ID's added for Secure Flow Stop – Valve Shut-Off	
+   
 ### v 2.0.10
 Z-Weather add setting for metres above sea level for showing relative air pressure
 

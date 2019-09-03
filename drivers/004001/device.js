@@ -5,9 +5,12 @@ const ZwaveDevice = require('homey-meshdriver').ZwaveDevice;
 
 class P004001 extends ZwaveDevice {
 	onMeshInit() {
+		this.enableDebug();
+		this.printNode();
 		this.registerCapability('onoff', 'SWITCH_BINARY');
 		this.registerCapability('alarm_smoke', 'SENSOR_ALARM');
 		this.registerCapability('alarm_smoke', 'SENSOR_BINARY');
+		this.registerCapability('alarm_smoke', 'NOTIFICATION');
 		this.registerCapability('alarm_tamper', 'SENSOR_ALARM');
 		this.registerCapability('alarm_tamper', 'SENSOR_BINARY');
 		this.registerCapability('alarm_battery', 'BATTERY');
