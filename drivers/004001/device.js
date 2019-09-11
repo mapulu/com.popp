@@ -8,10 +8,17 @@ class P004001 extends ZwaveDevice {
 		this.enableDebug();
 		this.printNode();
 		this.registerCapability('onoff', 'SWITCH_BINARY');
-		this.registerCapability('alarm_smoke', 'SENSOR_ALARM');
+		this.registerCapability('alarm_smoke', 'BASIC', {
+			report: 'BASIC_SET',
+			reportParser: report => {
+				if (report && report.hasOwnProperty('Value')) {
+					return report.Value >= 1;
+				}
+				return null;
+			}		
+		});
 		this.registerCapability('alarm_smoke', 'SENSOR_BINARY');
 		this.registerCapability('alarm_smoke', 'NOTIFICATION');
-		this.registerCapability('alarm_tamper', 'SENSOR_ALARM');
 		this.registerCapability('alarm_tamper', 'SENSOR_BINARY');
 		this.registerCapability('alarm_battery', 'BATTERY');
 		this.registerCapability('measure_battery', 'BATTERY');
