@@ -26,6 +26,9 @@
     "measure_battery",
     "alarm_battery"
   ],
+  "energy": {
+    "batteries": [ "AA", "AA" ]
+  },
   "capabilitiesOptions": {
     "target_temperature": {
       "min": 4,

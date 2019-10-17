@@ -5,31 +5,6 @@
     "nl": "Rook Detector en Sirene",
 	"de": "Rauchwarnmelder plus Sirenenfunktion"
   },
-  "mobile": {
-    "components": [{
-        "id": "icon",
-        "capabilities": ["onoff"]
-      },
-      {
-        "id": "toggle",
-        "capabilities": ["onoff"],
-        "options": {
-          "showTitle": true
-        }
-      },
-      {
-        "id": "battery",
-        "capabilities": ["measure_battery"],
-        "options": {
-          "showTitle": true
-        }
-      },
-      {
-        "id": "sensor",
-        "capabilities": ["alarm_smoke", "alarm_tamper", "alarm_battery"]
-      }
-    ]
-  },
   "zwave": {
     "manufacturerId": 340,
     "productTypeId": 256,
@@ -68,6 +43,9 @@
   },
   "class": "sensor",
   "capabilities": ["onoff", "alarm_smoke", "alarm_tamper", "measure_battery", "alarm_battery"],
+  "energy": {
+    "batteries": [ "PP3" ]
+  },
   "images": {
     "large": "/drivers/004001/assets/images/large.jpg",
     "small": "/drivers/004001/assets/images/small.jpg"
@@ -114,9 +92,10 @@
       "id": "3",
       "zwave": {
         "index": 3,
-        "size": 1
+        "size": 1,
+		"signed": false
       },
-      "value": 99,
+      "value": 255,
       "label": {
         "en": "Value of BASIC On-Command",
         "nl": "Waarde van Basic On-Commando",
@@ -133,7 +112,8 @@
       "id": "4",
       "zwave": {
         "index": 4,
-        "size": 2
+        "size": 2,
+		"signed": false
       },
       "value": 0,
       "label": {

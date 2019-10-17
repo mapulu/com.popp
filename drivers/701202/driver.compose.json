@@ -12,22 +12,8 @@
 	"alarm_generic.mold", 
 	"measure_battery"
   ],
-  "mobile": {
-    "components": [{
-        "id": "icon"
-      },
-      {
-        "id": "battery",
-        "capabilities": ["measure_battery"],
-        "options": {
-          "showTitle": true
-        }
-      },
-      {
-        "id": "sensor",
-        "capabilities": ["measure_temperature", "measure_humidity", "measure_dewpoint", "alarm_generic.mold", "measure_battery"]
-      }
-    ]
+  "energy": {
+    "batteries": [ "LS14250" ]
   },
     "capabilitiesOptions": {
     "alarm_generic.mold": {

@@ -51,6 +51,11 @@ c. check if effective and retry to the desired value
 
 ## Change Log:    
    
+### v 2.1.0
+Added Homey Energy
+Updated Meshdriver 
+Bugfixes
+
 ### v 2.0.12
 Fix App crash on Smart Outdoor Plug
 

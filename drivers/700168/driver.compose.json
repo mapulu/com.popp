@@ -14,22 +14,8 @@
     "is_rain",
 	"alarm_heavyrain"
   ],
-  "mobile": {
-    "components": [{
-        "id": "icon"
-      },
-      {
-        "id": "battery",
-        "capabilities": ["measure_battery"],
-        "options": {
-          "showTitle": true
-        }
-      },
-      {
-        "id": "sensor",
-        "capabilities": ["meter_rain", "measure_rain", "alarm_battery"]
-      }
-    ]
+  "energy": {
+    "batteries": [ "AAA", "AAA" ]
   },
   "capabilitiesOptions": {
     "measure_rain.total": {

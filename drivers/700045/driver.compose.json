@@ -5,30 +5,6 @@
     "nl": "Keypad",
 	"en": "Keypad"
   },
-  "mobile": {
-    "components": [{
-        "id": "icon"
-      },
-      {
-        "id": "battery",
-        "capabilities": [
-          "measure_battery"
-        ],
-        "options": {
-          "showTitle": true
-        }
-      },
-      {
-        "id": "sensor",
-        "capabilities": ["alarm_tamper", "alarm_battery"],
-        "options": {
-          "icons": {
-            "alarm_contact": "/drivers/700045/assets/ring.svg"
-          }
-        }
-      }
-    ]
-  },
   "zwave": {
     "manufacturerId": [
       340
@@ -88,6 +64,9 @@
     "measure_battery",
     "alarm_battery"
   ],
+  "energy": {
+    "batteries": [ "AAA", "AAA", "AAA", "AAA" ]
+  },
   "images": {
     "large": "/drivers/700045/assets/images/large.jpg",
     "small": "/drivers/700045/assets/images/small.jpg"

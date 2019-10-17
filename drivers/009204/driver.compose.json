@@ -60,6 +60,9 @@
   "capabilities": [
     "measure_battery"
   ],
+  "energy": {
+    "batteries": [ "CR2032" ]
+  },
   "images": {
     "large": "/drivers/009204/assets/images/large.png",
     "small": "/drivers/009204/assets/images/small.png"

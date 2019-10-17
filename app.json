@@ -15,8 +15,8 @@
     "large": "/assets/images/large.jpg",
     "small": "/assets/images/small.jpg"
   },
-  "version": "2.0.12",
-  "compatibility": ">=1.5.3",
+  "version": "2.0.13",
+  "compatibility": ">=3.0.0",
   "tags": {
     "en": [
       "scene controller",
@@ -1029,42 +1029,6 @@
         "nl": "Rook Detector en Sirene",
         "de": "Rauchwarnmelder plus Sirenenfunktion"
       },
-      "mobile": {
-        "components": [
-          {
-            "id": "icon",
-            "capabilities": [
-              "onoff"
-            ]
-          },
-          {
-            "id": "toggle",
-            "capabilities": [
-              "onoff"
-            ],
-            "options": {
-              "showTitle": true
-            }
-          },
-          {
-            "id": "battery",
-            "capabilities": [
-              "measure_battery"
-            ],
-            "options": {
-              "showTitle": true
-            }
-          },
-          {
-            "id": "sensor",
-            "capabilities": [
-              "alarm_smoke",
-              "alarm_tamper",
-              "alarm_battery"
-            ]
-          }
-        ]
-      },
       "zwave": {
         "manufacturerId": 340,
         "productTypeId": 256,
@@ -1113,6 +1077,11 @@
         "measure_battery",
         "alarm_battery"
       ],
+      "energy": {
+        "batteries": [
+          "PP3"
+        ]
+      },
       "images": {
         "large": "/drivers/004001/assets/images/large.jpg",
         "small": "/drivers/004001/assets/images/small.jpg"
@@ -1160,9 +1129,10 @@
           "id": "3",
           "zwave": {
             "index": 3,
-            "size": 1
+            "size": 1,
+            "signed": false
           },
-          "value": 99,
+          "value": 255,
           "label": {
             "en": "Value of BASIC On-Command",
             "nl": "Waarde van Basic On-Commando",
@@ -1179,7 +1149,8 @@
           "id": "4",
           "zwave": {
             "index": 4,
-            "size": 2
+            "size": 2,
+            "signed": false
           },
           "value": 0,
           "label": {
@@ -1251,6 +1222,11 @@
         "measure_battery",
         "measure_temperature"
       ],
+      "energy": {
+        "batteries": [
+          "LS14250"
+        ]
+      },
       "images": {
         "large": "/drivers/004407/assets/images/large.jpg",
         "small": "/drivers/004407/assets/images/small.jpg"
@@ -1298,46 +1274,6 @@
     },
     {
       "id": "005107",
-      "mobile": {
-        "components": [
-          {
-            "id": "icon"
-          },
-          {
-            "id": "toggle",
-            "capabilities": [
-              "onoff"
-            ],
-            "options": {
-              "showTitle": true,
-              "greyout": false
-            }
-          },
-          {
-            "id": "battery",
-            "capabilities": [
-              "measure_battery"
-            ],
-            "options": {
-              "showTitle": true
-            }
-          },
-          {
-            "id": "sensor",
-            "capabilities": [
-              "alarm_siren",
-              "measure_temperature",
-              "alarm_tamper",
-              "alarm_battery"
-            ],
-            "options": {
-              "icons": {
-                "alarm_siren": "/drivers/005107/assets/alarm.svg"
-              }
-            }
-          }
-        ]
-      },
       "name": {
         "en": "Solar Outdoor Siren",
         "nl": "Solar Buiten Sirene",
@@ -1385,6 +1321,11 @@
         "measure_temperature",
         "alarm_battery"
       ],
+      "energy": {
+        "batteries": [
+          "INTERNAL"
+        ]
+      },
       "capabilitiesOptions": {
         "onoff": {
           "greyout": false
@@ -1601,42 +1542,14 @@
         "meter_power.wind",
         "alarm_battery"
       ],
+      "energy": {
+        "batteries": [
+          "INTERNAL"
+        ]
+      },
       "images": {
         "large": "/drivers/005206/assets/images/large.jpg",
         "small": "/drivers/005206/assets/images/small.jpg"
-      },
-      "mobile": {
-        "components": [
-          {
-            "id": "icon"
-          },
-          {
-            "id": "battery",
-            "capabilities": [
-              "measure_battery"
-            ],
-            "options": {
-              "showTitle": true
-            }
-          },
-          {
-            "id": "sensor",
-            "capabilities": [
-              "measure_wind_strength",
-              "measure_temperature",
-              "measure_humidity",
-              "measure_luminance",
-              "measure_pressure",
-              "measure_dewpoint",
-              "alarm_battery"
-            ],
-            "options": {
-              "icons": {
-                "measure_dewpoint": "/drivers/005206/assets/measure_dewpoint.svg"
-              }
-            }
-          }
-        ]
       },
       "capabilitiesOptions": {
         "measure_luminance": {
@@ -2287,6 +2200,11 @@
       "capabilities": [
         "measure_battery"
       ],
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
+      },
       "images": {
         "large": "/drivers/009204/assets/images/large.png",
         "small": "/drivers/009204/assets/images/small.png"
@@ -2856,42 +2774,6 @@
         "nl": "10 Year Smoke Detector and Siren",
         "de": "10-Jahres-Rauchmelder / Sirene"
       },
-      "mobile": {
-        "components": [
-          {
-            "id": "icon",
-            "capabilities": [
-              "onoff"
-            ]
-          },
-          {
-            "id": "toggle",
-            "capabilities": [
-              "onoff"
-            ],
-            "options": {
-              "showTitle": true
-            }
-          },
-          {
-            "id": "battery",
-            "capabilities": [
-              "measure_battery"
-            ],
-            "options": {
-              "showTitle": true
-            }
-          },
-          {
-            "id": "sensor",
-            "capabilities": [
-              "alarm_smoke",
-              "alarm_tamper",
-              "alarm_battery"
-            ]
-          }
-        ]
-      },
       "zwave": {
         "manufacturerId": [
           340
@@ -2967,6 +2849,11 @@
         "measure_battery",
         "alarm_battery"
       ],
+      "energy": {
+        "batteries": [
+          "LS14250"
+        ]
+      },
       "images": {
         "large": "/drivers/009402/assets/images/large.jpg",
         "small": "/drivers/009402/assets/images/small.jpg"
@@ -3210,6 +3097,12 @@
         "measure_battery",
         "alarm_battery"
       ],
+      "energy": {
+        "batteries": [
+          "AA",
+          "AA"
+        ]
+      },
       "capabilitiesOptions": {
         "target_temperature": {
           "min": 4,
@@ -3239,6 +3132,11 @@
         "measure_battery",
         "alarm_battery"
       ],
+      "energy": {
+        "batteries": [
+          "PP3"
+        ]
+      },
       "capabilitiesOptions": {
         "alarm_contact": {
           "title": {
@@ -3875,34 +3773,6 @@
         "en": "Keypad",
         "nl": "Keypad"
       },
-      "mobile": {
-        "components": [
-          {
-            "id": "icon"
-          },
-          {
-            "id": "battery",
-            "capabilities": [
-              "measure_battery"
-            ],
-            "options": {
-              "showTitle": true
-            }
-          },
-          {
-            "id": "sensor",
-            "capabilities": [
-              "alarm_tamper",
-              "alarm_battery"
-            ],
-            "options": {
-              "icons": {
-                "alarm_contact": "/drivers/700045/assets/ring.svg"
-              }
-            }
-          }
-        ]
-      },
       "zwave": {
         "manufacturerId": [
           340
@@ -3960,6 +3830,14 @@
         "measure_battery",
         "alarm_battery"
       ],
+      "energy": {
+        "batteries": [
+          "AAA",
+          "AAA",
+          "AAA",
+          "AAA"
+        ]
+      },
       "images": {
         "large": "/drivers/700045/assets/images/large.jpg",
         "small": "/drivers/700045/assets/images/small.jpg"
@@ -3981,28 +3859,10 @@
         "is_rain",
         "alarm_heavyrain"
       ],
-      "mobile": {
-        "components": [
-          {
-            "id": "icon"
-          },
-          {
-            "id": "battery",
-            "capabilities": [
-              "measure_battery"
-            ],
-            "options": {
-              "showTitle": true
-            }
-          },
-          {
-            "id": "sensor",
-            "capabilities": [
-              "meter_rain",
-              "measure_rain",
-              "alarm_battery"
-            ]
-          }
+      "energy": {
+        "batteries": [
+          "AAA",
+          "AAA"
         ]
       },
       "capabilitiesOptions": {
@@ -4830,6 +4690,11 @@
         "alarm_tamper",
         "info_tilt"
       ],
+      "energy": {
+        "batteries": [
+          "LS14250"
+        ]
+      },
       "images": {
         "large": "/drivers/700892/assets/images/large.png",
         "small": "/drivers/700892/assets/images/small.png"
@@ -5421,30 +5286,9 @@
         "alarm_generic.mold",
         "measure_battery"
       ],
-      "mobile": {
-        "components": [
-          {
-            "id": "icon"
-          },
-          {
-            "id": "battery",
-            "capabilities": [
-              "measure_battery"
-            ],
-            "options": {
-              "showTitle": true
-            }
-          },
-          {
-            "id": "sensor",
-            "capabilities": [
-              "measure_temperature",
-              "measure_humidity",
-              "measure_dewpoint",
-              "alarm_generic.mold",
-              "measure_battery"
-            ]
-          }
+      "energy": {
+        "batteries": [
+          "LS14250"
         ]
       },
       "capabilitiesOptions": {

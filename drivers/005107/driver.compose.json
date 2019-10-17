@@ -1,40 +1,5 @@
 {
   "id": "005107",
-  "mobile": {
-    "components": [{
-        "id": "icon"
-      },
-      {
-        "id": "toggle",
-        "capabilities": ["onoff"],
-        "options": {
-          "showTitle": true,
-          "greyout": false
-        }
-      },
-      {
-        "id": "battery",
-        "capabilities": ["measure_battery"],
-        "options": {
-          "showTitle": true
-        }
-      },
-      {
-        "id": "sensor",
-        "capabilities": [
-          "alarm_siren",
-          "measure_temperature",
-          "alarm_tamper",
-          "alarm_battery"
-        ],
-        "options": {
-          "icons": {
-            "alarm_siren": "/drivers/005107/assets/alarm.svg"
-          }
-        }
-      }
-    ]
-  },
   "name": {
     "en": "Solar Outdoor Siren",
     "nl": "Solar Buiten Sirene",
@@ -72,6 +37,9 @@
   },
   "class": "other",
   "capabilities": ["onoff", "alarm_siren", "alarm_tamper", "measure_battery", "measure_temperature", "alarm_battery"],
+  "energy": {
+    "batteries": [ "INTERNAL" ]
+  },
   "capabilitiesOptions": {
     "onoff": {
       "greyout": false

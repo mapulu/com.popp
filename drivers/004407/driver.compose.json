@@ -53,6 +53,9 @@
     "measure_battery",
     "measure_temperature"
   ],
+  "energy": {
+    "batteries": [ "LS14250" ]
+  },
   "images": {
     "large": "/drivers/004407/assets/images/large.jpg",
     "small": "/drivers/004407/assets/images/small.jpg"
